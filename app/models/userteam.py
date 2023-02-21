@@ -13,7 +13,7 @@ class UserTeam(db.Model):
     points = db.Column(db.Integer, nullable=False, default=0)
     league_id = db.Column(db.Integer, db.ForeignKey('league.id'), nullable=False)
     bank = db.Column(db.Integer, nullable=False)
-    match_day = db.Column(db.Integer, nullable=False)
+    match_day = db.Column(db.Integer, nullable=False, default=1)
 
     players = db.relationship('Player', secondary='user_teams_players_table', back_populates='user_teams')
     user =db.relationship("User", back_populates="user_teams")
