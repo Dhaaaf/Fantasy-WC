@@ -1,5 +1,5 @@
 from .db import db, environment, SCHEMA, add_prefix_for_prod
-from .gameweekstat import GameWeekStats
+# from .gameweekstat import GameWeekStats
 
 
 class Player(db.Model):
@@ -18,9 +18,11 @@ class Player(db.Model):
     position = db.Column(db.String(20), nullable=False)
     value = db.Column(db.Integer, nullable=False)
 
-    tournament_id = db.Column(db.Integer, db.ForeignKey('tournament.id'), nullable=False)
+    tournament_id = db.Column(db.Integer, db.ForeignKey('tournaments_table.id'), nullable=False)
 
-    game_week_stats = db.relationship('GameWeekStats', back_populates='player', cascade="all, delete-orphan")
+    game_week_stats = db.relationship('GameWeekStat', back_populates='player', cascade="all, delete-orphan")
+    tournament = db.relationship('Tournament', back_populates='players')
+
 
     # user_teams = db.relationship('UserTeam', secondary='user_teams_to_player_link', back_populates="players")
 

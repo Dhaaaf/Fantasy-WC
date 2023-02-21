@@ -1,5 +1,5 @@
 from .db import db, environment, SCHEMA, add_prefix_for_prod
-from .player import Player
+# from .player import Player
 
 
 class Tournament(db.Model):

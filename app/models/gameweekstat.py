@@ -9,7 +9,7 @@ class GameWeekStat(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     week = db.Column(db.Integer, nullable=False)
-    player_id = db.Column(db.Integer, db.ForeignKey('player.id'), nullable=False)
+    player_id = db.Column(db.Integer, db.ForeignKey('players_table.id'), nullable=False)
     points = db.Column(db.Integer, nullable=False)
     goals = db.Column(db.Integer, nullable=False)
     assists = db.Column(db.Integer, nullable=False)

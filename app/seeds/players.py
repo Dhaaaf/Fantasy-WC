@@ -24,7 +24,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="GK",
-        value="6",
+        value="5",
         tournament_id="1"
     )
 
@@ -36,7 +36,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="DF",
-        value="6",
+        value="5",
         tournament_id="1"
     )
 
@@ -48,7 +48,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="DF",
-        value="6",
+        value="5",
         tournament_id="1"
     )
 
@@ -60,7 +60,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="DF",
-        value="6",
+        value="5",
         tournament_id="1"
     )
 
@@ -72,7 +72,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="DF",
-        value="6",
+        value="5",
         tournament_id="1"
     )
 
@@ -84,7 +84,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="DF",
-        value="6",
+        value="5",
         tournament_id="1"
     )
 
@@ -96,7 +96,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="DF",
-        value="6",
+        value="5",
         tournament_id="1"
     )
 
@@ -108,7 +108,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="MF",
-        value="7",
+        value="5",
         tournament_id="1"
     )
 
@@ -120,7 +120,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="MF",
-        value="6",
+        value="5",
         tournament_id="1"
     )
 
@@ -132,7 +132,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="MF",
-        value="6",
+        value="5",
         tournament_id="1"
     )
 
@@ -144,7 +144,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="MF",
-        value="7",
+        value="5",
         tournament_id="1"
     )
 
@@ -156,7 +156,7 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="MF",
-        value="7",
+        value="5",
         tournament_id="1"
     )
 
@@ -168,15 +168,16 @@ def seed_players():
         team="Argentina",
         year="2022",
         position="FW",
-        value="6",
+        value="5",
         tournament_id="1"
     )
 
-    # BRAZIL WC 2022
+    # Ronaldo Nazario R9 WC 2022
 
     p15 = Player (
         first_name="Ronaldo",
         last_name="Nazario",
+        aka="Ronaldo",
         picture="https://zalen.in/storage/news/post/s5SwkaprL8qwI1r8XYyt8BSj27a26kYHazGqw7vo.png",
         team="Brazil",
         year="2002",
@@ -184,6 +185,22 @@ def seed_players():
         value="15",
         tournament_id="6"
     )
+
+    # Sneijder WC 2010
+
+    p16 = Player (
+        first_name="Wesley",
+        last_name="Sneijder",
+        aka="Sneijder",
+        picture="https://pbs.twimg.com/media/FjtwDRgX0AcG8hq.jpg",
+        team="Netherlands",
+        year="2010",
+        position="MF",
+        value="15",
+        tournament_id="4"
+    )
+
+
 
     db.session.add_all(
         [
@@ -201,7 +218,8 @@ def seed_players():
             p12,
             p13,
             p14,
-            # p15,
+            p15,
+            p16
         ]
     )
     db.session.commit()
