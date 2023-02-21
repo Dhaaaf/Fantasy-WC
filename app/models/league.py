@@ -1,8 +1,8 @@
 from .db import db, environment, SCHEMA, add_prefix_for_prod
 from datetime import datetime
-from .user import User
-from .leaguetournament import LeaguesTournament
-from .tournament import Tournament
+# from .user import User
+# from .leaguetournament import LeaguesTournament
+# from .tournament import Tournament
 
 
 class League(db.Model):

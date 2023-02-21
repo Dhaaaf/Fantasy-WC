@@ -984,6 +984,148 @@ def seed_game_week_stats():
         man_of_the_match="False",
     )
 
+    # RONALDO NAZARIO R9 WC 2002
+
+    gw99 = GameWeekStat (
+        week="1",
+        player_id="15",
+        points="6",
+        goals="1",
+        assists="0",
+        clean_sheet="False",
+        man_of_the_match="False",
+    )
+
+    gw100 = GameWeekStat (
+        week="2",
+        player_id="15",
+        points="9",
+        goals="1",
+        assists="1",
+        clean_sheet="True",
+        man_of_the_match="False",
+    )
+
+    gw101 = GameWeekStat (
+        week="3",
+        player_id="15",
+        points="16",
+        goals="2",
+        assists="0",
+        clean_sheet="False",
+        man_of_the_match="True",
+    )
+
+    gw102 = GameWeekStat (
+        week="4",
+        player_id="15",
+        points="6",
+        goals="1",
+        assists="0",
+        clean_sheet="True",
+        man_of_the_match="False",
+    )
+
+    gw103 = GameWeekStat (
+        week="5",
+        player_id="15",
+        points="2",
+        goals="0",
+        assists="0",
+        clean_sheet="False",
+        man_of_the_match="False",
+    )
+
+    gw104 = GameWeekStat (
+        week="6",
+        player_id="15",
+        points="6",
+        goals="1",
+        assists="0",
+        clean_sheet="True",
+        man_of_the_match="False",
+    )
+
+    gw105 = GameWeekStat (
+        week="7",
+        player_id="15",
+        points="16",
+        goals="2",
+        assists="0",
+        clean_sheet="True",
+        man_of_the_match="True",
+    )
+
+    gw106 = GameWeekStat (
+        week="1",
+        player_id="16",
+        points="3",
+        goals="0",
+        assists="0",
+        clean_sheet="True",
+        man_of_the_match="False",
+    )
+
+    gw107 = GameWeekStat (
+        week="2",
+        player_id="16",
+        points="14",
+        goals="1",
+        assists="0",
+        clean_sheet="True",
+        man_of_the_match="True",
+    )
+
+    gw108 = GameWeekStat (
+        week="3",
+        player_id="16",
+        points="5",
+        goals="1",
+        assists="1",
+        clean_sheet="False",
+        man_of_the_match="False",
+    )
+
+    gw109 = GameWeekStat (
+        week="4",
+        player_id="16",
+        points="13",
+        goals="1",
+        assists="0",
+        clean_sheet="False",
+        man_of_the_match="True",
+    )
+
+    gw110 = GameWeekStat (
+        week="5",
+        player_id="16",
+        points="13",
+        goals="1",
+        assists="0",
+        clean_sheet="False",
+        man_of_the_match="True",
+    )
+
+    gw111 = GameWeekStat (
+        week="6",
+        player_id="16",
+        points="13",
+        goals="1",
+        assists="0",
+        clean_sheet="False",
+        man_of_the_match="True",
+    )
+
+    gw112 = GameWeekStat (
+        week="6",
+        player_id="16",
+        points="2",
+        goals="0",
+        assists="0",
+        clean_sheet="False",
+        man_of_the_match="False",
+    )
+
 
     db.session.add_all(
         [
@@ -1085,6 +1227,20 @@ def seed_game_week_stats():
             gw96,
             gw97,
             gw98,
+            gw99,
+            gw100,
+            gw101,
+            gw102,
+            gw103,
+            gw104,
+            gw105,
+            gw106,
+            gw107,
+            gw108,
+            gw109,
+            gw110,
+            gw111,
+            gw112
         ]
     )
     db.session.commit()

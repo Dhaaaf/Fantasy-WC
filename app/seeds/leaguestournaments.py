@@ -75,7 +75,7 @@ def seed_leagues_tournaments():
 
     lt15 = LeaguesTournament (
         league_id="3",
-        tournament_id="2"
+        tournament_id="1"
     )
 
     lt16 = LeaguesTournament (

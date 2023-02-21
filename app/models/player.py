@@ -1,5 +1,5 @@
 from .db import db, environment, SCHEMA, add_prefix_for_prod
-from .gameweekstat import GameWeekStats
+# from .gameweekstat import GameWeekStats
 
 
 class Player(db.Model):

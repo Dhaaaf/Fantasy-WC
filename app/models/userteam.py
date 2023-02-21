@@ -1,5 +1,5 @@
 from .db import db, environment, SCHEMA, add_prefix_for_prod
-from .player import Player
+# from .player import Player
 
 class UserTeam(db.Model):
     __tablename__ = "user_teams_table"
