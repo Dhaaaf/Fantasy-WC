@@ -8,7 +8,7 @@ def seed_leagues():
         name ="All or Nothing",
         display_pic ="https://www.ipsos.com/sites/default/files/styles/max_1300x1300/public/ct/news_and_polls/2022-11/ipsos-global-advisor-fifa-world-cup-2022.jpg?itok=G7HtaVZa",
         team_budget="100",
-        is_private="False"
+        is_private=False
     )
 
     l2 = League (
@@ -16,7 +16,7 @@ def seed_leagues():
         name ="Old is Gold",
         display_pic ="https://i2-prod.mirror.co.uk/incoming/article25415910.ece/ALTERNATES/s1200c/0_GettyImages-88019502.jpg",
         team_budget="130",
-        is_private="False"
+        is_private=False
     )
 
     l3 = League (
@@ -24,7 +24,7 @@ def seed_leagues():
         name ="One more try",
         display_pic ="https://images.adsttc.com/media/images/6334/0bcc/7120/024a/58db/cbe1/large_jpg/qatars-lusail-stadium-designed-by-foster-plus-partners-hosts-its-first-game_7.jpg?1664355284",
         team_budget="110",
-        is_private="False"
+        is_private=False
     )
 
     l4 = League (
@@ -32,7 +32,7 @@ def seed_leagues():
         name ="Fergie Time",
         display_pic ="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt261e76ddd443705f/60db777390ef0d39a2fd978e/f5acbb2cbc63eed78904048af649b4ca44e0db23.png?auto=webp&fit=crop&format=jpg&height=800&quality=60&width=1200",
         team_budget="93",
-        is_private="True"
+        is_private=True
     )
 
     l5 = League (
@@ -40,7 +40,7 @@ def seed_leagues():
         name ="Money League",
         display_pic ="https://img.freepik.com/free-photo/set-euro-currency-bills-isolated_1101-2388.jpg",
         team_budget="200",
-        is_private="True"
+        is_private=True
     )
 
     db.session.add_all(

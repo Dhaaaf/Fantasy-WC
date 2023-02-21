@@ -10,8 +10,8 @@ def seed_game_week_stats():
         points="6",
         goals="1",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw2 = GameWeekStat (
@@ -20,8 +20,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw3 = GameWeekStat (
@@ -30,8 +30,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw4 = GameWeekStat (
@@ -40,8 +40,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw5 = GameWeekStat (
@@ -50,8 +50,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw6 = GameWeekStat (
@@ -60,8 +60,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw7 = GameWeekStat (
@@ -70,8 +70,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw8 = GameWeekStat (
@@ -80,8 +80,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw9 = GameWeekStat (
@@ -90,8 +90,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw10 = GameWeekStat (
@@ -100,8 +100,8 @@ def seed_game_week_stats():
         points="5",
         goals="0",
         assists="1",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw11 = GameWeekStat (
@@ -110,8 +110,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw12 = GameWeekStat (
@@ -120,8 +120,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw13 = GameWeekStat (
@@ -130,8 +130,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw14 = GameWeekStat (
@@ -140,8 +140,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw15 = GameWeekStat (
@@ -150,8 +150,8 @@ def seed_game_week_stats():
         points="15",
         goals="1",
         assists="1",
-        clean_sheet="True",
-        man_of_the_match="True",
+        clean_sheet=True,
+        man_of_the_match=True,
     )
 
     gw16 = GameWeekStat (
@@ -160,8 +160,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw17 = GameWeekStat (
@@ -170,8 +170,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw18 = GameWeekStat (
@@ -180,8 +180,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw19 = GameWeekStat (
@@ -190,8 +190,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw20 = GameWeekStat (
@@ -200,8 +200,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw21 = GameWeekStat (
@@ -210,8 +210,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw22 = GameWeekStat (
@@ -220,8 +220,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw23 = GameWeekStat (
@@ -230,8 +230,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="1",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw24 = GameWeekStat (
@@ -240,8 +240,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw25 = GameWeekStat (
@@ -250,8 +250,8 @@ def seed_game_week_stats():
         points="3",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw26 = GameWeekStat (
@@ -260,8 +260,8 @@ def seed_game_week_stats():
         points="3",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw27 = GameWeekStat (
@@ -270,8 +270,8 @@ def seed_game_week_stats():
         points="8",
         goals="1",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw28 = GameWeekStat (
@@ -280,8 +280,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw29 = GameWeekStat (
@@ -290,8 +290,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw30 = GameWeekStat (
@@ -300,8 +300,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw31 = GameWeekStat (
@@ -310,8 +310,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw32 = GameWeekStat (
@@ -320,8 +320,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw33 = GameWeekStat (
@@ -330,8 +330,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw34 = GameWeekStat (
@@ -340,8 +340,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw35 = GameWeekStat (
@@ -350,8 +350,8 @@ def seed_game_week_stats():
         points="9",
         goals="0",
         assists="1",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw36 = GameWeekStat (
@@ -360,8 +360,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw37 = GameWeekStat (
@@ -370,8 +370,8 @@ def seed_game_week_stats():
         points="3",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw38 = GameWeekStat (
@@ -380,8 +380,8 @@ def seed_game_week_stats():
         points="3",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw39 = GameWeekStat (
@@ -390,8 +390,8 @@ def seed_game_week_stats():
         points="3",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw40 = GameWeekStat (
@@ -400,8 +400,8 @@ def seed_game_week_stats():
         points="13",
         goals="1",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="True",
+        clean_sheet=True,
+        man_of_the_match=True,
     )
 
     gw41 = GameWeekStat (
@@ -410,8 +410,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="1",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw42 = GameWeekStat (
@@ -420,8 +420,8 @@ def seed_game_week_stats():
         points="6",
         goals="1",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw43 = GameWeekStat (
@@ -430,8 +430,8 @@ def seed_game_week_stats():
         points="12",
         goals="1",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="True",
+        clean_sheet=False,
+        man_of_the_match=True,
     )
 
     gw44 = GameWeekStat (
@@ -440,8 +440,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw45 = GameWeekStat (
@@ -450,8 +450,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw46 = GameWeekStat (
@@ -460,8 +460,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw47 = GameWeekStat (
@@ -470,8 +470,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw48 = GameWeekStat (
@@ -480,8 +480,8 @@ def seed_game_week_stats():
         points="5",
         goals="0",
         assists="1",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw49 = GameWeekStat (
@@ -490,8 +490,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw50 = GameWeekStat (
@@ -500,8 +500,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw51 = GameWeekStat (
@@ -510,8 +510,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw52 = GameWeekStat (
@@ -520,8 +520,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw53 = GameWeekStat (
@@ -530,8 +530,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw54 = GameWeekStat (
@@ -540,8 +540,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw55 = GameWeekStat (
@@ -550,8 +550,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw56 = GameWeekStat (
@@ -560,8 +560,8 @@ def seed_game_week_stats():
         points="6",
         goals="1",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw57 = GameWeekStat (
@@ -570,8 +570,8 @@ def seed_game_week_stats():
         points="15",
         goals="1",
         assists="1",
-        clean_sheet="False",
-        man_of_the_match="True",
+        clean_sheet=False,
+        man_of_the_match=True,
     )
 
     gw58 = GameWeekStat (
@@ -580,8 +580,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw59 = GameWeekStat (
@@ -590,8 +590,8 @@ def seed_game_week_stats():
         points="5",
         goals="0",
         assists="1",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw60 = GameWeekStat (
@@ -600,8 +600,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw61 = GameWeekStat (
@@ -610,8 +610,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw62 = GameWeekStat (
@@ -620,8 +620,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw63 = GameWeekStat (
@@ -630,8 +630,8 @@ def seed_game_week_stats():
         points="8",
         goals="1",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw64 = GameWeekStat (
@@ -640,8 +640,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw65 = GameWeekStat (
@@ -650,8 +650,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw66 = GameWeekStat (
@@ -660,8 +660,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw67 = GameWeekStat (
@@ -670,8 +670,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw68 = GameWeekStat (
@@ -680,8 +680,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw69 = GameWeekStat (
@@ -690,8 +690,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw70 = GameWeekStat (
@@ -700,8 +700,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw71 = GameWeekStat (
@@ -710,8 +710,8 @@ def seed_game_week_stats():
         points="15",
         goals="1",
         assists="1",
-        clean_sheet="True",
-        man_of_the_match="True",
+        clean_sheet=True,
+        man_of_the_match=True,
     )
 
     gw72 = GameWeekStat (
@@ -720,8 +720,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw73 = GameWeekStat (
@@ -730,8 +730,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw74 = GameWeekStat (
@@ -740,8 +740,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw75 = GameWeekStat (
@@ -750,8 +750,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw76 = GameWeekStat (
@@ -760,8 +760,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw77 = GameWeekStat (
@@ -770,8 +770,8 @@ def seed_game_week_stats():
         points="6",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw78 = GameWeekStat (
@@ -780,8 +780,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw79 = GameWeekStat (
@@ -790,8 +790,8 @@ def seed_game_week_stats():
         points="0",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw80 = GameWeekStat (
@@ -800,8 +800,8 @@ def seed_game_week_stats():
         points="3",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw81 = GameWeekStat (
@@ -810,8 +810,8 @@ def seed_game_week_stats():
         points="3",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw82 = GameWeekStat (
@@ -820,8 +820,8 @@ def seed_game_week_stats():
         points="3",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="Fale",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw83 = GameWeekStat (
@@ -830,8 +830,8 @@ def seed_game_week_stats():
         points="3",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw84 = GameWeekStat (
@@ -840,8 +840,8 @@ def seed_game_week_stats():
         points="13",
         goals="2",
         assists="1",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw85 = GameWeekStat (
@@ -850,8 +850,8 @@ def seed_game_week_stats():
         points="16",
         goals="2",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="True",
+        clean_sheet=False,
+        man_of_the_match=True,
     )
 
     gw86 = GameWeekStat (
@@ -860,8 +860,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw87 = GameWeekStat (
@@ -870,8 +870,8 @@ def seed_game_week_stats():
         points="5",
         goals="0",
         assists="1",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw88 = GameWeekStat (
@@ -880,8 +880,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw89 = GameWeekStat (
@@ -890,8 +890,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw90 = GameWeekStat (
@@ -900,8 +900,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw91 = GameWeekStat (
@@ -910,8 +910,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw92 = GameWeekStat (
@@ -920,8 +920,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw93 = GameWeekStat (
@@ -930,8 +930,8 @@ def seed_game_week_stats():
         points="11",
         goals="1",
         assists="1",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw94 = GameWeekStat (
@@ -940,8 +940,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw95 = GameWeekStat (
@@ -950,8 +950,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw96 = GameWeekStat (
@@ -960,8 +960,8 @@ def seed_game_week_stats():
         points="5",
         goals="0",
         assists="1",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw97 = GameWeekStat (
@@ -970,8 +970,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw98 = GameWeekStat (
@@ -980,8 +980,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     # RONALDO NAZARIO R9 WC 2002
@@ -992,8 +992,8 @@ def seed_game_week_stats():
         points="6",
         goals="1",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw100 = GameWeekStat (
@@ -1002,8 +1002,8 @@ def seed_game_week_stats():
         points="9",
         goals="1",
         assists="1",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw101 = GameWeekStat (
@@ -1012,8 +1012,8 @@ def seed_game_week_stats():
         points="16",
         goals="2",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="True",
+        clean_sheet=False,
+        man_of_the_match=True,
     )
 
     gw102 = GameWeekStat (
@@ -1022,8 +1022,8 @@ def seed_game_week_stats():
         points="6",
         goals="1",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw103 = GameWeekStat (
@@ -1032,8 +1032,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw104 = GameWeekStat (
@@ -1042,8 +1042,8 @@ def seed_game_week_stats():
         points="6",
         goals="1",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw105 = GameWeekStat (
@@ -1052,8 +1052,8 @@ def seed_game_week_stats():
         points="16",
         goals="2",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="True",
+        clean_sheet=True,
+        man_of_the_match=True,
     )
 
     gw106 = GameWeekStat (
@@ -1062,8 +1062,8 @@ def seed_game_week_stats():
         points="3",
         goals="0",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="False",
+        clean_sheet=True,
+        man_of_the_match=False,
     )
 
     gw107 = GameWeekStat (
@@ -1072,8 +1072,8 @@ def seed_game_week_stats():
         points="14",
         goals="1",
         assists="0",
-        clean_sheet="True",
-        man_of_the_match="True",
+        clean_sheet=True,
+        man_of_the_match=True,
     )
 
     gw108 = GameWeekStat (
@@ -1082,8 +1082,8 @@ def seed_game_week_stats():
         points="5",
         goals="1",
         assists="1",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
     gw109 = GameWeekStat (
@@ -1092,8 +1092,8 @@ def seed_game_week_stats():
         points="13",
         goals="1",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="True",
+        clean_sheet=False,
+        man_of_the_match=True,
     )
 
     gw110 = GameWeekStat (
@@ -1102,8 +1102,8 @@ def seed_game_week_stats():
         points="13",
         goals="1",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="True",
+        clean_sheet=False,
+        man_of_the_match=True,
     )
 
     gw111 = GameWeekStat (
@@ -1112,8 +1112,8 @@ def seed_game_week_stats():
         points="13",
         goals="1",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="True",
+        clean_sheet=False,
+        man_of_the_match=True,
     )
 
     gw112 = GameWeekStat (
@@ -1122,8 +1122,8 @@ def seed_game_week_stats():
         points="2",
         goals="0",
         assists="0",
-        clean_sheet="False",
-        man_of_the_match="False",
+        clean_sheet=False,
+        man_of_the_match=False,
     )
 
 
