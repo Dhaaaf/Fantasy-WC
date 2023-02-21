@@ -65,17 +65,32 @@ def seed_leagues_tournaments():
 
     lt13 = LeaguesTournament (
         league_id="3",
-        tournament_id="5"
+        tournament_id="3"
     )
 
     lt14 = LeaguesTournament (
         league_id="3",
-        tournament_id="6"
+        tournament_id="2"
     )
 
     lt15 = LeaguesTournament (
         league_id="3",
-        tournament_id="7"
+        tournament_id="2"
+    )
+
+    lt16 = LeaguesTournament (
+        league_id="2",
+        tournament_id="1"
+    )
+
+    lt17 = LeaguesTournament (
+        league_id="4",
+        tournament_id="1"
+    )
+
+    lt18 = LeaguesTournament (
+        league_id="5",
+        tournament_id="1"
     )
 
     db.session.add_all(
@@ -94,7 +109,10 @@ def seed_leagues_tournaments():
             lt12,
             lt13,
             lt14,
-            lt15
+            lt15,
+            lt16,
+            lt17,
+            lt18
         ]
     )
 
