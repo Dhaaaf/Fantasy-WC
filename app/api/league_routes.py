@@ -90,3 +90,20 @@ def edit_league(id):
         return {"league": league.to_dict()}, 200
     
     return form.errors
+
+
+# DELETE LEAGUE
+@league_routes.route("/<int:id>", methods=["DELETE"])
+@login_required
+def delete_league(id):
+    userId = int(current_user.id)
+    league = League.query.get(id)
+    if (league == None):
+        return {"errors": ["League does not exist"]}, 404
+    if (league.owner_id != userId):
+        return {"errors": ["This league doesn't belong to this user"]}, 403
+
+    db.session.delete(league)
+    db.session.commit()
+
+    return {"league": id}
