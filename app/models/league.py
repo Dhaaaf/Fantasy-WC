@@ -25,7 +25,7 @@ class League(db.Model):
     if environment == "production":
         __table_args__ = {"schema": SCHEMA}
         
-        tournaments = db.relationship('Tournament', secondary=f"{SCHEMA}leagues_tournaments_table")
+        tournaments = db.relationship('Tournament', secondary=f"{SCHEMA}.leagues_tournaments_table")
     else:
         tournaments = db.relationship('Tournament', secondary="leagues_tournaments_table")
 
