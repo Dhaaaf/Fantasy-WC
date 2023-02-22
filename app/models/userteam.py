@@ -8,10 +8,10 @@ class UserTeam(db.Model):
         __table_args__ = {'schema': SCHEMA}
 
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod('users.id')), nullable=False)
     name = db.Column(db.String(50), nullable=False)
     points = db.Column(db.Integer, nullable=False, default=0)
-    league_id = db.Column(db.Integer, db.ForeignKey('leagues_table.id'), nullable=False)
+    league_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod('leagues_table.id')), nullable=False)
     bank = db.Column(db.Integer, nullable=False)
     match_day = db.Column(db.Integer, nullable=False, default=1)
 

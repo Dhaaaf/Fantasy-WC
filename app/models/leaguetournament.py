@@ -8,5 +8,5 @@ class LeaguesTournament(db.Model):
         __table_args__ = {"schema": SCHEMA}
     
     id = db.Column(db.Integer, primary_key=True)
-    league_id = db.Column(db.Integer, db.ForeignKey('leagues_table.id'), nullable=False)
-    tournament_id = db.Column(db.Integer, db.ForeignKey('tournaments_table.id'), nullable=False)
+    league_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod('leagues_table.id')), nullable=False)
+    tournament_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod('tournaments_table.id')), nullable=False)

@@ -18,7 +18,7 @@ class Player(db.Model):
     position = db.Column(db.String(20), nullable=False)
     value = db.Column(db.Integer, nullable=False)
 
-    tournament_id = db.Column(db.Integer, db.ForeignKey('tournaments_table.id'), nullable=False)
+    tournament_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod('tournaments_table.id')), nullable=False)
 
     game_week_stats = db.relationship('GameWeekStat', back_populates='player', cascade="all, delete-orphan")
     tournament = db.relationship('Tournament', back_populates='players')
