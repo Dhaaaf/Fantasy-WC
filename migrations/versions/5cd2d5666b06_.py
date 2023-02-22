@@ -64,7 +64,7 @@ def upgrade():
         op.execute(f"ALTER TABLE players_table SET SCHEMA {SCHEMA};")
 
 
-    op.create_table('game_week_stats_table',
+    op.create_table('game_week_stat',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('week', sa.Integer(), nullable=False),
     sa.Column('player_id', sa.Integer(), nullable=False),
@@ -77,7 +77,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
     if environment == "production":
-        op.execute(f"ALTER TABLE game_week_stats_table SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE game_week_stat SET SCHEMA {SCHEMA};")
 
 
     op.create_table('leagues_tournaments_table',
@@ -126,7 +126,7 @@ def downgrade():
     op.drop_table('user_teams_players_table')
     op.drop_table('user_teams_table')
     op.drop_table('leagues_tournaments_table')
-    op.drop_table('game_week_stats_table')
+    op.drop_table('game_week_stat')
     op.drop_table('players_table')
     op.drop_table('leagues_table')
     op.drop_table('tournaments_table')
