@@ -28,7 +28,7 @@ class Player(db.Model):
 
     if environment == "production":
         __table_args__ = {"schema": SCHEMA}
-        user_teams = db.relationship('UserTeam', secondary=f"{SCHEMA}user_teams_players_table", back_populates="players")
+        user_teams = db.relationship('UserTeam', secondary=f"{SCHEMA}.user_teams_players_table", back_populates="players")
     else:
         user_teams = db.relationship('UserTeam', secondary='user_teams_players_table', back_populates="players")
 
