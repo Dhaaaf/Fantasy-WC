@@ -39,7 +39,8 @@ def get_engine():
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
 config.set_main_option(
-    'sqlalchemy.url', str(get_engine().url).replace('%', '%%'))
+    'sqlalchemy.url',
+    str(get_engine().url).replace('%', '%%'))
 target_db = current_app.extensions['migrate'].db
 
 # other values from the config, defined by the needs of env.py,
@@ -93,7 +94,7 @@ def run_migrations_online():
                 directives[:] = []
                 logger.info('No changes in schema detected.')
 
-    connectable = get_engine(
+    connectable = engine_from_config(
         config.get_section(config.config_ini_section),
         prefix='sqlalchemy.',
         poolclass=pool.NullPool,
