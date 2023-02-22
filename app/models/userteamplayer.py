@@ -7,5 +7,5 @@ class UserTeamPlayer(db.Model):
         __table_args__ = {"schema": SCHEMA}
 
     id = db.Column(db.Integer, primary_key=True)
-    user_team_id = db.Column(db.Integer, db.ForeignKey('user_teams_table.id'), nullable=False)
-    player_id = db.Column(db.Integer, db.ForeignKey('players_table.id'), nullable=False)
+    user_team_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod('user_teams_table.id')), nullable=False)
+    player_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod('players_table.id')), nullable=False)
