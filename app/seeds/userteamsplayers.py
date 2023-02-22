@@ -211,9 +211,9 @@ def seed_users_teams_players():
 def undo_users_teams_players():
     if environment == "production":
         db.session.execute(
-            f"TRUNCATE table {SCHEMA}.users_teams_players_table RESTART IDENTITY CASCADE;"
+            f"TRUNCATE table {SCHEMA}.user_teams_players_table RESTART IDENTITY CASCADE;"
         )
     else:
-        db.session.execute("DELETE FROM users_teams_players_table")
+        db.session.execute("DELETE FROM user_teams_players_table")
 
     db.session.commit()
