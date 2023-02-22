@@ -15,7 +15,7 @@ class League(db.Model):
     owner_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod('users.id')), nullable=False)
     name = db.Column(db.String(50), nullable=False)
     display_pic = db.Column(db.String, nullable=False)
-    team_budget = db.Column(db.Integer, nullable=False)
+    team_budget = db.Column(db.Integer, default=100, nullable=False)
     is_private = db.Column(db.Boolean, default=False, nullable=False)
 
     # tournaments = db.relationship('Tournament', secondary='leagues_to_tournaments_link')
