@@ -49,7 +49,7 @@ def undo():
     undo_users_teams()
     undo_leagues_tournaments()
     undo_leagues()
-    undo_game_week_stats
+    undo_game_week_stats()
     undo_players()
     undo_tournaments()
     undo_users()

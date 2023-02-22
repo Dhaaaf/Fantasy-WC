@@ -1249,9 +1249,9 @@ def seed_game_week_stats():
 def undo_game_week_stats():
     if environment == "production":
         db.session.execute(
-            f"TRUNCATE table {SCHEMA}.game_week_stats_table RESTART IDENTITY CASCADE;"
+            f"TRUNCATE table {SCHEMA}.game_week_stat RESTART IDENTITY CASCADE;"
         )
     else:
-        db.session.execute("DELETE FROM game_week_stats_table")
+        db.session.execute("DELETE FROM game_week_stat")
 
     db.session.commit()
