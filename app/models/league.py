@@ -29,6 +29,7 @@ class League(db.Model):
     else:
         tournaments = db.relationship('Tournament', secondary="leagues_tournaments_table")
 
+
     def to_dict(self):
         return {
             "id": self.id,
