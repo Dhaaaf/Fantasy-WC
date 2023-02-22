@@ -23,6 +23,7 @@ class UserTeam(db.Model):
     else:
         players = db.relationship('Player', secondary='user_teams_players_table', back_populates='user_teams')
     
+    
     user =db.relationship("User", back_populates="user_teams")
     league =db.relationship("League", back_populates="user_teams")
 
