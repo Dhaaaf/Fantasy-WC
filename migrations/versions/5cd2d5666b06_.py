@@ -77,7 +77,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
     if environment == "production":
-        op.execute(f"ALTER TABLE game_week_stat SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE game_week_stats_table SET SCHEMA {SCHEMA};")
 
 
     op.create_table('leagues_tournaments_table',
