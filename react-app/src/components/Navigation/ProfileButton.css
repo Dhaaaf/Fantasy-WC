@@ -1,0 +1,171 @@
+.profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: fit-content;
+    min-width: 120px;
+    width: fit-content;
+
+    border-radius: 8px;
+    margin: 8px;
+    list-style: none;
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    background-color: white;
+}
+
+.profile-button-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-button {
+    background-color: #001d3d;
+    border: 0.1px solid #e3bc3f;
+    border-radius: 10px;
+    color: #e3bc3f;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 0;
+    height: 45px;
+}
+
+.profile-button-bars-div {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-button-container:hover {
+    background-color: #001d3d;
+    border-radius: 21px;
+    box-shadow: -2px 3px 1px rgba(165, 165, 165, 0.2);
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+
+#solid-bars {
+    margin-right: 7px;
+    color: gray;
+    font-size: 15px;
+}
+
+.dropdown-menu {
+    width: 100%;
+    height: inherit;
+    background-color: #001d3d;
+}
+
+.log-in-sign-up > div > button {
+    text-align: left;
+    width: 100%;
+    height: inherit;
+    font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    transition-property: all;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #e3bc3f;
+    color: #001d3d;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid rgba(165, 165, 165, 0.2);
+}
+
+
+#sign-up-modal {
+    font-family: inherit;
+    padding: 10px;
+    transition-property: all;
+}
+
+#sign-up-modal:hover {
+    background-color: rgba(165, 165, 165, 0.1);
+}
+
+#log-in-modal {
+    font-family: inherit;
+    padding: 10px;
+    transition-property: all;
+    border-bottom: 2px solid rgba(165, 165, 165, 0.2);
+}
+
+#log-in-modal:hover {
+    background-color: rgba(165, 165, 165, 0.1);
+}
+
+.profile-info-actions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: inherit;
+    font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    transition-property: all;
+    background-color: #001d3d;
+    color: #e3bc3f;
+    border: 1px solid #e3bc3f;
+}
+
+#username {
+    padding: 10px 0px;
+    border-bottom: 1px solid #e3bc3f;
+}
+
+#profile-email {
+    padding: 10px 0;
+    border-bottom: 1px solid #e3bc3f;
+}
+
+#demo-user-button {
+    /* margin-top: 5px; */
+    background-color: #e3bc3f;
+    color: #001d3d;
+    height: 25px;
+    width: 100%;
+    text-align: left;
+}
+
+#demo-user-button:hover {
+    background-color: #e3bc3f;
+    color: #001d3d;
+}
+
+
+#logout-button {
+    margin-top: 5px;
+    height: 25px;
+    color: #e3bc3f;
+    background-color: #001d3d;
+}
+
+#logout-button:hover {
+    color: #e3bc3f;
+}
+
+.fantasywc-button {
+    background-color: #001d3d;
+    justify-content: left;
+    color: gray;
+    font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
+    /* font-weight: bolder; */
+    border: none;
+    border-radius: 7px;
+    /* height: 3rem; */
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.fantasywc-button:hover {
+    background-color: #e3bc3f;
+}

@@ -1,7 +1,64 @@
-.profile-dropdown {
+/* .profile-dropdown {
   position: absolute;
-}
+} */
 
 .hidden {
   display: none;
+}
+
+.world-cup-trophy {
+  height: 70px;
+}
+
+.fantasy-text {
+  padding-left: 10px;
+  font-size: larger;
+  color: #e3bc3f;
+}
+
+.hidden {
+  display: none
+}
+
+.navigation-bar {
+  width: 100%;
+  position: sticky;
+  box-sizing: border-box;
+  top: 0px;
+  /* background-color: white; */
+  background-color: #001d3d;
+  border-bottom: 1px solid rgba(165, 165, 165, 0.2);
+  /* border-top: 1px solid rgba(165, 165, 165, 0.2); */
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px 20px;
+}
+
+.nav-innerdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-nav-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.home-link {
+  font-size: 38px;
+}
+
+.right-nav-div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100px;
+  box-sizing: border-box;
 }

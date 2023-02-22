@@ -1,8 +1,8 @@
-const GET_LEAGUES = "server/GET_LEAGUES";
-const ADD_LEAGUE = "server/ADD_LEAGUES";
-const EDIT_LEAGUE = "server/EDIT_LEAGUE";
-const DELETE_LEAGUE = "server/DELETE_LEAGUE";
-const RESET_LEAGUE = "server/RESET_LEAGUE";
+const GET_LEAGUES = "league/GET_LEAGUES";
+const ADD_LEAGUE = "league/ADD_LEAGUES";
+const EDIT_LEAGUE = "league/EDIT_LEAGUE";
+const DELETE_LEAGUE = "league/DELETE_LEAGUE";
+const RESET_LEAGUE = "league/RESET_LEAGUE";
 
 // ACTION
 
@@ -19,13 +19,14 @@ export const actionAddLeague = (league) => ({
 });
 
 // EDIT
-export const actionEditLeague = (league) => ({
+export const actionEditLeague = (leagueId, league) => ({
 	type: EDIT_LEAGUE,
+    leagueId,
 	league,
 });
 
 // DELETE
-export const actionDeleteServerMember = (leagueId) => ({
+export const actionDeleteLeague= (leagueId) => ({
 	type: DELETE_LEAGUE,
 	leagueId,
 });
@@ -57,5 +58,111 @@ export const thunkGetLeagues = () => async (dispatch) => {
 
 // CREATE 
 export const thunkAddLeague = (newLeague) => async(dispatch) => {
-    
+    const res = await fetch('/api/leagues/new', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newLeague),
+    });
+
+    if (res.ok) {
+        const data = await res.json();
+        dispatch(actionAddLeague(data.league));
+        return data.league;
+    } else if (res.status < 500) {
+        const data = await res.json();
+        if (data.errors) {
+            return data.errors;
+        }
+    } else {
+        return ["An error occurred. Please try again."];
+    }
+}
+
+//EDIT
+export const thunkEditLeague = (leagueId, league) => async (dispatch) => {
+    const res = await fetch(`/api/leagues/${leagueId}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(league),
+    })
+
+    if (res.ok) {
+        const data = await res.json();
+        dispatch(actionEditLeague(data.league));
+        return data.league;
+    } else if (res.status < 500) {
+        const data = await res.json();
+        if (data.errors) {
+            return data.errors;
+        }
+    } else {
+        return ["An error occurred. Please try again."];
+    }
+}
+
+
+// DELETE
+export const thunkDeleteLeague = (leagueId) => async (dispatch) => {
+    const res = await fetch (`/api/leagues/${leagueId}`, {
+        method: "DELETE",
+    });
+    if (res.ok) {
+		const data = await res.json();
+		dispatch(actionDeleteLeague(leagueId));
+		return data.league;
+	} else if (res.status < 500) {
+		const data = await res.json();
+		if (data.errors) {
+			return data.errors;
+		}
+	} else {
+		return ["An error occured. Please try again."];
+	}
+}
+
+const normalize = (leagues) => {
+	const data = {};
+	if (leagues) {
+		leagues.forEach((league) => (data[league.id] = league));
+		return data;
+	}
+};
+
+const initialState = {leagues: {}}
+
+export default function reducer(state = initialState, action) {
+	switch (action.type) {
+		case GET_LEAGUES: {
+			let newState = { ...state };
+			newState = normalize(action.leagues);
+			return newState;
+		}
+		case ADD_LEAGUE: {
+			let newState = { ...state };
+			newState = {
+				...state.leagues,
+				[action.league.id]: action.league,
+			};
+			return newState;
+		}
+		case EDIT_LEAGUE: {
+			let newState = { ...state };
+			newState[action.league.id] = action.league;
+			return newState;
+		}
+		case DELETE_LEAGUE: {
+			let newState = { ...state };
+			delete newState[action.leagueId];
+			return newState;
+		}
+		case RESET_LEAGUE: {
+			return {};
+		}
+		default:
+			return state;
+	}
 }
