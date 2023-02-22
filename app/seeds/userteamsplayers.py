@@ -113,57 +113,57 @@ def seed_users_teams_players():
     )
 
     utp23 = UserTeamPlayer (
-        user_team_id=2,
+        user_team_id=3,
         player_id=1
     )
 
     utp24 = UserTeamPlayer (
-        user_team_id=2,
+        user_team_id=3,
         player_id=16
     )
 
     utp25 = UserTeamPlayer (
-        user_team_id=2,
-        player_id=19
+        user_team_id=3,
+        player_id=9
     )
 
     utp26 = UserTeamPlayer (
-        user_team_id=2,
+        user_team_id=3,
         player_id=2
     )
 
     utp27 = UserTeamPlayer (
-        user_team_id=2,
+        user_team_id=3,
         player_id=3
     )
 
     utp28 = UserTeamPlayer (
-        user_team_id=2,
+        user_team_id=3,
         player_id=5
     )
 
     utp29 = UserTeamPlayer (
-        user_team_id=2,
+        user_team_id=3,
         player_id=6
     )
 
     utp30 = UserTeamPlayer (
-        user_team_id=2,
+        user_team_id=3,
         player_id=7
     )
 
     utp31 = UserTeamPlayer (
-        user_team_id=2,
+        user_team_id=3,
         player_id=12
     )
 
     utp32 = UserTeamPlayer (
-        user_team_id=2,
+        user_team_id=3,
         player_id=13
     )
 
     utp33 = UserTeamPlayer (
-        user_team_id=2,
+        user_team_id=3,
         player_id=14
     )
 
