@@ -2,7 +2,7 @@ from .db import db, environment, SCHEMA, add_prefix_for_prod
 
 
 class GameWeekStat(db.Model):
-    _tablename__ = "game_week_stats_table"
+    _tablename__ = "game_week_stat"
 
     if environment == "production":
         __table_args__ = {'schema': SCHEMA}
