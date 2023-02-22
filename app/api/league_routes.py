@@ -20,6 +20,7 @@ def leagues():
 def leagues_user():
     leagues = current_user.leagues
     return {"leagues": [league.to_dict() for league in leagues]}, 201
+    
 
 # GET LEAGUES WHICH ARE PUBLIC AND USER'S
 @league_routes.route("/public")
@@ -95,9 +96,9 @@ def edit_league(id):
 # DELETE LEAGUE
 @league_routes.route("/<int:id>", methods=["DELETE"])
 @login_required
-def delete_league(id):
+def delete_league(leagueId):
     userId = int(current_user.id)
-    league = League.query.get(id)
+    league = League.query.get(leagueId)
     if (league == None):
         return {"errors": ["League does not exist"]}, 404
     if (league.owner_id != userId):
@@ -106,4 +107,4 @@ def delete_league(id):
     db.session.delete(league)
     db.session.commit()
 
-    return {"league": id}
+    return {"league": leagueId}
