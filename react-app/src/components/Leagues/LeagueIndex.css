@@ -1,3 +1,15 @@
+.leagues-main-page {
+    /* background-image: url("../../assets/ucl-background.png"); */
+    background-size: cover;
+}
+
+.header-leagues h1 {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+}
+
 .leagues-mapper {
     display: flex;
     box-sizing: border-box;
@@ -8,13 +20,19 @@
     padding-top: 15px;
 }
 
+.league-card-wrapper{
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .league-card {
     height: fit-content;
     box-sizing: border-box;
     width: 170px;
-    margin: 0px 10px;
     cursor: pointer;
-    border: 1px solid #e3bc3f;
+    /* border: 1px solid #e3bc3f; */
+    box-shadow: 0px 8px 5px 5px #da7ded;
+    /* border: 1px solid #da7ded; */
     background-color: #001d3d;
 }
 

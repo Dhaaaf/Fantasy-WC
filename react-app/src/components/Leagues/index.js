@@ -43,18 +43,20 @@ const LeaguesIndex = () => {
                 <div className="leagues-mapper">
                     {leaguesArray && (
                         leaguesArray.map((league) => (
-                            <div key={league.id} className="league-card">
-                                <div className="league-img">
-                                    <img
-                                    className="league-image"
-                                    src={league.display_pic}
-                                    > 
-                                    </img>
-                                </div>
-                                <div className="league-card-footer">
-                                    <div className="league-name">{league.name}</div>
-                                    <div className="league-budget">Budget: € {league.team_budget} million</div>
-                                    <div className="league-tournaments">Tournaments: {league.tournaments.length}</div>
+                            <div key={league.id} className="league-card-wrapper">
+                                <div className="league-card">
+                                    <div className="league-img">
+                                        <img
+                                        className="league-image"
+                                        src={league.display_pic}
+                                        > 
+                                        </img>
+                                    </div>
+                                    <div className="league-card-footer">
+                                        <div className="league-name">{league.name}</div>
+                                        <div className="league-budget">Budget: € {league.team_budget} million</div>
+                                        <div className="league-tournaments">Tournaments: {league.tournaments.length}</div>
+                                    </div>
                                 </div>
                             </div>
                         ))
