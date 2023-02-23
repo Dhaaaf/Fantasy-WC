@@ -67,7 +67,7 @@ const LeaguesIndex = () => {
                                             onbuttonClick={closeMenu}
                                             />
                                         </div>
-                                        <button className="compete"> Compete</button>
+                                        <button className="compete">Kick-off</button>
                                     </div>
                                 </div>
                             </div>

@@ -32,7 +32,7 @@ def leagues_public():
         leagues = list(set(league1).union(set(user_leagues)))
         return {"leagues": [league.to_dict() for league in leagues]}, 201
     else:
-        return {"leagues": [league.to_dict() for league in leagues1]}, 201
+        return {"leagues": [league.to_dict() for league in league1]}, 201
 
 
 
