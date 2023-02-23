@@ -9,6 +9,8 @@ import {
 } from "../../store/leagues"
 import { NavLink, useHistory } from "react-router-dom";
 import "./LeagueIndex.css"
+import OpenModalButton from "../OpenModalButton";
+import TournamentsList from "./tournamentsList";
 
 const LeaguesIndex = () => {
     let dispatch = useDispatch();
@@ -17,6 +19,7 @@ const LeaguesIndex = () => {
     let userId = user.id
     const leagues = useSelector((state) => state.leagues);
     const history = useHistory()
+    const [showMenu, setShowMenu] = useState(false);
 
     useEffect(() => {
 		dispatch(thunkGetLeagues()).
@@ -32,14 +35,15 @@ const LeaguesIndex = () => {
         leaguesArray = Object.values(leagues)
     }
 
-    console.log("LEAGUES ARRAY---->", leaguesArray)
+
+    const closeMenu = () => setShowMenu(false);
 
     return (
         <div className="leagues-main-page">
-            <div className="header-leagues">
-                <h1>Pick a League to compete in:</h1>
-            </div>
-            <div className="footer-leagues">
+            <div className="leagues-container">
+                <div className="leagues-container-header">
+                <h1 className="header-league">Pick a League to compete in:</h1>
+                </div>
                 <div className="leagues-mapper">
                     {leaguesArray && (
                         leaguesArray.map((league) => (
@@ -55,15 +59,20 @@ const LeaguesIndex = () => {
                                     <div className="league-card-footer">
                                         <div className="league-name">{league.name}</div>
                                         <div className="league-budget">Budget: € {league.team_budget} million</div>
-                                        <div className="league-tournaments">Tournaments: {league.tournaments.length}</div>
+                                        <div className="league-tournaments-container">
+                                            <div className="league-tournaments">Tournaments: {league.tournaments.length}</div>
+                                            <OpenModalButton
+                                            modalComponent={<TournamentsList tournaments={league.tournaments} name={league.name} />}
+                                            buttonText="+"
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
+                                        <button className="compete"> Compete</button>
                                     </div>
                                 </div>
                             </div>
                         ))
                     )}
-                </div>
-                <div className="leagues-footer-right">
-
                 </div>
             </div>
         </div>
