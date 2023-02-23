@@ -67,11 +67,9 @@
     text-align: left;
     width: 100%;
     height: inherit;
-    font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     transition-property: all;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     background-color: #e3bc3f;
     color: #001d3d;
@@ -108,7 +106,6 @@
     text-align: center;
     width: 100%;
     height: inherit;
-    font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     transition-property: all;
     background-color: #001d3d;
@@ -156,7 +153,6 @@
     background-color: #001d3d;
     justify-content: left;
     color: gray;
-    font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
     /* font-weight: bolder; */
     border: none;
     border-radius: 7px;

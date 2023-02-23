@@ -40,13 +40,14 @@ function ProfileButton({ user }) {
     dispatch(logout());
   };
 
-  const demoSignIn = (e) => {
+  const demoSignIn = async (e) => {
     e.preventDefault();
     const password = "password"
     const email = "pep@aa.io"
-    dispatch(login(email, password));
-    closeMenu();
-}
+    const data = await dispatch(login(email, password));
+    
+    history.push(`/leagues`)
+  }
 
   const ulClassName = "profile-dropdown" + (showMenu ? "" : " hidden");
   const closeMenu = () => setShowMenu(false);
@@ -55,7 +56,7 @@ function ProfileButton({ user }) {
     <div className='profile-button-container'>
         <button onClick={openMenu} className='profile-button'>
             <div className="profile-button-bars-div">
-                <i class="fa-solid fa-user-tie"></i>
+                <i className="fa-solid fa-user-tie"></i>
             </div>
         </button>
         <div className={ulClassName} ref={ulRef}>
