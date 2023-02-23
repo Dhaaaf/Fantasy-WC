@@ -57,13 +57,14 @@ export const thunkGetLeagues = () => async (dispatch) => {
 }
 
 // CREATE 
-export const thunkAddLeague = (newLeague) => async(dispatch) => {
-    const res = await fetch('/api/leagues/new', {
+export const thunkAddLeague = (newLeague, tournaments) => async(dispatch) => {
+	const {name, display_pic, team_budget, is_private} = newLeague
+	const res = await fetch('/api/leagues/new', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(newLeague),
+        body: JSON.stringify(name, display_pic, team_budget, is_private, tournaments),
     });
 
     if (res.ok) {

@@ -11,6 +11,7 @@ import { NavLink, useHistory } from "react-router-dom";
 import "./LeagueIndex.css"
 import OpenModalButton from "../OpenModalButton";
 import TournamentsList from "./tournamentsList";
+import CreateLeague from "../CreateLeagueForm";
 
 const LeaguesIndex = () => {
     let dispatch = useDispatch();
@@ -43,6 +44,16 @@ const LeaguesIndex = () => {
             <div className="leagues-container">
                 <div className="leagues-container-header">
                 <h1 className="header-league">Pick a League to compete in:</h1>
+                <div className="add-league-div">
+                    <div className="plus">+</div>
+                    {/* <button className="add-league-button">Create a Custom League</button> */}
+                    <OpenModalButton
+                        modalComponent={<CreateLeague/>}
+                        buttonText="Create a Custom League"
+                        onbuttonClick={closeMenu}
+                        className="add-league-button"
+                    />
+                </div>
                 </div>
                 <div className="leagues-mapper">
                     {leaguesArray && (
