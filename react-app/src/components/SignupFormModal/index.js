@@ -35,51 +35,69 @@ function SignupFormModal() {
 
 	return (
 		<>
-			<h1>Sign Up</h1>
+		<div className="form-div">
+			<div className="title">
+     			<div className="form-title">Sign-up</div>
+    		</div>
 			<form onSubmit={handleSubmit}>
-				<ul>
+				<ul className="errors">
 					{errors.map((error, idx) => (
 						<li key={idx}>{error}</li>
 					))}
 				</ul>
-				<label>
-					Email
-					<input
-						type="text"
-						value={email}
-						onChange={(e) => setEmail(e.target.value)}
-						required
-					/>
-				</label>
-				<label>
-					Username
+				<div className="entries">
+        			<div className="form-label">
+        				<label htmlFor="email" className="email">Email</label>
+        			</div>
+         			<input
+            			type="text"
+            		value={email}
+            		onChange={(e) => setEmail(e.target.value)}
+            		required
+            		id='email-input'
+          			/>
+        		</div>
+				<div className="entries">
+					<div className="form-label">
+						<label htmlFor="username" className="username">Username</label>
+					</div>
 					<input
 						type="text"
 						value={username}
 						onChange={(e) => setUsername(e.target.value)}
 						required
+						id="username-input"
 					/>
-				</label>
-				<label>
-					Password
+				</div>
+				<div className="entries">
+					<div className="form-label">
+						<label htmlFor="password" className="password">Password</label>
+					</div>
 					<input
 						type="password"
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
 						required
+						id="password-input"
 					/>
-				</label>
-				<label>
-					Confirm Password
+				</div>
+				<div className="entries">
+					<div className="form-label">
+						<label htmlFor="confirmpassword" className="confirmpassword">Confirm Password</label>
+					</div>
 					<input
 						type="password"
-						value={confirmPassword}
+						alue={confirmPassword}
 						onChange={(e) => setConfirmPassword(e.target.value)}
 						required
+						id="confirm-password-input"
 					/>
-				</label>
-				<button type="submit">Sign Up</button>
+				</div>
+				<div className="form-button">
+					<button type="submit" className="submit-button" id="signup-button">Sign Up</button>
+				</div>
 			</form>
+		</div>
 		</>
 	);
 }
