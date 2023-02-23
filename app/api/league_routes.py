@@ -27,9 +27,13 @@ def leagues_user():
 @login_required
 def leagues_public():
     league1 = League.query.filter_by(is_private=False).all()
-    user_leagues = current_user.leagues
-    leagues = list(set(league1).union(set(user_leagues)))
-    return {"leagues": [league.to_dict() for league in leagues]}, 201
+    if current_user:
+        user_leagues = current_user.leagues
+        leagues = list(set(league1).union(set(user_leagues)))
+        return {"leagues": [league.to_dict() for league in leagues]}, 201
+    else:
+        return {"leagues": [league.to_dict() for league in leagues1]}, 201
+
 
 
 # CREATE LEAGUE

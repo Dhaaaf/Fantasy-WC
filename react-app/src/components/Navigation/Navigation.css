@@ -13,7 +13,8 @@
 .fantasy-text {
   padding-left: 10px;
   font-size: larger;
-  color: #e3bc3f;
+  /* color: #e3bc3f; */
+  color: white;
 }
 
 .hidden {
@@ -25,8 +26,9 @@
   position: sticky;
   box-sizing: border-box;
   top: 0px;
-  /* background-color: white; */
-  background-color: #001d3d;
+  /* background-color: #001d3d; */
+  /* background-color: #00145c; */
+  background-color: #37003c;
   border-bottom: 1px solid rgba(165, 165, 165, 0.2);
   /* border-top: 1px solid rgba(165, 165, 165, 0.2); */
   margin-left: 0px;

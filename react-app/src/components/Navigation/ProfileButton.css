@@ -25,7 +25,9 @@
 }
 
 .profile-button {
-    background-color: #001d3d;
+    /* background-color: #001d3d; */
+    /* background-color: #00145ce3; */
+    background-color: #37003c;
     border: 0.1px solid #e3bc3f;
     border-radius: 10px;
     color: #e3bc3f;
@@ -60,18 +62,17 @@
 .dropdown-menu {
     width: 100%;
     height: inherit;
-    background-color: #001d3d;
+    /* background-color: #001d3d; */
+    background-color: #37003c;
 }
 
 .log-in-sign-up > div > button {
     text-align: left;
     width: 100%;
     height: inherit;
-    font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     transition-property: all;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     background-color: #e3bc3f;
     color: #001d3d;
@@ -88,7 +89,9 @@
 }
 
 #sign-up-modal:hover {
-    background-color: rgba(165, 165, 165, 0.1);
+    /* background-color: rgba(165, 165, 165, 0.1); */
+    background-color: #37003c;
+
 }
 
 #log-in-modal {
@@ -108,10 +111,10 @@
     text-align: center;
     width: 100%;
     height: inherit;
-    font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     transition-property: all;
-    background-color: #001d3d;
+    /* background-color: #001d3d; */
+    background-color: #37003c;
     color: #e3bc3f;
     border: 1px solid #e3bc3f;
 }
@@ -129,7 +132,8 @@
 #demo-user-button {
     /* margin-top: 5px; */
     background-color: #e3bc3f;
-    color: #001d3d;
+    /* color: #001d3d; */
+    color: #37003c;
     height: 25px;
     width: 100%;
     text-align: left;
@@ -145,7 +149,9 @@
     margin-top: 5px;
     height: 25px;
     color: #e3bc3f;
-    background-color: #001d3d;
+    /* background-color: #001d3d; */
+    background-color: #37003c;
+    /* background-color: #00145ce3; */
 }
 
 #logout-button:hover {
@@ -153,10 +159,11 @@
 }
 
 .fantasywc-button {
-    background-color: #001d3d;
+    /* background-color: #001d3d; */
+    /* background-color: #00145ce3; */
+    background-color: #37003c;
     justify-content: left;
     color: gray;
-    font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
     /* font-weight: bolder; */
     border: none;
     border-radius: 7px;

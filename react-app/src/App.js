@@ -5,6 +5,8 @@ import SignupFormPage from "./components/SignupFormPage";
 import LoginFormPage from "./components/LoginFormPage";
 import { authenticate } from "./store/session";
 import Navigation from "./components/Navigation";
+import ProtectedRoute from "./components/auth/ProtectedRoute";
+import LeaguesIndex from "./components/Leagues";
 
 function App() {
   const dispatch = useDispatch();
@@ -24,6 +26,9 @@ function App() {
           <Route path="/signup">
             <SignupFormPage />
           </Route>
+          <ProtectedRoute path="/leagues" exact={true}>
+            <LeaguesIndex/>
+          </ProtectedRoute>
         </Switch>
       )}
     </>
