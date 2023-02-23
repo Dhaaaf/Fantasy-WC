@@ -63,7 +63,7 @@ const LeaguesIndex = () => {
                                             <div className="league-tournaments">Tournaments: {league.tournaments.length}</div>
                                             <OpenModalButton
                                             modalComponent={<TournamentsList tournaments={league.tournaments} name={league.name} />}
-                                            buttonText="+"
+                                            buttonText="i"
                                             onbuttonClick={closeMenu}
                                             />
                                         </div>
