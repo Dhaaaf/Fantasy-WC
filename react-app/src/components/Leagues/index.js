@@ -11,6 +11,8 @@ import { NavLink, useHistory } from "react-router-dom";
 import "./LeagueIndex.css"
 import OpenModalButton from "../OpenModalButton";
 import TournamentsList from "./tournamentsList";
+import CreateLeague from "../CreateLeagueForm";
+import EditDeleteLeagueModal from "../EditDeleteModal";
 
 const LeaguesIndex = () => {
     let dispatch = useDispatch();
@@ -43,12 +45,30 @@ const LeaguesIndex = () => {
             <div className="leagues-container">
                 <div className="leagues-container-header">
                 <h1 className="header-league">Pick a League to compete in:</h1>
+                <div className="add-league-div">
+                    <div className="plus">+</div>
+                    {/* <button className="add-league-button">Create a Custom League</button> */}
+                    <OpenModalButton
+                        modalComponent={<CreateLeague/>}
+                        buttonText="Create a Custom League"
+                        onbuttonClick={closeMenu}
+                        className="add-league-button"
+                    />
+                </div>
                 </div>
                 <div className="leagues-mapper">
                     {leaguesArray && (
                         leaguesArray.map((league) => (
                             <div key={league.id} className="league-card-wrapper">
-                                <div className="league-card">
+                                { league.owner_id === userId ? (
+                                    <div className="league-card owner">
+                                    <div className="gear-edit">
+                                    <OpenModalButton
+                                        modalComponent={<EditDeleteLeagueModal league={league} />}
+                                        buttonText="edit-league"
+                                        onbuttonClick={closeMenu}
+                                        />
+                                    </div>
                                     <div className="league-img">
                                         <img
                                         className="league-image"
@@ -67,9 +87,35 @@ const LeaguesIndex = () => {
                                             onbuttonClick={closeMenu}
                                             />
                                         </div>
+
                                         <button className="compete">Kick-off</button>
                                     </div>
                                 </div>
+                                ) : (
+                                    <div className="league-card">
+                                    <div className="league-img">
+                                        <img
+                                        className="league-image"
+                                        src={league.display_pic}
+                                        > 
+                                        </img>
+                                    </div>
+                                    <div className="league-card-footer">
+                                        <div className="league-name">{league.name}</div>
+                                        <div className="league-budget">Budget: € {league.team_budget} million</div>
+                                        <div className="league-tournaments-container">
+                                            <div className="league-tournaments">Tournaments: {league.tournaments.length}</div>
+                                            <OpenModalButton
+                                            modalComponent={<TournamentsList tournaments={league.tournaments} name={league.name} />}
+                                            buttonText="i"
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
+
+                                        <button className="compete">Kick-off</button>
+                                    </div>
+                                </div>
+                                )}
                             </div>
                         ))
                     )}

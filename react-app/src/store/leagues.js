@@ -57,13 +57,13 @@ export const thunkGetLeagues = () => async (dispatch) => {
 }
 
 // CREATE 
-export const thunkAddLeague = (newLeague) => async(dispatch) => {
-    const res = await fetch('/api/leagues/new', {
+export const thunkAddLeague = (name, display_pic, team_budget, is_private, tournaments) => async(dispatch) => {
+	const res = await fetch('/api/leagues/new', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(newLeague),
+        body: JSON.stringify(name, display_pic, team_budget, is_private, tournaments),
     });
 
     if (res.ok) {
@@ -81,18 +81,19 @@ export const thunkAddLeague = (newLeague) => async(dispatch) => {
 }
 
 //EDIT
-export const thunkEditLeague = (leagueId, league) => async (dispatch) => {
+export const thunkEditLeague = (leagueId, name, display_pic, is_private) => async (dispatch) => {
     const res = await fetch(`/api/leagues/${leagueId}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(league),
+        body: JSON.stringify({name, display_pic, is_private}),
     })
 
     if (res.ok) {
         const data = await res.json();
-        dispatch(actionEditLeague(data.league));
+		console.log("DATA ------>", data)
+        dispatch(actionEditLeague(data.league.id, data.league));
         return data.league;
     } else if (res.status < 500) {
         const data = await res.json();
@@ -143,10 +144,7 @@ export default function reducer(state = initialState, action) {
 		}
 		case ADD_LEAGUE: {
 			let newState = { ...state };
-			newState = {
-				...state.leagues,
-				[action.league.id]: action.league,
-			};
+			newState[action.league.id] = action.league
 			return newState;
 		}
 		case EDIT_LEAGUE: {
