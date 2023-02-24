@@ -1,6 +1,6 @@
 from flask import Flask, Blueprint, request
 from flask_login import login_required, current_user
-from app.models import db, League, User, Player, UserTeam
+from app.models import db, League, User, Player, UserTeam, UserTeamPlayer
 from app.forms import UserTeamForm
 
 user_team_routes = Blueprint("user_teams", __name__)
@@ -15,7 +15,7 @@ def get_team(id):
 
 
 # CREATE TEAM
-@user_team_routes.route("/league/<int:league_id>/new")
+@user_team_routes.route("/league/<int:league_id>/new", methods=["POST"])
 @login_required
 def create_team(league_id):
     userId = int(current_user.id)
@@ -39,3 +39,45 @@ def create_team(league_id):
         db.session.commit()
     
     return {"team": team.to_dict()}, 201
+
+
+# ADD Player to Team
+@user_team_routes.route("/<int:user_team_id>/player/<int:player_id>", methods=["POST"])
+@login_required
+def add_player(user_team_id, player_id):
+    team = UserTeam.query.get(user_team_id)
+    if (team == None):
+        return {"errors": ["Team does not exist"]}, 404
+
+    player = Player.query.get(player_id)
+    if (player == None):
+        return {"errors": ["Player does not exist"]}, 404
+    
+    new_team_player = UserTeamPlayer(
+        user_team_id=user_team_id,
+        player_id=player_id
+    )
+
+    return {"newPlayer": player.to_dict()}
+
+
+# DELETE Player from Team
+@user_team_routes.route("/<int:user_team_id>/player/<int:player_id>", methods=["DELETE"])
+@login_required
+def remove_player(user_team_id, player_id):
+    team = UserTeam.query.get(user_team_id)
+    if (team == None):
+        return {"errors": ["Team does not exist"]}, 404
+
+    player = Player.query.get(player_id)
+    if (player == None):
+        return {"errors": ["Player does not exist"]}, 404
+
+    user_team_player = UserTeamPlayer.query.filter(UserTeamPlayer.user_team_id == user_team_id, UserTeamPlayer.player_id == player_id).all()
+    if (len(user_team_player) == 0):
+        return {"errors": ["Player is not in this team"]}, 404
+
+    db.session.delete(user_team_player),
+    db.session.commit()
+
+    return {"removedPlayer": player.to_dict()}
