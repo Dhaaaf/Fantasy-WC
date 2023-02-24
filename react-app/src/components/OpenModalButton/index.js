@@ -38,7 +38,7 @@ function OpenModalButton({
         className={`OpenModalButton-button ${buttonText}`}
       >
         <div className="gear-container">
-        <i class="fa-solid fa-gear"></i>
+        <i className="fa-solid fa-gear"></i>
         </div>
       </button>
     );

@@ -10,9 +10,12 @@ export default function EditDeleteLeagueModal({league}) {
 	const [errors, setErrors] = useState([]);
     const [name, setName] = useState(league.name)
     const [display_pic, setDisplay_pic] = useState(league.display_pic)
+    const [is_private, setIs_Private] = useState(league.is_private)
     const { closeModal } = useModal();
 
     let errorsArray = []
+
+    let leagueId = league.id
 
 
     const handleEdit = async (e) => {
@@ -29,15 +32,18 @@ export default function EditDeleteLeagueModal({league}) {
 
         if (errorsArray.length > 0) setErrors(errorsArray)
 
+        console.log("leagueId ----->", leagueId)
 
         if (errorsArray.length == 0) {
-
+            dispatch(thunkEditLeague(leagueId, name, display_pic, is_private))
             closeModal()
         }
     }
 
     const handleDelete = async (e) => {
         e.preventDefault()
+        dispatch(thunkDeleteLeague(league.id))
+        closeModal();
     }
 
     return (
@@ -77,6 +83,22 @@ export default function EditDeleteLeagueModal({league}) {
                         id='league-display-pic-input'
                         />
                     </div>
+
+                    <div className="entries">
+                        <div className="form-label">
+                            <label htmlFor="is_private" className="is_private">Private League?</label>
+                        </div>
+                        <input
+							className="CreateChannelForm-checkbox"
+							type="checkbox"
+							checked={is_private}
+							onChange={() => setIs_Private(!is_private)}
+						/>
+                        <div className="CreateLeagueForm-switch">
+							<div></div>
+						</div>
+        		    </div>
+
                     <div className="form-button">
 					    <button type="submit" className="submit-button" id="edit-league-button">Edit League</button>
 				    </div>

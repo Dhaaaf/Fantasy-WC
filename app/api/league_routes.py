@@ -92,17 +92,20 @@ def edit_league(id):
         league.name = res["name"]
         league.display_pic = res["display_pic"]
         league.is_private = res["is_private"]
+        db.session.commit()
+
+        print("LEAGUE -------->", league.to_dict())
         return {"league": league.to_dict()}, 200
     
     return form.errors
 
 
 # DELETE LEAGUE
-@league_routes.route("/<int:id>", methods=["DELETE"])
+@league_routes.route("/<int:league_id>", methods=["DELETE"])
 @login_required
-def delete_league(leagueId):
+def delete_league(league_id):
     userId = int(current_user.id)
-    league = League.query.get(leagueId)
+    league = League.query.get(league_id)
     if (league == None):
         return {"errors": ["League does not exist"]}, 404
     if (league.owner_id != userId):
@@ -111,4 +114,4 @@ def delete_league(leagueId):
     db.session.delete(league)
     db.session.commit()
 
-    return {"league": leagueId}
+    return {"league": league_id}
