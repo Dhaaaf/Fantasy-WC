@@ -263,6 +263,90 @@ def seed_players():
         value=5,
         tournament_id=3
     )
+
+    p22 = Player (
+        first_name="Sami",
+        last_name="Khedira",
+        aka="Khedira",
+        picture="https://img.bleacherreport.net/img/images/photos/002/978/728/hi-res-67b1dba4d642c51ca766f2c70e12cc00_crop_north.jpg?1405456333&w=3072&h=2048",
+        team="Germany",
+        year=2014,
+        position="MF",
+        value=5,
+        tournament_id=3
+    )
+
+    p23 = Player (
+        first_name="Mesut",
+        last_name="Özil",
+        aka="Özil",
+        picture="https://img.bleacherreport.net/img/images/photos/002/991/444/hi-res-44fe1e24ff69c65a27a5ab6e510aa2c8_crop_north.jpg?1406264055&w=3072&h=2048",
+        team="Germany",
+        year=2014,
+        position="MF",
+        value=5,
+        tournament_id=3
+    )
+
+    p24 = Player (
+        first_name="André",
+        last_name="Schürrle",
+        aka="Schürrle",
+        picture="https://storage.googleapis.com/afs-prod/media/b03872ab94a94cf48ba3da7dd7049c43/2723.jpeg",
+        team="Germany",
+        year=2014,
+        position="MF",
+        value=5,
+        tournament_id=3
+    )
+
+    p25 = Player (
+        first_name="Mario",
+        last_name="Götze",
+        aka="Götze",
+        picture="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/07/13/22/gotze-2.jpg?quality=75&width=982&height=726&auto=webp",
+        team="Germany",
+        year=2014,
+        position="MF",
+        value=5,
+        tournament_id=3
+    )
+
+    p26 = Player (
+        first_name="Toni",
+        last_name="Kroos",
+        aka="Kroos",
+        picture="https://i.guim.co.uk/img/static/sys-images/Sport/Pix/pictures/2014/7/16/1405525594623/Germanys-midfielder-Toni--014.jpg?width=700&quality=85&auto=format&fit=max&s=2ca1c06387e4bc50680c3ce1f0c685f1",
+        team="Germany",
+        year=2014,
+        position="MF",
+        value=5,
+        tournament_id=3
+    )
+
+    p27 = Player (
+        first_name="Thomas",
+        last_name="Müller",
+        aka="Müller",
+        picture="https://i.pinimg.com/736x/1f/84/18/1f8418e410f937bab44f3f20ac85c795--football-soccer-soccer-players.jpg",
+        team="Germany",
+        year=2014,
+        position="FW",
+        value=5,
+        tournament_id=3
+    )
+
+    p28 = Player (
+        first_name="Miroslav",
+        last_name="Klose",
+        aka="Klose",
+        picture="https://i.ytimg.com/vi/DrAkH2dSozQ/maxresdefault.jpg",
+        team="Germany",
+        year=2014,
+        position="FW",
+        value=5,
+        tournament_id=3
+    )
     
 
 
@@ -289,7 +373,14 @@ def seed_players():
             p18,
             p19,
             p20,
-            p21
+            p21,
+            p22,
+            p23,
+            p24,
+            p25,
+            p26,
+            p27,
+            p28
         ]
     )
     db.session.commit()
