@@ -9,7 +9,8 @@ from .api import (
     user_routes,
     auth_routes,
     league_routes,
-    tournament_routes
+    tournament_routes,
+    user_team_routes
 )
 from .seeds import seed_commands
 from .config import Config
@@ -34,6 +35,7 @@ app.register_blueprint(user_routes, url_prefix='/api/users')
 app.register_blueprint(auth_routes, url_prefix='/api/auth')
 app.register_blueprint(league_routes, url_prefix='/api/leagues')
 app.register_blueprint(tournament_routes, url_prefix='/api/tournaments')
+app.register_blueprint(user_team_routes, url_prefix='/api/user_teams')
 db.init_app(app)
 Migrate(app, db)
 
