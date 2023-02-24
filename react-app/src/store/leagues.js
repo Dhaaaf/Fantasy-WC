@@ -57,8 +57,8 @@ export const thunkGetLeagues = () => async (dispatch) => {
 }
 
 // CREATE 
-export const thunkAddLeague = (newLeague, tournaments) => async(dispatch) => {
-	const {name, display_pic, team_budget, is_private} = newLeague
+export const thunkAddLeague = (name, display_pic, team_budget, is_private, tournaments) => async(dispatch) => {
+	console.log("THUNK ---->", name, display_pic, team_budget, is_private, tournaments)
 	const res = await fetch('/api/leagues/new', {
         method: "POST",
         headers: {
@@ -144,10 +144,7 @@ export default function reducer(state = initialState, action) {
 		}
 		case ADD_LEAGUE: {
 			let newState = { ...state };
-			newState = {
-				...state.leagues,
-				[action.league.id]: action.league,
-			};
+			newState[action.league.id] = action.league
 			return newState;
 		}
 		case EDIT_LEAGUE: {

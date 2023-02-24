@@ -60,6 +60,13 @@ const LeaguesIndex = () => {
                         leaguesArray.map((league) => (
                             <div key={league.id} className="league-card-wrapper">
                                 <div className="league-card">
+                                    <div className="gear-edit">
+                                    <OpenModalButton
+                                        modalComponent={<TournamentsList tournaments={league.tournaments} name={league.name} />}
+                                        buttonText="edit-league"
+                                        onbuttonClick={closeMenu}
+                                        />
+                                    </div>
                                     <div className="league-img">
                                         <img
                                         className="league-image"
@@ -78,6 +85,7 @@ const LeaguesIndex = () => {
                                             onbuttonClick={closeMenu}
                                             />
                                         </div>
+
                                         <button className="compete">Kick-off</button>
                                     </div>
                                 </div>

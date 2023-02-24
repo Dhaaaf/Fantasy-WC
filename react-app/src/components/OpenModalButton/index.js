@@ -15,6 +15,36 @@ function OpenModalButton({
     if (onButtonClick) onButtonClick();
   };
 
+  if (buttonText === "i") {
+    // console.log("button text");
+    return (
+      <button
+        onClick={onClick}
+        className={`OpenModalButton-button ${buttonText}`}
+      >
+        <div className="i-container">
+        <i className="fa-solid fa-info"></i>
+        </div>
+      </button>
+    );
+  }
+
+
+  if (buttonText === "edit-league") {
+    // console.log("button text");
+    return (
+      <button
+        onClick={onClick}
+        className={`OpenModalButton-button ${buttonText}`}
+      >
+        <div className="gear-container">
+        <i class="fa-solid fa-gear"></i>
+        </div>
+      </button>
+    );
+  }
+
+
   return (
     <button onClick={onClick}>{buttonText}</button>
   );

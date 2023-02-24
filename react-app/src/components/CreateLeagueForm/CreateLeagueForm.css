@@ -80,4 +80,5 @@ label {
 #create-league-button {
     margin-bottom: 20px;
     padding: 5px;
+    cursor: pointer;
 }

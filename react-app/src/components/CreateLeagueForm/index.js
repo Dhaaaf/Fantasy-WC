@@ -7,6 +7,8 @@ import {
 import {
     thunkGetTournaments
 } from "../../store/tournaments"
+import { useModal } from "../../context/Modal";
+
 import "./CreateLeagueForm.css"
 
 export default function CreateLeague() {
@@ -24,6 +26,8 @@ export default function CreateLeague() {
     const [is2002, setis2002] = useState(true)
     const [is1998, setis1998] = useState(true)
 	const [errors, setErrors] = useState([]);
+  const { closeModal } = useModal();
+
 
     useEffect(() => {
 		dispatch(thunkGetTournaments()).
@@ -31,19 +35,46 @@ export default function CreateLeague() {
 	}, [dispatch]);
 
     let tournaments = []
+    let errorsArray = []
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 		setErrors([]);
-    }
 
-    console.log(is_private)
+        if (name.length < 3 || name.length > 20) {
+            errorsArray.push("Name must be between 3 and 20 characters")
+        }
+
+        if (team_budget < 80 || team_budget > 999) {
+            errorsArray.push("Team Budget must be between 80 and 999")
+        }
+
+        if (!display_pic) {
+            errorsArray.push("Please set a display picture")
+        }
+
+        if (errorsArray.length > 0) setErrors(errorsArray)
+
+        if (is2022) tournaments.push(1)
+        if (is2018) tournaments.push(2)
+        if (is2014) tournaments.push(3)
+        if (is2010) tournaments.push(4)
+        if (is2006) tournaments.push(5)
+        if (is2002) tournaments.push(6)
+        if (is1998) tournaments.push(7)
+
+        if (errorsArray.length == 0) {
+            dispatch(thunkAddLeague({name, display_pic, team_budget, is_private, tournaments}));
+            closeModal()
+        }
+
+    }
 
     if (isLoaded) {
 		return (
             <div className="form-div">
                 <div className="title">
-                    <div className="form-title">Creat League</div>
+                    <div className="form-title">Create League</div>
                 </div>
                 <form onSubmit={handleSubmit}>
                     <ul className="errors">
