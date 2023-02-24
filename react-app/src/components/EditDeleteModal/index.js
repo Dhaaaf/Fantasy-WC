@@ -36,6 +36,10 @@ export default function EditDeleteLeagueModal({league}) {
         }
     }
 
+    const handleDelete = async (e) => {
+        e.preventDefault()
+    }
+
     return (
         <div className="form-div">
             <div className="title">
@@ -77,6 +81,9 @@ export default function EditDeleteLeagueModal({league}) {
 					    <button type="submit" className="submit-button" id="edit-league-button">Edit League</button>
 				    </div>
             </form>
+                    <div className="form-button">
+					    <button onClick={handleDelete} className="submit-button" id="delete-league-button">Delete League</button>
+				    </div>
         </div>
     )
 }

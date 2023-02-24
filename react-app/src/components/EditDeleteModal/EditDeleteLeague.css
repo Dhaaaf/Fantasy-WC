@@ -72,13 +72,18 @@ label {
     color: white;
     align-items: center;
     height: 30px;
-    width: 100px;
+    width: 120px;
     margin-top: 20px;
     border-radius: 5px;
 }
 
 #edit-league-button {
-    margin-bottom: 20px;
     padding: 5px;
     cursor: pointer;
+}
+
+#delete-league-button {
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 8px;
 }
