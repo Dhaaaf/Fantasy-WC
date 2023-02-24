@@ -4,13 +4,14 @@ import { Redirect, useHistory } from "react-router-dom";
 import {
     thunkAddTeam
 } from "../../../store/team"
-import { useModal } from "../../context/Modal";
+import { useModal } from "../../../context/Modal";
 
 import "./CreateTeam.css"
 
 export default function CreateTeam({league}) {
     const dispatch = useDispatch()
     const [name, setName] = useState("")
+	const [errors, setErrors] = useState([]);
     const { closeModal } = useModal();
 
     let errorsArray = []
@@ -28,10 +29,43 @@ export default function CreateTeam({league}) {
 
 
         if (errorsArray.length == 0) {
-            dispatch(thunkAddLeague({name, display_pic, team_budget, is_private, tournaments}));
+            console.log("GETTING HERE", leagueId)
+            // dispatch(thunkAddLeague(name, leagueId));
             closeModal()
         }
-
     }
+
+    return (
+        <div className="form-div">
+            <div className="title">
+                <div className="form-title">Create League</div>
+            </div>
+            <form onSubmit={handleSubmit}>
+                <ul className="errors">
+                    {errors.map((error, idx) => (
+                        <li key={idx}>{error}</li>
+                    ))}
+                </ul>
+
+                <div className="entries">
+                    <div className="form-label">
+                        <label htmlFor="name" className="name">Name</label>
+                    </div>
+                    <input
+                        type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    id='team-name-input'
+                    />
+                </div>
+
+                <div className="form-button">
+                    <button type="submit" className="submit-button" id="create-team-button">Create Team</button>
+                </div>
+
+            </form>
+        </div>
+    );
 
 }

@@ -13,6 +13,7 @@ import OpenModalButton from "../OpenModalButton";
 import TournamentsList from "./tournamentsList";
 import CreateLeague from "../CreateLeagueForm";
 import EditDeleteLeagueModal from "../EditDeleteModal";
+import CreateTeam from "../Team/CreateTeamForm";
 
 const LeaguesIndex = () => {
     let dispatch = useDispatch();
@@ -88,7 +89,14 @@ const LeaguesIndex = () => {
                                             />
                                         </div>
 
-                                        <button className="compete">Kick-off</button>
+
+                                        <div className="compete">
+                                        <OpenModalButton
+                                            modalComponent={<CreateTeam league={league} />}
+                                            buttonText="Kick-off"
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                                 ) : (
@@ -111,8 +119,13 @@ const LeaguesIndex = () => {
                                             onbuttonClick={closeMenu}
                                             />
                                         </div>
-
-                                        <button className="compete">Kick-off</button>
+                                        <div className="compete">
+                                        <OpenModalButton
+                                            modalComponent={<CreateTeam league={league} />}
+                                            buttonText="Kick-off"
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                                 )}

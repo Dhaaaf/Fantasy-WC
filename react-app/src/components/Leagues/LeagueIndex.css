@@ -158,16 +158,6 @@
     text-overflow: ellipsis;
 }
 
-.compete {
-    border: none;
-    background-color: #e3bc3f;
-    border-radius: 5px;
-    color:#37003c;
-    height: 30px;
-    margin-bottom: 8px;
-    cursor: pointer;
-    padding: 0px 20px;
-}
 
 .add-league-div {
     display: flex;
@@ -209,4 +199,15 @@
 
 .gear-container {
     border: none;
+}
+
+.compete > button {
+    border: none;
+    background-color: #e3bc3f;
+    border-radius: 5px;
+    color:#37003c;
+    height: 30px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    padding: 0px 20px;
 }
