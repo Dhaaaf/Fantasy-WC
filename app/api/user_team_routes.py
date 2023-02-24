@@ -41,6 +41,18 @@ def create_team(league_id):
     return {"team": team.to_dict()}, 201
 
 
+# Delete Team
+@user_team_routes.route("/<user_team_id>", methods=["DELETE"])
+@login_required
+def delete_team(user_team_id):
+    userId = int(current_user.id)
+
+    team = UserTeam.query.get(user_team_id)
+    if (team == None):
+        return {"errors": ["Team does not exist"]}, 404
+
+
+
 # ADD Player to Team
 @user_team_routes.route("/<int:user_team_id>/player/<int:player_id>", methods=["POST"])
 @login_required

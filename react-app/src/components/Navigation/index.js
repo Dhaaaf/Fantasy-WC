@@ -14,7 +14,7 @@ function Navigation({ isLoaded }){
                 <div className='left-nav-div'>
 					<div className='main-logo'>
                     	<NavLink exact to="/" className="home-link">
-							<img className="world-cup-trophy" src={worldCupTrophy}></img>
+							<img className="world-cup-trophy" src={worldCupTrophy} alt={worldCupTrophy}></img>
 						</NavLink>
 					</div>
 					<div className='fantasy-text'>
