@@ -1056,6 +1056,8 @@ def seed_game_week_stats():
         man_of_the_match=True,
     )
 
+    # Wesley Sneijder 2010
+
     gw106 = GameWeekStat (
         week=1,
         player_id=16,
@@ -1117,7 +1119,7 @@ def seed_game_week_stats():
     )
 
     gw112 = GameWeekStat (
-        week=6,
+        week=7,
         player_id=16,
         points=2,
         goals=0,
@@ -1125,6 +1127,367 @@ def seed_game_week_stats():
         clean_sheet=False,
         man_of_the_match=False,
     )
+
+    # Manuel Neuer 2014
+
+    gw113 = GameWeekStat (
+        week=1,
+        player_id=17,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw114 = GameWeekStat (
+        week=2,
+        player_id=17,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw115 = GameWeekStat (
+        week=3,
+        player_id=17,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw116 = GameWeekStat (
+        week=4,
+        player_id=17,
+        points=8,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw117 = GameWeekStat (
+        week=5,
+        player_id=17,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw118 = GameWeekStat (
+        week=6,
+        player_id=17,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw119 = GameWeekStat (
+        week=7,
+        player_id=17,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Howedes 2014
+
+    gw120 = GameWeekStat (
+        week=1,
+        player_id=18,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw121 = GameWeekStat (
+        week=2,
+        player_id=18,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw122 = GameWeekStat (
+        week=3,
+        player_id=18,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw123 = GameWeekStat (
+        week=4,
+        player_id=18,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw124 = GameWeekStat (
+        week=5,
+        player_id=18,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw125 = GameWeekStat (
+        week=6,
+        player_id=18,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw126 = GameWeekStat (
+        week=7,
+        player_id=18,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Mats Hummels - 2014
+
+    gw127 = GameWeekStat (
+        week=1,
+        player_id=19,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw128 = GameWeekStat (
+        week=2,
+        player_id=19,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw129 = GameWeekStat (
+        week=3,
+        player_id=19,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw130 = GameWeekStat (
+        week=4,
+        player_id=19,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw131 = GameWeekStat (
+        week=5,
+        player_id=19,
+        points=18,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw132 = GameWeekStat (
+        week=6,
+        player_id=19,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw133 = GameWeekStat (
+        week=7,
+        player_id=19,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Jerome Boateng 2014
+
+    gw134 = GameWeekStat (
+        week=1,
+        player_id=20,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw135 = GameWeekStat (
+        week=2,
+        player_id=20,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw136 = GameWeekStat (
+        week=3,
+        player_id=20,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw137 = GameWeekStat (
+        week=4,
+        player_id=20,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw138 = GameWeekStat (
+        week=5,
+        player_id=20,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw139 = GameWeekStat (
+        week=6,
+        player_id=20,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw140 = GameWeekStat (
+        week=7,
+        player_id=20,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Philipp Lahm 2014
+
+    gw141 = GameWeekStat (
+        week=1,
+        player_id=21,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw142 = GameWeekStat (
+        week=2,
+        player_id=21,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw143 = GameWeekStat (
+        week=3,
+        player_id=21,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw144 = GameWeekStat (
+        week=4,
+        player_id=21,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw145 = GameWeekStat (
+        week=5,
+        player_id=21,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw146 = GameWeekStat (
+        week=6,
+        player_id=21,
+        points=8,
+        goals=0,
+        assists=2,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw147 = GameWeekStat (
+        week=7,
+        player_id=21,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
 
 
     db.session.add_all(
@@ -1240,7 +1603,42 @@ def seed_game_week_stats():
             gw109,
             gw110,
             gw111,
-            gw112
+            gw112,
+            gw113,
+            gw114,
+            gw115,
+            gw116,
+            gw117,
+            gw118,
+            gw119,
+            gw120,
+            gw121,
+            gw122,
+            gw123,
+            gw124,
+            gw125,
+            gw126,
+            gw127,
+            gw128,
+            gw129,
+            gw130,
+            gw131,
+            gw132,
+            gw133,
+            gw134,
+            gw135,
+            gw136,
+            gw137,
+            gw138,
+            gw139,
+            gw140,
+            gw141,
+            gw142,
+            gw143,
+            gw144,
+            gw145,
+            gw146,
+            gw147,
         ]
     )
     db.session.commit()

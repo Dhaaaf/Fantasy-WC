@@ -200,6 +200,71 @@ def seed_players():
         tournament_id=4
     )
 
+    # Germany WC 2014
+
+    p17 = Player (
+
+        first_name="Manuel",
+        last_name="Neuer",
+        aka="Neuer",
+        picture="https://img.bleacherreport.net/img/images/photos/002/974/364/hi-res-fe6fde25a63a1b72b4376d79e8f5956d_crop_north.jpg?1405143592&w=3072&h=2048",
+        team="Germany",
+        year=2014,
+        position="GK",
+        value=5,
+        tournament_id=3
+    )
+
+    p18 = Player (
+
+        first_name="Benedikt",
+        last_name="Höwedes",
+        aka="Höwedes",
+        picture="https://pbs.twimg.com/media/Djc_GcqW0AAX_2u.jpg",
+        team="Germany",
+        year=2014,
+        position="DF",
+        value=5,
+        tournament_id=3
+    )
+
+    p19 = Player (
+        first_name="Mats",
+        last_name="Hummels",
+        aka="Hummels",
+        picture="https://img.bleacherreport.net/img/images/photos/002/971/482/hi-res-bce375cb21d89f6923c5976fd39f3e8c_crop_north.jpg?1404980586&w=3072&h=2048",
+        team="Germany",
+        year=2014,
+        position="DF",
+        value=5,
+        tournament_id=3
+    )
+
+    p20 = Player (
+        first_name="Jérôme",
+        last_name="Boateng",
+        aka="Boateng",
+        picture="https://i.pinimg.com/originals/b2/3b/ee/b23bee7f63caee0cefc54473062fb3a8.jpg",
+        team="Germany",
+        year=2014,
+        position="DF",
+        value=5,
+        tournament_id=3
+    )
+
+    p21 = Player (
+        first_name="Philipp",
+        last_name="Lahm",
+        aka="Lahm",
+        picture="https://s.ndtvimg.com/images/content/2014/jul/806/philipp-lahm-trophy-germany-fifa.jpg",
+        team="Germany",
+        year=2014,
+        position="DF",
+        value=5,
+        tournament_id=3
+    )
+    
+
 
 
     db.session.add_all(
@@ -219,7 +284,12 @@ def seed_players():
             p13,
             p14,
             p15,
-            p16
+            p16,
+            p17,
+            p18,
+            p19,
+            p20,
+            p21
         ]
     )
     db.session.commit()
