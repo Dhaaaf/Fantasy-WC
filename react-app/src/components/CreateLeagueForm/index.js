@@ -26,7 +26,7 @@ export default function CreateLeague() {
     const [is2002, setis2002] = useState(true)
     const [is1998, setis1998] = useState(true)
 	const [errors, setErrors] = useState([]);
-  const { closeModal } = useModal();
+    const { closeModal } = useModal();
 
 
     useEffect(() => {
@@ -243,8 +243,8 @@ export default function CreateLeague() {
         		    </div>
 
                     <div className="form-button">
-					<button type="submit" className="submit-button" id="create-league-button">Create League</button>
-				</div>
+					    <button type="submit" className="submit-button" id="create-league-button">Create League</button>
+				    </div>
 
                 </form>
             </div>
