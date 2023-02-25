@@ -1,0 +1,35 @@
+.game-page-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 0px 40px;
+    padding-top: 15px;
+    height: 100vh;
+}
+
+.team-div{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+.team-header {
+    width: 100%;
+}
+
+.pitch {
+    background-image: url("../../assets/Fantasy-Style-Football-Pitch2.jpg");
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.players-list-div{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}

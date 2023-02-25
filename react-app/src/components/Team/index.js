@@ -5,6 +5,7 @@ import { thunkGetPlayers, actionResetPlayers } from "../../store/players";
 import { NavLink, useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import OpenModalButton from "../OpenModalButton";
+// import pitch from "../../assets/Fantasy-Style-Football-Pitch2.jpg"
 
 
 import "./Team.css"
@@ -64,7 +65,17 @@ const TeamPage = () => {
         user &&
         team &&
         players && (
-            <div> Team Page</div>
+            <div className="game-page-container">
+                <div className="team-div">
+                    <div className="team-header">
+                        Team header
+                    </div>
+                    <div className="pitch">
+                        Pitch header
+                    </div>
+                </div>
+                <div className="players-list-div">Players</div>
+            </div>
         )
     )
 }
