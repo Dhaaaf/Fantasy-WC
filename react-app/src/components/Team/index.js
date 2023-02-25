@@ -5,8 +5,6 @@ import { thunkGetPlayers, actionResetPlayers } from "../../store/players";
 import { NavLink, useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import OpenModalButton from "../OpenModalButton";
-// import pitch from "../../assets/Fantasy-Style-Football-Pitch2.jpg"
-
 
 import "./Team.css"
 
@@ -68,10 +66,40 @@ const TeamPage = () => {
             <div className="game-page-container">
                 <div className="team-div">
                     <div className="team-header">
-                        Team header
+                        <div className="matchday-div">
+                            Matchday {team.match_day}
+                        </div>
+                        <div className="team-name-div">
+                            {team.name}
+                        </div>
+                        <div className="team-info-div">
+                            <div className="transfers-div">
+                                <div className="text-info">Transfers</div>
+                                <div className="numbers-info">X</div>
+                            </div>
+                            <div className="points-div">
+                                <div className="text-info">Total Points</div>
+                                <div className="numbers-info">{team.points}</div>
+                            </div>
+                            <div className="bank-div">
+                                <div className="text-info">Bank</div>
+                                <div className="numbers-info">{team.bank} mil</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="pitch">
-                        Pitch header
+                        <div className="team-11-div keeper">
+                            <div>keeper</div>
+                        </div>
+                        <div className="team-11-div defenders">
+                            <div>Defender</div>
+                        </div>
+                        <div className="team-11-div midfielders">
+                            <div>midfielders</div>
+                        </div>
+                        <div className="team-11-div forwards">
+                            <div>forwards</div>
+                        </div>
                     </div>
                 </div>
                 <div className="players-list-div">Players</div>
