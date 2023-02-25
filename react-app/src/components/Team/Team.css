@@ -168,10 +168,58 @@
 }
 
 .player-list-item {
-    height: 50px;
+    height: 40px;
     width: 100%;
     padding: 10px 0px;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.8);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player-img {
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.name-year-div {
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    color: #37003c;
+}
+
+.player-name {
+    padding-right: 10px;
+    font-size: 100%;
+}
+
+@media (max-width: 880px) {
+    .game-page-container {
+        padding: 0px 10px;
+        padding-top: 15px;
+    }
+
+    .name-year-div {
+        width: 30%;
+        flex-direction: column;
+        padding-left: 20px;
+        align-items: flex-start;
+    }
+}
+
+.player-year{
+    font-size: 70%;
+}
+
+.player-value {
+    padding-left: 40px;
+    width: 20%;
+    font-size: 80%;
+    padding-right: 5px;
 }

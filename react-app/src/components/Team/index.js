@@ -122,7 +122,7 @@ const TeamPage = () => {
                             </div>
                             <div className="bank-div">
                                 <div className="text-info">Bank</div>
-                                <div className="numbers-info">{team.bank} mil</div>
+                                <div className="numbers-info">{team.bank}</div>
                             </div>
                         </div>
                     </div>
@@ -181,9 +181,12 @@ const TeamPage = () => {
                         <div className="players-list">
                         {keepers.map(player => (
                             <div className="player-list-item">
-                                <img src={player.picture}></img>
-                                <p className="player-name">{player.aka} - {player.year}</p>
-                                <p className="player-value">{player.value}</p>
+                                <img src={player.picture} className="player-img"></img>
+                                <div className="name-year-div">
+                                    <div className="player-name">{player.aka}</div>
+                                    <div className="player-year">{player.year}</div>
+                                </div>
+                                <div className="player-value">€ {player.value}</div>
                             </div>
                         ))}
                     </div>
@@ -192,9 +195,12 @@ const TeamPage = () => {
                         <div className="players-list">
                         {defenders.map(player => (
                             <div className="player-list-item">
-                                <img src={player.picture}></img>
-                                <p className="player-name">{player.aka} - {player.year}</p>
-                                <p className="player-value">{player.value}</p>
+                                <img src={player.picture} className="player-img"></img>
+                                <div className="name-year-div">
+                                    <div className="player-name">{player.aka}</div>
+                                    <div className="player-year">{player.year}</div>
+                                </div>
+                                <div className="player-value">€ {player.value}</div>
                             </div>
                         ))}
                     </div>
@@ -203,9 +209,12 @@ const TeamPage = () => {
                     <div className="players-list">
                         {midfielders.map(player => (
                             <div className="player-list-item">
-                                <img src={player.picture}></img>
-                                <p className="player-name">{player.aka} - {player.year}</p>
-                                <p className="player-value">{player.value}</p>
+                                <img src={player.picture} className="player-img"></img>
+                                <div className="name-year-div">
+                                    <div className="player-name">{player.aka}</div>
+                                    <div className="player-year">{player.year}</div>
+                                </div>
+                                <div className="player-value">€ {player.value}</div>
                             </div>
                         ))}
                     </div>
@@ -214,9 +223,12 @@ const TeamPage = () => {
                     <div className="players-list">
                         {forwards.map(player => (
                             <div className="player-list-item">
-                                <img src={player.picture}></img>
-                                <p className="player-name">{player.aka} - {player.year}</p>
-                                <p className="player-value">{player.value}</p>
+                                <img src={player.picture} className="player-img"></img>
+                                <div className="name-year-div">
+                                    <div className="player-name">{player.aka}</div>
+                                    <div className="player-year">{player.year}</div>
+                                </div>
+                                <div className="player-value">€ {player.value}</div>
                             </div>
                         ))}
                     </div>
