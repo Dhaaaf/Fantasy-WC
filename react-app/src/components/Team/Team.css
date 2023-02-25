@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    padding: 0px 40px;
+    padding: 0px 60px;
     padding-top: 15px;
     height: 100vh;
 }
@@ -57,6 +57,7 @@
 .numbers-info {
     font-size: 20px;
     font-weight: bold;
+    color: #e3bc3f;
 }
 
 .transfers-div{
@@ -77,18 +78,14 @@
     width: 33%;
 }
 
-.players-list-div{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid blue;
-}
-
 .pitch {
     background-image: url("../../assets/Fantasy-Style-Football-Pitch2.jpg");
     height: 100%;
     background-size: 100% 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .team-11-div {
@@ -96,4 +93,85 @@
     color: white;
     height: 25%;
     text-align: center;
+}
+
+.team-11-div.team-keeper {
+    width: 70%;
+}
+
+.team-11-div.team-defenders {
+    width: 78%;
+}
+
+.team-11-div.team-midfielders {
+    width: 85%;
+}
+
+.team-11-div.team-forwards {
+    width: 80%;
+}
+
+/* PLAYERS SELECTION ON RIGHT */
+
+.players-list-div{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 0.1px solid gray;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+
+.players-list-header {
+    font-size: 9px;
+    padding-left: 10px;
+    color: #e3bc3f;
+    background-color: #37003c;
+    padding-top: 5px;
+}
+
+.position-selector-div {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #e3bc3f;
+    height: 35px;
+}
+
+.position-selector {
+    color: white;
+    background-color: #37003c;
+    font-size: 15px;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 1px solid #37003c;
+    border-left: 1px solid #37003c;
+    border-right: 1px solid #37003c;
+    width: 20%;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.position-selector.gold {
+    background-color: #e3bc3f;
+    color: #37003c;
+}
+
+.players-list {
+    width: 100%;
+    padding: 5px 5px;
+}
+
+.player-list-item {
+    height: 50px;
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
 }
