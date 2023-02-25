@@ -13,6 +13,7 @@ export default function CreateTeam({league}) {
     const [name, setName] = useState("")
 	const [errors, setErrors] = useState([]);
     const { closeModal } = useModal();
+    const history = useHistory();
 
     let errorsArray = []
     let leagueId = league.id
@@ -30,7 +31,10 @@ export default function CreateTeam({league}) {
 
         if (errorsArray.length == 0) {
             console.log("GETTING HERE", leagueId)
-            // dispatch(thunkAddLeague(name, leagueId));
+            dispatch(thunkAddTeam(name, leagueId))
+            .then((data) =>
+				history.push(`/league/${leagueId}/team/${data.id}`)
+			)
             closeModal()
         }
     }
@@ -38,7 +42,7 @@ export default function CreateTeam({league}) {
     return (
         <div className="form-div">
             <div className="title">
-                <div className="form-title">Create League</div>
+                <div className="form-title">Create Team</div>
             </div>
             <form onSubmit={handleSubmit}>
                 <ul className="errors">
