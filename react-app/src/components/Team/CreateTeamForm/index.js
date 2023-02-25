@@ -30,8 +30,7 @@ export default function CreateTeam({league}) {
 
 
         if (errorsArray.length == 0) {
-            console.log("GETTING HERE", leagueId)
-            dispatch(thunkAddTeam(name, leagueId))
+            dispatch(thunkAddTeam({name, leagueId}))
             .then((data) =>
 				history.push(`/league/${leagueId}/team/${data.id}`)
 			)

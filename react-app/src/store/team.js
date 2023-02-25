@@ -54,13 +54,14 @@ export const thunkGetTeam = (teamId) => async (dispatch) => {
 }
 
 // CREATE
-export const thunkAddTeam = (name, leagueId) => async(dispatch) => {
+export const thunkAddTeam = (payload) => async(dispatch) => {
+    const {name, leagueId} = payload
     const res = await fetch (`/api/user_teams/league/${leagueId}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(name),
+        body: JSON.stringify({name, leagueId}),
     });
     if (res.ok) {
         const data = await res.json()

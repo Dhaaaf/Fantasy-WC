@@ -15,7 +15,7 @@ def get_team(id):
 
 
 # CREATE TEAM
-@user_team_routes.route("/league/<int:league_id>/new", methods=["POST"])
+@user_team_routes.route("/league/<int:league_id>", methods=["POST"])
 @login_required
 def create_team(league_id):
     userId = int(current_user.id)
@@ -23,6 +23,7 @@ def create_team(league_id):
     if (league == None):
         return {"errors": ["League does not exist"]}, 404
     res = request.get_json()
+    print("RES ------->", res)
     form = UserTeamForm()
     form["csrf_token"].data = request.cookies["csrf_token"]
 
