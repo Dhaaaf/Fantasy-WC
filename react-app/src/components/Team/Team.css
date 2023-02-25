@@ -170,7 +170,7 @@
 .player-list-item {
     height: 40px;
     width: 100%;
-    padding: 10px 0px;
+    padding: 12px 0px;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid rgba(225, 225, 225, 0.8);

@@ -177,6 +177,9 @@ const TeamPage = () => {
                         <div className="position-selector gold" onClick={filterForwards}>FW</div>
                     </div>
                     )}
+                    <div className="pre-players-list">
+
+                    </div>
                     {filterGK && (
                         <div className="players-list">
                         {keepers.map(player => (
