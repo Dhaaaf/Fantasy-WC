@@ -1769,7 +1769,7 @@ def seed_game_week_stats():
     gw175 = GameWeekStat (
         week=7,
         player_id=25,
-        points=13,
+        points=14,
         goals=1,
         assists=0,
         clean_sheet=True,
@@ -1907,7 +1907,7 @@ def seed_game_week_stats():
         goals=1,
         assists=1,
         clean_sheet=False,
-        man_of_the_match=True,
+        man_of_the_match=False,
     )
 
     gw189 = GameWeekStat (
@@ -1979,7 +1979,7 @@ def seed_game_week_stats():
         goals=1,
         assists=0,
         clean_sheet=False,
-        man_of_the_match=True,
+        man_of_the_match=False,
     )
 
     gw196 = GameWeekStat (
@@ -1991,6 +1991,729 @@ def seed_game_week_stats():
         clean_sheet=True,
         man_of_the_match=False,
     )
+
+    # SPAIN 2010
+
+    # IKER CASILLAS
+
+    gw197 = GameWeekStat (
+        week=1,
+        player_id=29,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw198 = GameWeekStat (
+        week=2,
+        player_id=29,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw199 = GameWeekStat (
+        week=3,
+        player_id=29,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw200 = GameWeekStat (
+        week=4,
+        player_id=29,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw201 = GameWeekStat (
+        week=5,
+        player_id=29,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw202 = GameWeekStat (
+        week=6,
+        player_id=29,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw203 = GameWeekStat (
+        week=7,
+        player_id=29,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Gerard Pique
+
+    gw204 = GameWeekStat (
+        week=1,
+        player_id=30,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw205 = GameWeekStat (
+        week=2,
+        player_id=30,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw206 = GameWeekStat (
+        week=3,
+        player_id=30,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw207 = GameWeekStat (
+        week=4,
+        player_id=30,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw208 = GameWeekStat (
+        week=5,
+        player_id=30,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw209 = GameWeekStat (
+        week=6,
+        player_id=30,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw210 = GameWeekStat (
+        week=7,
+        player_id=30,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Sergio Ramos
+
+    gw211 = GameWeekStat (
+        week=1,
+        player_id=31,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw212 = GameWeekStat (
+        week=2,
+        player_id=31,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw213 = GameWeekStat (
+        week=3,
+        player_id=31,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw214 = GameWeekStat (
+        week=4,
+        player_id=31,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw215 = GameWeekStat (
+        week=5,
+        player_id=31,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw216 = GameWeekStat (
+        week=6,
+        player_id=31,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw217 = GameWeekStat (
+        week=7,
+        player_id=31,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Carles Puyol
+
+    gw218 = GameWeekStat (
+        week=1,
+        player_id=32,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw219 = GameWeekStat (
+        week=2,
+        player_id=32,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw220 = GameWeekStat (
+        week=3,
+        player_id=32,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw221 = GameWeekStat (
+        week=4,
+        player_id=32,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw222 = GameWeekStat (
+        week=5,
+        player_id=32,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw223 = GameWeekStat (
+        week=6,
+        player_id=32,
+        points=18,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw224 = GameWeekStat (
+        week=7,
+        player_id=32,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Sergio Busquets
+
+    gw225 = GameWeekStat (
+        week=1,
+        player_id=33,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw226 = GameWeekStat (
+        week=2,
+        player_id=33,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw227 = GameWeekStat (
+        week=3,
+        player_id=33,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw228 = GameWeekStat (
+        week=4,
+        player_id=33,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw229 = GameWeekStat (
+        week=5,
+        player_id=33,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw230 = GameWeekStat (
+        week=6,
+        player_id=33,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw231 = GameWeekStat (
+        week=7,
+        player_id=33,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Xabi Alonso
+
+    gw232 = GameWeekStat (
+        week=1,
+        player_id=34,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw233 = GameWeekStat (
+        week=2,
+        player_id=34,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw234 = GameWeekStat (
+        week=3,
+        player_id=34,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw235 = GameWeekStat (
+        week=4,
+        player_id=34,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw236 = GameWeekStat (
+        week=5,
+        player_id=34,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw237 = GameWeekStat (
+        week=6,
+        player_id=34,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw238 = GameWeekStat (
+        week=7,
+        player_id=34,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Cesc Fabregas
+
+    gw239 = GameWeekStat (
+        week=1,
+        player_id=35,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw240 = GameWeekStat (
+        week=2,
+        player_id=35,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw241 = GameWeekStat (
+        week=3,
+        player_id=35,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw242 = GameWeekStat (
+        week=4,
+        player_id=35,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw243 = GameWeekStat (
+        week=5,
+        player_id=35,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw244 = GameWeekStat (
+        week=6,
+        player_id=35,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw245 = GameWeekStat (
+        week=7,
+        player_id=35,
+        points=6,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Xavi Hernandez
+
+    gw246 = GameWeekStat (
+        week=1,
+        player_id=36,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw247 = GameWeekStat (
+        week=2,
+        player_id=36,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw248 = GameWeekStat (
+        week=3,
+        player_id=36,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw249 = GameWeekStat (
+        week=4,
+        player_id=36,
+        points=12,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw250 = GameWeekStat (
+        week=5,
+        player_id=36,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw251 = GameWeekStat (
+        week=6,
+        player_id=36,
+        points=6,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw252 = GameWeekStat (
+        week=7,
+        player_id=36,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Andres Iniesta
+
+    gw253 = GameWeekStat (
+        week=1,
+        player_id=37,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw254 = GameWeekStat (
+        week=2,
+        player_id=37,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw255 = GameWeekStat (
+        week=3,
+        player_id=37,
+        points=13,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw256 = GameWeekStat (
+        week=4,
+        player_id=37,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw257 = GameWeekStat (
+        week=5,
+        player_id=37,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw258 = GameWeekStat (
+        week=6,
+        player_id=37,
+        points=6,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw259 = GameWeekStat (
+        week=7,
+        player_id=37,
+        points=14,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    # David Villa
+
+    gw260 = GameWeekStat (
+        week=1,
+        player_id=38,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw261 = GameWeekStat (
+        week=2,
+        player_id=38,
+        points=16,
+        goals=2,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw262 = GameWeekStat (
+        week=3,
+        player_id=38,
+        points=9,
+        goals=1,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw263 = GameWeekStat (
+        week=4,
+        player_id=38,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw264 = GameWeekStat (
+        week=5,
+        player_id=38,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw265 = GameWeekStat (
+        week=6,
+        player_id=38,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw266 = GameWeekStat (
+        week=7,
+        player_id=38,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
 
 
     db.session.add_all(
@@ -2191,6 +2914,76 @@ def seed_game_week_stats():
             gw194,
             gw195,
             gw196,
+            gw197,
+            gw198,
+            gw199,
+            gw200,
+            gw201,
+            gw202,
+            gw203,
+            gw204,
+            gw205,
+            gw206,
+            gw207,
+            gw208,
+            gw209,
+            gw210,
+            gw211,
+            gw212,
+            gw213,
+            gw214,
+            gw215,
+            gw216,
+            gw217,
+            gw218,
+            gw219,
+            gw220,
+            gw221,
+            gw222,
+            gw223,
+            gw224,
+            gw225,
+            gw226,
+            gw227,
+            gw228,
+            gw229,
+            gw230,
+            gw231,
+            gw232,
+            gw233,
+            gw234,
+            gw235,
+            gw236,
+            gw237,
+            gw238,
+            gw239,
+            gw240,
+            gw241,
+            gw242,
+            gw243,
+            gw244,
+            gw245,
+            gw246,
+            gw247,
+            gw248,
+            gw249,
+            gw250,
+            gw251,
+            gw252,
+            gw253,
+            gw254,
+            gw255,
+            gw256,
+            gw257,
+            gw258,
+            gw259,
+            gw260,
+            gw261,
+            gw262,
+            gw263,
+            gw264,
+            gw265,
+            gw266
 
         ]
     )

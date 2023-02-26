@@ -347,7 +347,130 @@ def seed_players():
         value=5,
         tournament_id=3
     )
+
+    # SPAIN WC 2010
+
+    p29 = Player (
+        first_name="Iker",
+        last_name="Casillas",
+        aka="Casillas",
+        picture="https://i.dailymail.co.uk/1s/2020/08/04/12/31547300-8591685-image-a-9_1596540025615.jpg",
+        team="Spain",
+        year=2010,
+        position="GK",
+        value=5,
+        tournament_id=4
+    )
+
+    p30 = Player (
+        first_name="Gerard",
+        last_name="Piqué",
+        aka="Piqué",
+        picture="https://pbs.twimg.com/media/E6BFGgJWQAU2mOV?format=jpg&name=4096x4096",
+        team="Spain",
+        year=2010,
+        position="DF",
+        value=5,
+        tournament_id=4
+    )
+
+    p31 = Player (
+        first_name="Sergio",
+        last_name="Ramos",
+        aka="Ramos",
+        picture="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/07/10/15943994776546.jpg",
+        team="Spain",
+        year=2010,
+        position="DF",
+        value=5,
+        tournament_id=4
+    )
     
+    p32 = Player (
+        first_name="Carles",
+        last_name="Puyol",
+        aka="Puyol",
+        picture="https://ichef.bbci.co.uk/news/976/cpsprodpb/5A4D/production/_90471132_gettyimages-107064379.jpg",
+        team="Spain",
+        year=2010,
+        position="DF",
+        value=5,
+        tournament_id=4
+    )
+
+    p33 = Player (
+        first_name="Sergio",
+        last_name="Busquets",
+        aka="Busquets",
+        picture="https://pbs.twimg.com/media/CnfRmooW8AAsVpj.jpg",
+        team="Spain",
+        year=2010,
+        position="MF",
+        value=5,
+        tournament_id=4
+    )
+
+    p34 = Player (
+        first_name="Xabi",
+        last_name="Alonso",
+        aka="Alonso",
+        picture="https://www.ihavenet.com/images/2010-FIFA-World-Cup-Final-Champions-Spain-Midfielder-Alonso-Xavi-with-FIFA-World-Cup-Trophy.jpg",
+        team="Spain",
+        year=2010,
+        position="MF",
+        value=5,
+        tournament_id=4
+    )
+
+    p35 = Player (
+        first_name="Cesc",
+        last_name="Fàbregas",
+        aka="Fàbregas",
+        picture="https://media.cnn.com/api/v1/images/stellar/prod/200729163551-03-cesc-fabregas.jpg?q=w_2000,h_1494,x_0,y_0,c_fill",
+        team="Spain",
+        year=2010,
+        position="MF",
+        value=5,
+        tournament_id=4
+    )
+
+    p36 = Player (
+        first_name="Xavi",
+        last_name="Hernandez",
+        aka="Xavi",
+        picture="https://static0.givemesportimages.com/wordpress/wp-content/uploads/2022/01/21_11_06_3dba81957cc31cb6156497cac627327a_960-1.jpg",
+        team="Spain",
+        year=2010,
+        position="MF",
+        value=5,
+        tournament_id=4
+    )
+
+    p37 = Player (
+        first_name="Andres",
+        last_name="Iniesta",
+        aka="Iniesta",
+        picture="https://e0.365dm.com/15/06/2048x1152/andres-iniesta-spain-netherlands-2010-world-cup-final_3313094.jpg",
+        team="Spain",
+        year=2010,
+        position="MF",
+        value=5,
+        tournament_id=4
+    )
+
+    p38 = Player (
+        first_name="David",
+        last_name="Villa",
+        aka="Villa",
+        picture="https://c3.thejournal.ie/media/2018/12/soccer-2010-fifa-world-cup-south-africa-group-h-spain-v-honduras-ellis-park-752x501.jpg",
+        team="Spain",
+        year=2010,
+        position="FW",
+        value=5,
+        tournament_id=4
+    )
+
+
 
 
 
@@ -380,7 +503,17 @@ def seed_players():
             p25,
             p26,
             p27,
-            p28
+            p28,
+            p29,
+            p30,
+            p31,
+            p32,
+            p33,
+            p34,
+            p35,
+            p36,
+            p37,
+            p38
         ]
     )
     db.session.commit()
