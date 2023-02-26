@@ -254,6 +254,15 @@
     font-size: 100%;
 }
 
+.player-name > button {
+    padding-right: 10px;
+    font-size: 100%;
+    border: none;
+    background-color: white;
+    color: #37003c;
+    cursor: pointer;
+}
+
 @media (max-width: 880px) {
     .game-page-container {
         padding: 0px 10px;

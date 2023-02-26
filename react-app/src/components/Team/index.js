@@ -6,6 +6,7 @@ import { thunkGetTeamPlayers, actionAddTeamPlayer, actionRemoveTeamPlayer, actio
 import { NavLink, useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import OpenModalButton from "../OpenModalButton";
+import PlayerModal from "../PlayerModal";
 
 import "./Team.css"
 
@@ -15,6 +16,7 @@ const TeamPage = () => {
 	const user = useSelector((state) => state.session.user)
     const leagues = useSelector((state) => state.leagues)
     const players = useSelector((state) => state.players)
+  const [showMenu, setShowMenu] = useState(false);
     const team = useSelector((state) => state.team)
     const teamPlayers = useSelector((state) => state.teamPlayers)
     const [filterGK, setfilterGK] = useState(false)
@@ -144,6 +146,9 @@ const TeamPage = () => {
         setfilterDF(false)
         setfilterGK(true)
     }
+
+
+  const closeMenu = () => setShowMenu(false);
 
     return (
         user &&
@@ -282,7 +287,14 @@ const TeamPage = () => {
                             <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
-                                    <div className="player-name">{player.aka}</div>
+                                    {/* <div className="player-name">{player.aka}</div> */}
+                                    <div className="player-name">
+                                    <OpenModalButton
+                                        modalComponent={<PlayerModal team={team} player={player} />}
+                                        buttonText={player.aka}
+                                        onbuttonClick={closeMenu}
+                                        />
+                                    </div>
                                     <div className="player-year">{player.year}</div>
                                 </div>
                                 <div className="player-value">€ {player.value}</div>
@@ -296,7 +308,14 @@ const TeamPage = () => {
                             <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
-                                    <div className="player-name">{player.aka}</div>
+                                    {/* <div className="player-name">{player.aka}</div> */}
+                                    <div className="player-name">
+                                    <OpenModalButton
+                                        modalComponent={<PlayerModal team={team} player={player} />}
+                                        buttonText={player.aka}
+                                        onbuttonClick={closeMenu}
+                                        />
+                                    </div>
                                     <div className="player-year">{player.year}</div>
                                 </div>
                                 <div className="player-value">€ {player.value}</div>
@@ -310,7 +329,14 @@ const TeamPage = () => {
                             <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
-                                    <div className="player-name">{player.aka}</div>
+                                    {/* <div className="player-name">{player.aka}</div> */}
+                                    <div className="player-name">
+                                    <OpenModalButton
+                                        modalComponent={<PlayerModal team={team} player={player} />}
+                                        buttonText={player.aka}
+                                        onbuttonClick={closeMenu}
+                                        />
+                                    </div>
                                     <div className="player-year">{player.year}</div>
                                 </div>
                                 <div className="player-value">€ {player.value}</div>
@@ -324,7 +350,14 @@ const TeamPage = () => {
                             <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
-                                    <div className="player-name">{player.aka}</div>
+                                    {/* <div className="player-name">{player.aka}</div> */}
+                                    <div className="player-name">
+                                    <OpenModalButton
+                                        modalComponent={<PlayerModal team={team} player={player} />}
+                                        buttonText={player.aka}
+                                        onbuttonClick={closeMenu}
+                                        />
+                                    </div>
                                     <div className="player-year">{player.year}</div>
                                 </div>
                                 <div className="player-value">€ {player.value}</div>

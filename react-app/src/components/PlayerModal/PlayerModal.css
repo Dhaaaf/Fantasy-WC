@@ -1,0 +1,80 @@
+.player-modal-card {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    /* border-radius: 10px; */
+    /* background-color: black; */
+    border: 1px solid #e3bc3f;
+}
+
+.player-modal-card-img {
+    height: 100%;
+    max-height: 400px;
+    width: 50%;
+    max-width: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.player-modal-card-right {
+    display: flex;
+    flex-direction: column;
+    color: #e3bc3f;
+    background-color: #37003c;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    height: 100%;
+    border-left: 1px solid #e3bc3f;
+}
+
+.player-modal-card-info {
+    display: flex;
+    flex-direction: column;
+    color: #e3bc3f;
+    background-color: #37003c;
+    width: 100%;
+    text-align: center;
+}
+
+
+.player-modal-card-name {
+    padding: 10px 0px;
+    font-size: 24px;
+    border-bottom: 1px solid #e3bc3f;
+}
+
+.player-modal-card-team {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-size: 20px;
+    border-bottom: 1px solid #e3bc3f;
+}
+
+.player-modal-card-position {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-size: 18px;
+    border-bottom: 1px solid #e3bc3f;
+}
+
+.player-modal-card-matchday {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-size: 17px;
+    border-bottom: 1px solid #e3bc3f;
+}
+
+.player-modal-card-stats {
+    padding: 5px 0px;
+    font-size: 15px;
+    border-bottom: 1px solid #e3bc3f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.player-modal-card-stats-inner {
+    padding: 3px 0px;
+}
