@@ -175,16 +175,64 @@ const TeamPage = () => {
                     </div>
                     <div className="pitch">
                         <div className="team-11-div team-keeper">
-                            
+                            {teamKeeper.length > 0 && (
+                                teamKeeper.map(player => (
+                                    <div key={player.id} className="team-11-player-card team-11-keeper">
+                                        <img src={player.picture} className="team-11-player-img"></img>
+                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {team.match_day > 0 ? (
+                                            <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
+                                        ) : (
+                                            <div className="team-11-player-value">€ {player.value}</div>
+                                        )}
+                                    </div>
+                                ))
+                            )}
                         </div>
                         <div className="team-11-div team-defenders">
-                            <div>Defender</div>
+                        {teamDefense.length > 0 && (
+                                teamDefense.map(player => (
+                                    <div key={player.id} className="team-11-player-card team-11-keeper">
+                                        <img src={player.picture} className="team-11-player-img"></img>
+                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {team.match_day > 0 ? (
+                                            <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
+                                        ) : (
+                                            <div className="team-11-player-value">€ {player.value}</div>
+                                        )}
+                                    </div>
+                                ))
+                            )}
                         </div>
                         <div className="team-11-div team-midfielders">
-                            <div>midfielders</div>
+                        {teamMidfield.length > 0 && (
+                                teamMidfield.map(player => (
+                                    <div key={player.id} className="team-11-player-card team-11-keeper">
+                                        <img src={player.picture} className="team-11-player-img"></img>
+                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {team.match_day > 0 ? (
+                                            <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
+                                        ) : (
+                                            <div className="team-11-player-value">€ {player.value}</div>
+                                        )}
+                                    </div>
+                                ))
+                            )}
                         </div>
                         <div className="team-11-div team-forwards">
-                            <div>forwards</div>
+                        {teamAttack.length > 0 && (
+                                teamAttack.map(player => (
+                                    <div key={player.id} className="team-11-player-card team-11-keeper">
+                                        <img src={player.picture} className="team-11-player-img"></img>
+                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {team.match_day > 0 ? (
+                                            <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
+                                        ) : (
+                                            <div className="team-11-player-value">€ {player.value}</div>
+                                        )}
+                                    </div>
+                                ))
+                            )}
                         </div>
                     </div>
                 </div>

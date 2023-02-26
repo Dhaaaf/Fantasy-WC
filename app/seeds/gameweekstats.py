@@ -867,9 +867,9 @@ def seed_game_week_stats():
     gw87 = GameWeekStat (
         week=7,
         player_id=3,
-        points=5,
+        points=2,
         goals=0,
-        assists=1,
+        assists=0,
         clean_sheet=False,
         man_of_the_match=False,
     )
