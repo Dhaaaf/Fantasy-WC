@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { thunkGetTeam, actionResetTeam } from"../../store/team"
 import { thunkGetPlayers, actionResetPlayers } from "../../store/players";
+import { thunkGetTeamPlayers, actionAddTeamPlayer, actionRemoveTeamPlayer, actionResetTeamPlayers } from "../../store/teamPlayers";
 import { NavLink, useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import OpenModalButton from "../OpenModalButton";
@@ -15,6 +16,7 @@ const TeamPage = () => {
     const leagues = useSelector((state) => state.leagues)
     const players = useSelector((state) => state.players)
     const team = useSelector((state) => state.team)
+    const teamPlayers = useSelector((state) => state.teamPlayers)
     const [filterGK, setfilterGK] = useState(false)
     const [filterDF, setfilterDF] = useState(false)
     const [filterMF, setfilterMF] = useState(false)
@@ -29,7 +31,16 @@ const TeamPage = () => {
         return () => {
             dispatch(actionResetTeam());
         }
-    }, [])
+    }, [dispatch])
+
+    useEffect (() => {
+        dispatch(thunkGetTeamPlayers(teamId)).
+        then(() => setIsLoaded(true));
+
+        return () => {
+            dispatch(actionResetTeamPlayers());
+        }
+    }, [dispatch])
 
     useEffect (() => {
         dispatch(thunkGetPlayers(leagueId))
@@ -39,8 +50,44 @@ const TeamPage = () => {
         }
     }, [])
 
-    console.log("TEAM ------->", team)
-    console.log("Players ------->", players)
+    // console.log("TEAM ------->", team)
+    // console.log("Players ------->", players)
+
+    //// TEAM PLAYERS
+
+    let teamPlayersArray
+    if (teamPlayers) {
+        teamPlayersArray = Object.values(teamPlayers)
+    }
+
+
+    let teamKeeper;
+    let teamDefense;
+    let teamMidfield;
+    let teamAttack
+
+    if (teamPlayers) {
+        teamKeeper = teamPlayersArray.filter(player => player.position == "GK")
+        teamDefense = teamPlayersArray.filter(player => player.position == "DF")
+        teamMidfield = teamPlayersArray.filter(player => player.position == "MF")
+        teamAttack = teamPlayersArray.filter(player => player.position == "FW")
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //// PLAYER SORTING
 
@@ -63,10 +110,10 @@ const TeamPage = () => {
         forwards.sort((a, b) => b.value - a.value);
     }
 
-    console.log ("GK ----->", keepers)
-    console.log ("DF ----->", defenders)
-    console.log ("MF ----->", midfielders)
-    console.log ("FW ----->", forwards)
+    // console.log ("GK ----->", keepers)
+    // console.log ("DF ----->", defenders)
+    // console.log ("MF ----->", midfielders)
+    // console.log ("FW ----->", forwards)
 
     //// FILTERING PLAYERS BY POSITION
 
@@ -128,19 +175,71 @@ const TeamPage = () => {
                     </div>
                     <div className="pitch">
                         <div className="team-11-div team-keeper">
-                            <div>keeper</div>
+                            {teamKeeper.length > 0 && (
+                                teamKeeper.map(player => (
+                                    <div key={player.id} className="team-11-player-card team-11-keeper">
+                                        <img src={player.picture} className="team-11-player-img"></img>
+                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {team.match_day > 0 ? (
+                                            <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
+                                        ) : (
+                                            <div className="team-11-player-value">€ {player.value}</div>
+                                        )}
+                                    </div>
+                                ))
+                            )}
                         </div>
                         <div className="team-11-div team-defenders">
-                            <div>Defender</div>
+                        {teamDefense.length > 0 && (
+                                teamDefense.map(player => (
+                                    <div key={player.id} className="team-11-player-card team-11-keeper">
+                                        <img src={player.picture} className="team-11-player-img"></img>
+                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {team.match_day > 0 ? (
+                                            <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
+                                        ) : (
+                                            <div className="team-11-player-value">€ {player.value}</div>
+                                        )}
+                                    </div>
+                                ))
+                            )}
                         </div>
                         <div className="team-11-div team-midfielders">
-                            <div>midfielders</div>
+                        {teamMidfield.length > 0 && (
+                                teamMidfield.map(player => (
+                                    <div key={player.id} className="team-11-player-card team-11-keeper">
+                                        <img src={player.picture} className="team-11-player-img"></img>
+                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {team.match_day > 0 ? (
+                                            <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
+                                        ) : (
+                                            <div className="team-11-player-value">€ {player.value}</div>
+                                        )}
+                                    </div>
+                                ))
+                            )}
                         </div>
                         <div className="team-11-div team-forwards">
-                            <div>forwards</div>
+                        {teamAttack.length > 0 && (
+                                teamAttack.map(player => (
+                                    <div key={player.id} className="team-11-player-card team-11-keeper">
+                                        <img src={player.picture} className="team-11-player-img"></img>
+                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {team.match_day > 0 ? (
+                                            <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
+                                        ) : (
+                                            <div className="team-11-player-value">€ {player.value}</div>
+                                        )}
+                                    </div>
+                                ))
+                            )}
                         </div>
                     </div>
                 </div>
+
+
+
+                {/* RIGHT SIDE OF PAGE */}
                 <div className="players-list-div">
                     <div className="players-list-header">
                         <h1>Transfer Market</h1>
@@ -177,13 +276,10 @@ const TeamPage = () => {
                         <div className="position-selector gold" onClick={filterForwards}>FW</div>
                     </div>
                     )}
-                    <div className="pre-players-list">
-
-                    </div>
                     {filterGK && (
                         <div className="players-list">
                         {keepers.map(player => (
-                            <div className="player-list-item">
+                            <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
                                     <div className="player-name">{player.aka}</div>
@@ -197,7 +293,7 @@ const TeamPage = () => {
                     {filterDF && (
                         <div className="players-list">
                         {defenders.map(player => (
-                            <div className="player-list-item">
+                            <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
                                     <div className="player-name">{player.aka}</div>
@@ -211,7 +307,7 @@ const TeamPage = () => {
                     {filterMF && (
                     <div className="players-list">
                         {midfielders.map(player => (
-                            <div className="player-list-item">
+                            <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
                                     <div className="player-name">{player.aka}</div>
@@ -225,7 +321,7 @@ const TeamPage = () => {
                     {filterFW && (
                     <div className="players-list">
                         {forwards.map(player => (
-                            <div className="player-list-item">
+                            <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
                                     <div className="player-name">{player.aka}</div>

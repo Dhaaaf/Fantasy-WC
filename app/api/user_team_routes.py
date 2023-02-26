@@ -54,6 +54,20 @@ def delete_team(user_team_id):
 
 
 
+# Get Players of Team
+@user_team_routes.route("/<int:id>/players")
+def get_team_players(id):
+    team = UserTeam.query.get(id)
+    players = team.players
+    return {"players": [player.to_dict() for player in players]}
+
+
+
+
+
+
+
+
 # ADD Player to Team
 @user_team_routes.route("/<int:user_team_id>/player/<int:player_id>", methods=["POST"])
 @login_required

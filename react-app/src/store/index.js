@@ -5,13 +5,15 @@ import leagues from "./leagues"
 import tournaments from "./tournaments"
 import players from "./players"
 import team from "./team"
+import teamPlayers from "./teamPlayers"
 
 const rootReducer = combineReducers({
   session,
   leagues,
   tournaments,
   players,
-  team
+  team,
+  teamPlayers
 });
 
 
