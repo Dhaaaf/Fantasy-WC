@@ -177,13 +177,10 @@ const TeamPage = () => {
                         <div className="position-selector gold" onClick={filterForwards}>FW</div>
                     </div>
                     )}
-                    <div className="pre-players-list">
-
-                    </div>
                     {filterGK && (
                         <div className="players-list">
                         {keepers.map(player => (
-                            <div className="player-list-item">
+                            <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
                                     <div className="player-name">{player.aka}</div>
@@ -197,7 +194,7 @@ const TeamPage = () => {
                     {filterDF && (
                         <div className="players-list">
                         {defenders.map(player => (
-                            <div className="player-list-item">
+                            <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
                                     <div className="player-name">{player.aka}</div>
@@ -211,7 +208,7 @@ const TeamPage = () => {
                     {filterMF && (
                     <div className="players-list">
                         {midfielders.map(player => (
-                            <div className="player-list-item">
+                            <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
                                     <div className="player-name">{player.aka}</div>
@@ -225,7 +222,7 @@ const TeamPage = () => {
                     {filterFW && (
                     <div className="players-list">
                         {forwards.map(player => (
-                            <div className="player-list-item">
+                            <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
                                     <div className="player-name">{player.aka}</div>
