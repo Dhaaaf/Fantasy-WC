@@ -31,8 +31,8 @@ def seed_players():
     p3 = Player (
         first_name="Marcos",
         last_name="Acuna",
-        aka="Auna",
-        picture="https://cdn.futbin.com/content/fifa23/img/players/p67333198.png?v=23",
+        aka="Acuna",
+        picture="https://i0.wp.com/cdn.footballfancast.com/wp-content/uploads/2022/11/Reported-Wolves-target-Marcos-Acuna-scaled-e1669821567707.jpg",
         team="Argentina",
         year=2022,
         position="DF",
@@ -178,7 +178,7 @@ def seed_players():
         first_name="Ronaldo",
         last_name="Nazario",
         aka="Ronaldo",
-        picture="https://zalen.in/storage/news/post/s5SwkaprL8qwI1r8XYyt8BSj27a26kYHazGqw7vo.png",
+        picture="https://imgsrv2.voi.id/w6pLz7BZHP1p4TmzOAOl8a4uIqVVCL8j9jfxv6N8Ymc/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8yMjQxNjcvMjAyMjExMDMwNjIwLW1haW4ucG5n.jpg",
         team="Brazil",
         year=2002,
         position="FW",
@@ -200,6 +200,155 @@ def seed_players():
         tournament_id=4
     )
 
+    # Germany WC 2014
+
+    p17 = Player (
+
+        first_name="Manuel",
+        last_name="Neuer",
+        aka="Neuer",
+        picture="https://img.bleacherreport.net/img/images/photos/002/974/364/hi-res-fe6fde25a63a1b72b4376d79e8f5956d_crop_north.jpg?1405143592&w=3072&h=2048",
+        team="Germany",
+        year=2014,
+        position="GK",
+        value=5,
+        tournament_id=3
+    )
+
+    p18 = Player (
+
+        first_name="Benedikt",
+        last_name="Höwedes",
+        aka="Höwedes",
+        picture="https://pbs.twimg.com/media/Djc_GcqW0AAX_2u.jpg",
+        team="Germany",
+        year=2014,
+        position="DF",
+        value=5,
+        tournament_id=3
+    )
+
+    p19 = Player (
+        first_name="Mats",
+        last_name="Hummels",
+        aka="Hummels",
+        picture="https://img.bleacherreport.net/img/images/photos/002/971/482/hi-res-bce375cb21d89f6923c5976fd39f3e8c_crop_north.jpg?1404980586&w=3072&h=2048",
+        team="Germany",
+        year=2014,
+        position="DF",
+        value=5,
+        tournament_id=3
+    )
+
+    p20 = Player (
+        first_name="Jérôme",
+        last_name="Boateng",
+        aka="Boateng",
+        picture="https://i.pinimg.com/originals/b2/3b/ee/b23bee7f63caee0cefc54473062fb3a8.jpg",
+        team="Germany",
+        year=2014,
+        position="DF",
+        value=5,
+        tournament_id=3
+    )
+
+    p21 = Player (
+        first_name="Philipp",
+        last_name="Lahm",
+        aka="Lahm",
+        picture="https://s.ndtvimg.com/images/content/2014/jul/806/philipp-lahm-trophy-germany-fifa.jpg",
+        team="Germany",
+        year=2014,
+        position="DF",
+        value=5,
+        tournament_id=3
+    )
+
+    p22 = Player (
+        first_name="Sami",
+        last_name="Khedira",
+        aka="Khedira",
+        picture="https://img.bleacherreport.net/img/images/photos/002/978/728/hi-res-67b1dba4d642c51ca766f2c70e12cc00_crop_north.jpg?1405456333&w=3072&h=2048",
+        team="Germany",
+        year=2014,
+        position="MF",
+        value=5,
+        tournament_id=3
+    )
+
+    p23 = Player (
+        first_name="Mesut",
+        last_name="Özil",
+        aka="Özil",
+        picture="https://img.bleacherreport.net/img/images/photos/002/991/444/hi-res-44fe1e24ff69c65a27a5ab6e510aa2c8_crop_north.jpg?1406264055&w=3072&h=2048",
+        team="Germany",
+        year=2014,
+        position="MF",
+        value=5,
+        tournament_id=3
+    )
+
+    p24 = Player (
+        first_name="André",
+        last_name="Schürrle",
+        aka="Schürrle",
+        picture="https://storage.googleapis.com/afs-prod/media/b03872ab94a94cf48ba3da7dd7049c43/2723.jpeg",
+        team="Germany",
+        year=2014,
+        position="MF",
+        value=5,
+        tournament_id=3
+    )
+
+    p25 = Player (
+        first_name="Mario",
+        last_name="Götze",
+        aka="Götze",
+        picture="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/07/13/22/gotze-2.jpg?quality=75&width=982&height=726&auto=webp",
+        team="Germany",
+        year=2014,
+        position="MF",
+        value=5,
+        tournament_id=3
+    )
+
+    p26 = Player (
+        first_name="Toni",
+        last_name="Kroos",
+        aka="Kroos",
+        picture="https://i.guim.co.uk/img/static/sys-images/Sport/Pix/pictures/2014/7/16/1405525594623/Germanys-midfielder-Toni--014.jpg?width=700&quality=85&auto=format&fit=max&s=2ca1c06387e4bc50680c3ce1f0c685f1",
+        team="Germany",
+        year=2014,
+        position="MF",
+        value=5,
+        tournament_id=3
+    )
+
+    p27 = Player (
+        first_name="Thomas",
+        last_name="Müller",
+        aka="Müller",
+        picture="https://i.pinimg.com/736x/1f/84/18/1f8418e410f937bab44f3f20ac85c795--football-soccer-soccer-players.jpg",
+        team="Germany",
+        year=2014,
+        position="FW",
+        value=5,
+        tournament_id=3
+    )
+
+    p28 = Player (
+        first_name="Miroslav",
+        last_name="Klose",
+        aka="Klose",
+        picture="https://i.ytimg.com/vi/DrAkH2dSozQ/maxresdefault.jpg",
+        team="Germany",
+        year=2014,
+        position="FW",
+        value=5,
+        tournament_id=3
+    )
+    
+
 
 
     db.session.add_all(
@@ -219,7 +368,19 @@ def seed_players():
             p13,
             p14,
             p15,
-            p16
+            p16,
+            p17,
+            p18,
+            p19,
+            p20,
+            p21,
+            p22,
+            p23,
+            p24,
+            p25,
+            p26,
+            p27,
+            p28
         ]
     )
     db.session.commit()

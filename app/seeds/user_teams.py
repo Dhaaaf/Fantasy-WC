@@ -12,7 +12,7 @@ def seed_users_teams():
 
     ut2 = UserTeam (
         user_id=1,
-        name="Blow Dryers",
+        name="Hair Dryers",
         points=429,
         league_id=2,
         bank=45,

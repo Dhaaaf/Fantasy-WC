@@ -7,6 +7,7 @@ import { authenticate } from "./store/session";
 import Navigation from "./components/Navigation";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import LeaguesIndex from "./components/Leagues";
+import TeamPage from "./components/Team";
 
 function App() {
   const dispatch = useDispatch();
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <ProtectedRoute path="/leagues" exact={true}>
             <LeaguesIndex/>
+          </ProtectedRoute>
+          <ProtectedRoute path="/league/:leagueId/team/:teamId" exact={true}>
+            <TeamPage/>
           </ProtectedRoute>
         </Switch>
       )}

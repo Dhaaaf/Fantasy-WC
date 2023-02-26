@@ -1,7 +1,7 @@
 from flask import Flask, Blueprint, request
 from flask_login import login_required, current_user
 from app.models import db, League, User, LeaguesTournament
-from app.forms import LeagueFrom
+from app.forms import LeagueForm
 
 #  url_prefix="/api/leagues
 league_routes = Blueprint("leagues", __name__)
@@ -42,7 +42,7 @@ def leagues_public():
 def create_league():
     userId = int(current_user.id)
     res = request.get_json()
-    form = LeagueFrom()
+    form = LeagueForm()
     form["csrf_token"].data = request.cookies["csrf_token"]
     tournaments = res["tournaments"]
     if tournaments == None:
@@ -86,7 +86,7 @@ def edit_league(id):
         return {"errors": ["This league doesn't belong to this user"]}, 403
     
     res = request.get_json()
-    form = LeagueFrom()
+    form = LeagueForm()
     form["csrf_token"].data = request.cookies["csrf_token"]
     if form.validate_on_submit():
         league.name = res["name"]

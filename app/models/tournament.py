@@ -16,5 +16,6 @@ class Tournament(db.Model):
     def to_dict(self):
         return {
             "id": self.id,
-            "tournament_name": self.tournament_name
+            "tournament_name": self.tournament_name,
+            # "players": [player.to_dict() for player in self.players]
         }
