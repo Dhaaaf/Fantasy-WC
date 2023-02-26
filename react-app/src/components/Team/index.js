@@ -184,7 +184,14 @@ const TeamPage = () => {
                                 teamKeeper.map(player => (
                                     <div key={player.id} className="team-11-player-card team-11-keeper">
                                         <img src={player.picture} className="team-11-player-img"></img>
-                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {/* <div className="team-11-player-name">{player.aka}</div> */}
+                                        <div className="team-11-player-name">
+                                            <OpenModalButton
+                                            modalComponent={<PlayerModal team={team} player={player} />}
+                                            buttonText={player.aka}
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
                                         {team.match_day > 0 ? (
                                             <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
                                         ) : (
@@ -199,7 +206,14 @@ const TeamPage = () => {
                                 teamDefense.map(player => (
                                     <div key={player.id} className="team-11-player-card team-11-keeper">
                                         <img src={player.picture} className="team-11-player-img"></img>
-                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {/* <div className="team-11-player-name">{player.aka}</div> */}
+                                        <div className="team-11-player-name">
+                                            <OpenModalButton
+                                            modalComponent={<PlayerModal team={team} player={player} />}
+                                            buttonText={player.aka}
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
                                         {team.match_day > 0 ? (
                                             <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
                                         ) : (
@@ -214,7 +228,14 @@ const TeamPage = () => {
                                 teamMidfield.map(player => (
                                     <div key={player.id} className="team-11-player-card team-11-keeper">
                                         <img src={player.picture} className="team-11-player-img"></img>
-                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {/* <div className="team-11-player-name">{player.aka}</div> */}
+                                        <div className="team-11-player-name">
+                                            <OpenModalButton
+                                            modalComponent={<PlayerModal team={team} player={player} />}
+                                            buttonText={player.aka}
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
                                         {team.match_day > 0 ? (
                                             <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
                                         ) : (
@@ -229,7 +250,14 @@ const TeamPage = () => {
                                 teamAttack.map(player => (
                                     <div key={player.id} className="team-11-player-card team-11-keeper">
                                         <img src={player.picture} className="team-11-player-img"></img>
-                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {/* <div className="team-11-player-name">{player.aka}</div> */}
+                                        <div className="team-11-player-name">
+                                            <OpenModalButton
+                                            modalComponent={<PlayerModal team={team} player={player} />}
+                                            buttonText={player.aka}
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
                                         {team.match_day > 0 ? (
                                             <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
                                         ) : (

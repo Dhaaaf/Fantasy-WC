@@ -143,6 +143,15 @@
     width: 100px;
 }
 
+.team-11-player-name > button {
+    background-color: #37003c;
+    color: white;
+    font-size: 12px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+}
+
 .team-11-player-value {
     background-color: #66cd8a;
     background-color: #e3bc3f;

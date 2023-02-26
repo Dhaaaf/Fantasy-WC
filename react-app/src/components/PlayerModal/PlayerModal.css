@@ -73,6 +73,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* color: white; */
 }
 
 .player-modal-card-stats-inner {
