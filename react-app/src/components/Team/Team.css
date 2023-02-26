@@ -93,6 +93,9 @@
     color: white;
     height: 25%;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .team-11-div.team-keeper {
@@ -110,6 +113,16 @@
 .team-11-div.team-forwards {
     width: 80%;
 }
+
+/* TEAM PLAYERS STYLING */
+
+
+
+
+
+
+
+
 
 /* PLAYERS SELECTION ON RIGHT */
 

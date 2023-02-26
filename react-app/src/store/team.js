@@ -1,8 +1,8 @@
 const GET_TEAM = "team/GET_TEAM";
 const ADD_TEAM = "team/ADD_TEAM";
 const EDIT_TEAM = "team/EDIT_TEAM"
-const ADD_PLAYER = "team/ADD_PLAYER";
-const REMOVE_PLAYER = "team/REMOVE_PLAYER";
+// const ADD_PLAYER = "team/ADD_PLAYER";
+// const REMOVE_PLAYER = "team/REMOVE_PLAYER";
 const RESET_TEAM = "team/DELETE_TEAM"
 
 
@@ -31,17 +31,17 @@ export const actionResetTeam = () => ({
     type: RESET_TEAM
 })
 
-// ADD PLAYER
-export const actionAddPlayer = (player) => ({
-    type: ADD_PLAYER,
-    player
-})
+// // ADD PLAYER
+// export const actionAddPlayer = (player) => ({
+//     type: ADD_PLAYER,
+//     player
+// })
 
-// REMOVE PLAYER
-export const actionRemovePlayer = (player) => ({
-    type: REMOVE_PLAYER,
-    player
-})
+// // REMOVE PLAYER
+// export const actionRemovePlayer = (player) => ({
+//     type: REMOVE_PLAYER,
+//     player
+// })
 
 
 
@@ -104,15 +104,6 @@ export default function reducer(state = initialState, action) {
             let newState = { ...state };
 			newState = action.team;
 			return newState;
-        }
-        case ADD_PLAYER: {
-            let newState = { ...state };
-            newState.players.push(action.player)
-            return newState
-        }
-        case REMOVE_PLAYER: {
-            let newState = { ...state };
-            newState.players = newState.players.filter(player => ( player != action.player))
         }
 		case RESET_TEAM: {
 			return {};

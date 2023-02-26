@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { thunkGetTeam, actionResetTeam } from"../../store/team"
 import { thunkGetPlayers, actionResetPlayers } from "../../store/players";
+import { thunkGetTeamPlayers, actionAddTeamPlayer, actionRemoveTeamPlayer, actionResetTeamPlayers } from "../../store/teamPlayers";
 import { NavLink, useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import OpenModalButton from "../OpenModalButton";
@@ -15,6 +16,7 @@ const TeamPage = () => {
     const leagues = useSelector((state) => state.leagues)
     const players = useSelector((state) => state.players)
     const team = useSelector((state) => state.team)
+    const teamPlayers = useSelector((state) => state.teamPlayers)
     const [filterGK, setfilterGK] = useState(false)
     const [filterDF, setfilterDF] = useState(false)
     const [filterMF, setfilterMF] = useState(false)
@@ -29,7 +31,16 @@ const TeamPage = () => {
         return () => {
             dispatch(actionResetTeam());
         }
-    }, [])
+    }, [dispatch])
+
+    useEffect (() => {
+        dispatch(thunkGetTeamPlayers(teamId)).
+        then(() => setIsLoaded(true));
+
+        return () => {
+            dispatch(actionResetTeamPlayers());
+        }
+    }, [dispatch])
 
     useEffect (() => {
         dispatch(thunkGetPlayers(leagueId))
@@ -39,8 +50,44 @@ const TeamPage = () => {
         }
     }, [])
 
-    console.log("TEAM ------->", team)
-    console.log("Players ------->", players)
+    // console.log("TEAM ------->", team)
+    // console.log("Players ------->", players)
+
+    //// TEAM PLAYERS
+
+    let teamPlayersArray
+    if (teamPlayers) {
+        teamPlayersArray = Object.values(teamPlayers)
+    }
+
+
+    let teamKeeper;
+    let teamDefense;
+    let teamMidfield;
+    let teamAttack
+
+    if (teamPlayers) {
+        teamKeeper = teamPlayersArray.filter(player => player.position == "GK")
+        teamDefense = teamPlayersArray.filter(player => player.position == "DF")
+        teamMidfield = teamPlayersArray.filter(player => player.position == "MF")
+        teamAttack = teamPlayersArray.filter(player => player.position == "FW")
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //// PLAYER SORTING
 
@@ -63,10 +110,10 @@ const TeamPage = () => {
         forwards.sort((a, b) => b.value - a.value);
     }
 
-    console.log ("GK ----->", keepers)
-    console.log ("DF ----->", defenders)
-    console.log ("MF ----->", midfielders)
-    console.log ("FW ----->", forwards)
+    // console.log ("GK ----->", keepers)
+    // console.log ("DF ----->", defenders)
+    // console.log ("MF ----->", midfielders)
+    // console.log ("FW ----->", forwards)
 
     //// FILTERING PLAYERS BY POSITION
 
@@ -128,7 +175,7 @@ const TeamPage = () => {
                     </div>
                     <div className="pitch">
                         <div className="team-11-div team-keeper">
-                            <div>keeper</div>
+                            
                         </div>
                         <div className="team-11-div team-defenders">
                             <div>Defender</div>
@@ -141,6 +188,10 @@ const TeamPage = () => {
                         </div>
                     </div>
                 </div>
+
+
+
+                {/* RIGHT SIDE OF PAGE */}
                 <div className="players-list-div">
                     <div className="players-list-header">
                         <h1>Transfer Market</h1>
