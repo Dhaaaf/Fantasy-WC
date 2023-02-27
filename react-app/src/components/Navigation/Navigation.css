@@ -60,8 +60,22 @@
 
 .right-nav-div {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
-  width: 100px;
-  box-sizing: border-box;
+  align-items: center;
+  width: 180px;
+}
+
+.right-nav-rules-div {
+  margin-right: 30px;
+}
+
+.right-nav-rules-div > button {
+  border: 1px solid #37003c;
+  cursor: pointer;
+  color: #37003c;
+  background-color: #e3bc3f;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 20px;
 }
