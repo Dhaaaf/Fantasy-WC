@@ -48,10 +48,59 @@
     font-size: 24px;
     color: #37003c;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.name-edit-delete {
+    font-size: 12px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #37003c;
+}
+
+.name-edit-delete > button {
+    border: none;
+    background-color: white;
+    font-size: 12px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #37003c;
 }
 
 .reset-button {
     cursor: pointer;
+    padding: 1px 6px;
+    border-radius: 5px;
+    /* background-color: #e3bc3f; */
+    color: #37003c;
+    font-size: 15px;
+}
+
+.next-match-button {
+    cursor: pointer;
+    padding: 1px 6px;
+    border-radius: 5px;
+    background-color: #e3bc3f;
+    color: #37003c;
+    font-size: 15px;
+}
+
+.next-match-button.disabled {
+    cursor: default;
+    background-color: gray;
+    color: white;
+}
+
+.check-table {
+    cursor: pointer;
+    padding: 1px 6px;
+    border-radius: 5px;
+    background-color: #e3bc3f;
+    color: #37003c;
+    font-size: 15px;
+    /* color: #e3bc3f; */
 }
 
 .team-info-div {

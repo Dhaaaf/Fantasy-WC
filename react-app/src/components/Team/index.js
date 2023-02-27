@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { thunkGetTeam, actionResetTeam } from"../../store/team"
+import { thunkGetTeam, actionResetTeam, thunkNextMatchDay } from"../../store/team"
 import { thunkGetPlayers, actionResetPlayers } from "../../store/players";
 import { thunkGetTeamPlayers, actionAddTeamPlayer, actionRemoveTeamPlayer, actionResetTeamPlayers } from "../../store/teamPlayers";
 import { NavLink, useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import OpenModalButton from "../OpenModalButton";
 import PlayerModal from "../PlayerModal";
+import EditDeleteTeam from "../TeamEditDelete";
 
 import "./Team.css"
 
@@ -16,7 +17,7 @@ const TeamPage = () => {
 	const user = useSelector((state) => state.session.user)
     const leagues = useSelector((state) => state.leagues)
     const players = useSelector((state) => state.players)
-  const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
     const team = useSelector((state) => state.team)
     const teamPlayers = useSelector((state) => state.teamPlayers)
     const [filterGK, setfilterGK] = useState(false)
@@ -55,6 +56,9 @@ const TeamPage = () => {
     // console.log("TEAM ------->", team)
     // console.log("Players ------->", players)
 
+
+
+
     //// TEAM PLAYERS
 
     let teamPlayersArray
@@ -85,7 +89,7 @@ const TeamPage = () => {
 
 
 
-    // Transfer Counter
+    //// Transfer Counter
 
     let transfers
     if (team.match_day == 0) {
@@ -99,11 +103,14 @@ const TeamPage = () => {
         transfers = 3
     }
 
+    let zeroOrSeven = (team.match_day == 0 || team.match_day == 7)
+
+    let teamPlayersIds
     let transfersMade = 0
     if (team && teamPlayersArray && team.players) {
         let dbPlayers = team.players
         let dbPlayersIds = dbPlayers.map(player => player.id)
-        let teamPlayersIds = teamPlayersArray.map(player => (player.id))
+        teamPlayersIds = teamPlayersArray.map(player => (player.id))
 
         // console.log("DB PLAYERS------>", dbPlayersIds)
         // console.log("COMPARING ARRAYS ------>", teamPlayersIds)
@@ -131,7 +138,7 @@ const TeamPage = () => {
     let defenders
     let midfielders
     let forwards
-    /// Sorting by position, and then sorting by value
+    //// Sorting by position, and then sorting by value
     if (players) {
         keepers = playersArray.filter (player => player.position == "GK")
         keepers.sort((a, b) => b.value - a.value);
@@ -174,12 +181,39 @@ const TeamPage = () => {
     }
 
 
-    ///// RESET TRANSFERS BUTTON
+    //// RESET TRANSFERS BUTTON
 
     const resetTransfers = () => {
         dispatch(thunkGetTeamPlayers(teamId))
         dispatch(thunkGetTeam(teamId))
     }
+
+
+    //// NEXT MATCHDAY
+
+    const nextMatchDay = async () => {
+        console.log("nextMatchDay stuff ----->", teamPlayersArray)
+        console.log("nextMatchDay stuff ----->", teamPlayersIds)
+        console.log("Transfers Left ---->", transfersLeft)
+
+        let bank =team.bank
+
+        let payload = {
+            teamId,
+            teamPlayersIds,
+            transfersLeft,
+            bank
+        }
+
+        dispatch(thunkNextMatchDay(payload)).
+        then(() => dispatch(thunkGetTeam(teamId)))
+    }
+
+    let canMoveNext = false
+    if (teamPlayersArray.length == 11 && team.match_day < 7) canMoveNext = true
+
+
+
 
 
   const closeMenu = () => setShowMenu(false);
@@ -201,7 +235,7 @@ const TeamPage = () => {
                         <div className="matchday-div">Round of 16</div>
                         )}
                         {team.match_day == 5 && (
-                        <div className="matchday-div">Quarter-Final {team.match_day}</div>
+                        <div className="matchday-div">Quarter-Final</div>
                         )}
                         {team.match_day == 6 && (
                         <div className="matchday-div">Semi-Final</div>
@@ -211,13 +245,24 @@ const TeamPage = () => {
                         )}
                         <div className="team-name-div">
                             <div className="reset-button" onClick={() => resetTransfers()}> <i className="fa-solid fa-arrows-rotate"></i>  Reset Transfers</div>
-                            <div className="team-name">{team.name}</div>
-                            <div className="next-match-button">Next Match Day  <i className="fa-solid fa-arrow-right"></i></div>
+                            <div className="team-name">
+                                <div className="inner-team-name">{team.name}</div>
+                                <div className="name-edit-delete">
+                                    <OpenModalButton
+                                        modalComponent={<EditDeleteTeam team={team} />}
+                                        buttonText="edit-team-name"
+                                        onbuttonClick={closeMenu}
+                                    />
+                                </div>
+                            </div>
+                            {canMoveNext && (<div className="next-match-button" onClick={() => nextMatchDay()}>Next Match Day  <i className="fa-solid fa-arrow-right"></i></div>)}
+                            {teamPlayersArray.length < 11 && (<div className="next-match-button disabled">Select a valid Squad </div>)}
+                            {team.match_day == 7 && (<div className="check-table">League Table <i className="fa-solid fa-table"></i></div>)}
                         </div>
                         <div className="team-info-div">
                             <div className="transfers-div">
                                 <div className="text-info">Transfers Left</div>
-                                {team.match_day == 0 ? (
+                                {zeroOrSeven ? (
                                     <div className="numbers-info"><i className="fa-solid fa-infinity"></i></div>
                                 ): (
                                     <div>
@@ -230,7 +275,8 @@ const TeamPage = () => {
                                 )}
                             </div>
                             <div className="points-div">
-                                <div className="text-info">Total Points</div>
+                                {team.match_day == 7 && (<div className="text-info">Final Points</div>)}
+                                {team.match_day  < 7 && (<div className="text-info">Total Points</div>)}
                                 <div className="numbers-info">{team.points}</div>
                             </div>
                             <div className="bank-div">
