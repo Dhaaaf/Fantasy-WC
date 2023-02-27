@@ -2714,6 +2714,801 @@ def seed_game_week_stats():
         man_of_the_match=False,
     )
 
+    # Hugo Lloris 2018
+
+    gw267 = GameWeekStat (
+        week=1,
+        player_id=39,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw268 = GameWeekStat (
+        week=2,
+        player_id=39,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw269 = GameWeekStat (
+        week=3,
+        player_id=39,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw270 = GameWeekStat (
+        week=4,
+        player_id=39,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw271 = GameWeekStat (
+        week=5,
+        player_id=39,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw272 = GameWeekStat (
+        week=6,
+        player_id=39,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw273 = GameWeekStat (
+        week=7,
+        player_id=39,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Lucas Hernandez 2018
+
+    gw274 = GameWeekStat (
+        week=1,
+        player_id=40,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw275 = GameWeekStat (
+        week=2,
+        player_id=40,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw276 = GameWeekStat (
+        week=3,
+        player_id=40,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw277 = GameWeekStat (
+        week=4,
+        player_id=40,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw278 = GameWeekStat (
+        week=5,
+        player_id=40,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw279 = GameWeekStat (
+        week=6,
+        player_id=40,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw280 = GameWeekStat (
+        week=7,
+        player_id=40,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Benjamin Pavard 2018
+
+    gw281 = GameWeekStat (
+        week=1,
+        player_id=41,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw282 = GameWeekStat (
+        week=2,
+        player_id=41,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw283 = GameWeekStat (
+        week=3,
+        player_id=41,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw284 = GameWeekStat (
+        week=4,
+        player_id=41,
+        points=8,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw285 = GameWeekStat (
+        week=5,
+        player_id=41,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw286 = GameWeekStat (
+        week=6,
+        player_id=41,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw287 = GameWeekStat (
+        week=7,
+        player_id=41,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Samuel Umtiti 2018
+
+
+    gw288 = GameWeekStat (
+        week=1,
+        player_id=42,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw289 = GameWeekStat (
+        week=2,
+        player_id=42,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw290 = GameWeekStat (
+        week=3,
+        player_id=42,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw291 = GameWeekStat (
+        week=4,
+        player_id=42,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw292 = GameWeekStat (
+        week=5,
+        player_id=42,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw293 = GameWeekStat (
+        week=6,
+        player_id=42,
+        points=18,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw294 = GameWeekStat (
+        week=7,
+        player_id=42,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Raphael Varane 2018
+
+    gw295 = GameWeekStat (
+        week=1,
+        player_id=43,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw296 = GameWeekStat (
+        week=2,
+        player_id=43,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw297 = GameWeekStat (
+        week=3,
+        player_id=43,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw298 = GameWeekStat (
+        week=4,
+        player_id=43,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw299 = GameWeekStat (
+        week=5,
+        player_id=43,
+        points=18,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw300 = GameWeekStat (
+        week=6,
+        player_id=43,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw301 = GameWeekStat (
+        week=7,
+        player_id=43,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Blaise Matuidi
+
+    gw302 = GameWeekStat (
+        week=1,
+        player_id=44,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw303 = GameWeekStat (
+        week=2,
+        player_id=44,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw304 = GameWeekStat (
+        week=3,
+        player_id=44,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw305 = GameWeekStat (
+        week=4,
+        player_id=44,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw306 = GameWeekStat (
+        week=5,
+        player_id=44,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw307 = GameWeekStat (
+        week=6,
+        player_id=44,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw308 = GameWeekStat (
+        week=7,
+        player_id=44,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Ngolo Kante 2018
+
+    gw309 = GameWeekStat (
+        week=1,
+        player_id=45,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw310 = GameWeekStat (
+        week=2,
+        player_id=45,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw311 = GameWeekStat (
+        week=3,
+        player_id=45,
+        points=9,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw312 = GameWeekStat (
+        week=4,
+        player_id=45,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw313 = GameWeekStat (
+        week=5,
+        player_id=45,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw314 = GameWeekStat (
+        week=6,
+        player_id=45,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw315 = GameWeekStat (
+        week=7,
+        player_id=45,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Paul Pogba
+
+    gw316 = GameWeekStat (
+        week=1,
+        player_id=46,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw317 = GameWeekStat (
+        week=2,
+        player_id=46,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw318 = GameWeekStat (
+        week=3,
+        player_id=46,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw319 = GameWeekStat (
+        week=4,
+        player_id=46,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw320 = GameWeekStat (
+        week=5,
+        player_id=46,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw321 = GameWeekStat (
+        week=6,
+        player_id=46,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw322 = GameWeekStat (
+        week=7,
+        player_id=46,
+        points=7,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Olivier Giroud
+
+    gw323 = GameWeekStat (
+        week=1,
+        player_id=47,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw324 = GameWeekStat (
+        week=2,
+        player_id=47,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw325 = GameWeekStat (
+        week=3,
+        player_id=47,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw326 = GameWeekStat (
+        week=4,
+        player_id=47,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw327 = GameWeekStat (
+        week=5,
+        player_id=47,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw328 = GameWeekStat (
+        week=6,
+        player_id=47,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw329 = GameWeekStat (
+        week=7,
+        player_id=47,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Kylian Mbappe - 2018
+
+    gw330 = GameWeekStat (
+        week=1,
+        player_id=48,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw331 = GameWeekStat (
+        week=2,
+        player_id=48,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw332 = GameWeekStat (
+        week=3,
+        player_id=48,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw333 = GameWeekStat (
+        week=4,
+        player_id=48,
+        points=19,
+        goals=2,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw334 = GameWeekStat (
+        week=5,
+        player_id=48,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw335 = GameWeekStat (
+        week=6,
+        player_id=48,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw336 = GameWeekStat (
+        week=7,
+        player_id=48,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Antoine Griezmann 2018
+
+    gw337 = GameWeekStat (
+        week=1,
+        player_id=49,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw338 = GameWeekStat (
+        week=2,
+        player_id=49,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw339 = GameWeekStat (
+        week=3,
+        player_id=49,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw340 = GameWeekStat (
+        week=4,
+        player_id=49,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw341 = GameWeekStat (
+        week=5,
+        player_id=49,
+        points=9,
+        goals=1,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw342 = GameWeekStat (
+        week=6,
+        player_id=49,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw343 = GameWeekStat (
+        week=7,
+        player_id=49,
+        points=15,
+        goals=1,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+
+
 
 
     db.session.add_all(
@@ -2983,7 +3778,84 @@ def seed_game_week_stats():
             gw263,
             gw264,
             gw265,
-            gw266
+            gw266,
+            gw267,
+            gw268,
+            gw269,
+            gw270,
+            gw271,
+            gw272,
+            gw273,
+            gw274,
+            gw275,
+            gw276,
+            gw277,
+            gw278,
+            gw279,
+            gw280,
+            gw281,
+            gw282,
+            gw283,
+            gw284,
+            gw285,
+            gw286,
+            gw287,
+            gw288,
+            gw289,
+            gw290,
+            gw291,
+            gw292,
+            gw293,
+            gw294,
+            gw295,
+            gw296,
+            gw297,
+            gw298,
+            gw299,
+            gw300,
+            gw301,
+            gw302,
+            gw303,
+            gw304,
+            gw305,
+            gw306,
+            gw307,
+            gw308,
+            gw309,
+            gw310,
+            gw311,
+            gw312,
+            gw313,
+            gw314,
+            gw315,
+            gw316,
+            gw317,
+            gw318,
+            gw319,
+            gw320,
+            gw321,
+            gw322,
+            gw323,
+            gw324,
+            gw325,
+            gw326,
+            gw327,
+            gw328,
+            gw329,
+            gw330,
+            gw331,
+            gw332,
+            gw333,
+            gw334,
+            gw335,
+            gw336,
+            gw337,
+            gw338,
+            gw339,
+            gw340,
+            gw341,
+            gw342,
+            gw343,
 
         ]
     )

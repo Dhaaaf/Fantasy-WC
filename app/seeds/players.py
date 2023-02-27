@@ -320,7 +320,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="MF",
-        value=5,
+        value=13,
         tournament_id=3
     )
 
@@ -470,7 +470,139 @@ def seed_players():
         tournament_id=4
     )
 
+    # FRANCE WC 2018
 
+    p39 = Player (
+        first_name="Hugo",
+        last_name="Lloris",
+        aka="Lloris",
+        picture="https://pbs.twimg.com/media/DujzDKmW4AAR6DP.jpg",
+        team="France",
+        year=2018,
+        position="GK",
+        value=5,
+        tournament_id=2
+    )
+
+    p40 = Player (
+        first_name="Lucas",
+        last_name="Hernandez",
+        aka="L. Hernandez",
+        picture="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190327215215-lucas-hernandez-tease.jpg",
+        team="France",
+        year=2018,
+        position="DF",
+        value=5,
+        tournament_id=2
+    )
+
+    p41 = Player (
+        first_name="Benjamin",
+        last_name="Pavard",
+        aka="Pavard",
+        picture="https://static01.nyt.com/images/2018/07/03/sports/00pavard1/merlin_140582979_12494f65-cf04-48b8-bfb8-b1062e46f050-superJumbo.jpg",
+        team="France",
+        year=2018,
+        position="DF",
+        value=5,
+        tournament_id=2
+    )
+
+    p42 = Player (
+        first_name="Samuel",
+        last_name="Umtiti",
+        aka="Umtiti",
+        picture="https://cdn.vox-cdn.com/thumbor/ro2NG7bQIdFzvEjZwYUg0PjvAe0=/0x0:3000x2041/1200x800/filters:focal(1323x357:1803x837)/cdn.vox-cdn.com/uploads/chorus_image/image/60383939/999475836.jpg.0.jpg",
+        team="France",
+        year=2018,
+        position="DF",
+        value=5,
+        tournament_id=2
+    )
+
+    p43 = Player (
+        first_name="Raphaël",
+        last_name="Varane",
+        aka="Varane",
+        picture="https://www.realmadrid.com/cs/Satellite?blobcol=urldata&blobheader=image%2Fjpeg&blobkey=id&blobtable=MungoBlobs&blobwhere=1203395997683&ssbinary=true",
+        team="France",
+        year=2018,
+        position="DF",
+        value=5,
+        tournament_id=2
+    )
+
+    p44 = Player (
+        first_name="Blaise",
+        last_name="Matuidi",
+        aka="Matuidi",
+        picture="https://www.juventus.com/images/image/private/t_editorial_landscape_12_desktop/dev/foc6gdv1mbezkzressfn.jpg",
+        team="France",
+        year=2018,
+        position="MF",
+        value=5,
+        tournament_id=2
+    )
+
+    p45 = Player (
+        first_name="N'Golo",
+        last_name="Kanté",
+        aka="Kanté",
+        picture="https://www.thesun.co.uk/wp-content/uploads/2018/07/NINTCHDBPICT000420698090.jpg?strip=all&w=960",
+        team="France",
+        year=2018,
+        position="MF",
+        value=5,
+        tournament_id=2
+    )
+
+    p46 = Player (
+        first_name="Paul",
+        last_name="Pogba",
+        aka="Pogba",
+        picture="https://www.si.com/.image/t_share/MTY4MDMxNDQ0NDk0NTkxMjQ5/topshot-fbl-wc-2018-match64-fra-cro-5b4c8e9a42fc3353af000075jpg.jpg",
+        team="France",
+        year=2018,
+        position="MF",
+        value=5,
+        tournament_id=2
+    )
+
+    p47 = Player (
+        first_name="Olivier",
+        last_name="Giroud",
+        aka="Giroud",
+        picture="https://digitalhub.fifa.com/m/2f3bbeb023837326/webimage-World-Cup-Champions-France-Portrait-Session-15-Jul-2018.png",
+        team="France",
+        year=2018,
+        position="FW",
+        value=5,
+        tournament_id=2
+    )
+
+    p48 = Player (
+        first_name="Kylian",
+        last_name="Mbappé",
+        aka="Mbappé",
+        picture="https://www.telegraph.co.uk/content/dam/world-cup/2018/07/15/TELEMMGLPICT000169493493_trans_NvBQzQNjv4BqLeUJvOJqnV613e1NxllMSYIixnj0N-lTmS4HQcSqwKA.jpeg",
+        team="France",
+        year=2018,
+        position="FW",
+        value=11,
+        tournament_id=2
+    )
+
+    p49 = Player (
+        first_name="Antoine",
+        last_name="Griezmann",
+        aka="Griezmann",
+        picture="https://pbs.twimg.com/media/DiKl3gIX4AAzcaD?format=jpg&name=4096x4096",
+        team="France",
+        year=2018,
+        position="FW",
+        value=13,
+        tournament_id=2
+    )
 
 
 
@@ -513,7 +645,18 @@ def seed_players():
             p35,
             p36,
             p37,
-            p38
+            p38,
+            p39,
+            p40,
+            p41,
+            p42,
+            p43,
+            p44,
+            p45,
+            p46,
+            p47,
+            p48,
+            p49
         ]
     )
     db.session.commit()
