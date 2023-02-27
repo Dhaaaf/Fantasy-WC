@@ -115,7 +115,6 @@ export const thunkAddTeam = (payload) => async(dispatch) => {
 
 export const thunkNextMatchDay = (payload) => async(dispatch) => {
     const {teamId, teamPlayersIds, transfersLeft, bank} = payload
-    console.log("PAYLOAD ----->", payload)
     const res = await fetch (`/api/user_teams/${teamId}/next_match`, {
         method: "PUT",
         headers: {
@@ -136,6 +135,56 @@ export const thunkNextMatchDay = (payload) => async(dispatch) => {
         return ["An error occurred. Please try again."];
     }
 }
+
+
+// EDIT TEAM NAME
+
+export const thunkEditTeamName = (payload) => async(dispatch) => {
+    const {teamId, name} = payload
+    const res = await fetch (`/api/user_teams/${teamId}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({name}),
+    });
+    if (res.ok) {
+        const data = await res.json()
+        dispatch(actionEditTeam(data.team))
+        return data.team;
+    } else if (res.status < 500) {
+        const data = await res.json();
+        if (data.errors) {
+            return data.errors;
+        }
+    } else {
+        return ["An error occurred. Please try again."];
+    }
+}
+
+// DELETE
+
+export const thunkDeleteTeam = (teamId) => async(dispatch) => {
+    const res = await fetch (`/api/user_teams/${teamId}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    });
+    if (res.ok) {
+        const data = await res.json()
+        dispatch(actionResetTeam())
+        return data.team;
+    } else if (res.status < 500) {
+        const data = await res.json();
+        if (data.errors) {
+            return data.errors;
+        }
+    } else {
+        return ["An error occurred. Please try again."];
+    }
+}
+
 
 
 
@@ -161,6 +210,11 @@ export default function reducer(state = initialState, action) {
         case REMOVE_BUDGET: {
             let newState = { ...state };
             newState.bank -= action.value
+            return newState
+        }
+        case EDIT_TEAM:{
+            let newState = {...state}
+            newState = action.team
             return newState
         }
 		case RESET_TEAM: {

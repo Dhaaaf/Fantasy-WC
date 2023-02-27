@@ -44,6 +44,21 @@ function OpenModalButton({
     );
   }
 
+  if (buttonText === "edit-team-name") {
+    // console.log("button text");
+    return (
+      <button
+        onClick={onClick}
+        className={`OpenModalButton-button ${buttonText}`}
+      >
+        <div className="name-edit-delete">
+        <i className="fa-solid fa-pen-to-square"></i>
+        </div>
+      </button>
+    );
+  }
+
+
 
   return (
     <button onClick={onClick}>{buttonText}</button>

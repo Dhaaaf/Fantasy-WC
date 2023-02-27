@@ -56,15 +56,14 @@ def next_match(user_team_id):
         return {"errors": ["This team doesn't belong to this user"]}, 403
 
     res = request.get_json()
-    print("RES------->",res)
-    print("RES transfers------->",res["transfersLeft"])
-    print("RES playerIds------->",res["teamPlayersIds"])
-    print("RES playerIds------->",res["bank"])
+    # print("RES------->",res)
+    # print("RES transfers------->",res["transfersLeft"])
+    # print("RES playerIds------->",res["teamPlayersIds"])
+    # print("RES playerIds------->",res["bank"])
 
 
     #GET ALL CURRENT PLAYERS AND DELETE
 
-    print("Before DELETE ------>", team.players)
 
 
     user_team_players = UserTeamPlayer.query.filter_by(user_team_id=team_id).all()
@@ -72,7 +71,6 @@ def next_match(user_team_id):
         db.session.delete(user_team_player)
         db.session.commit()
 
-    print("AFTER DELETE ------>", team.players)
 
 
     #LOOP OVER ARRAY OF NEW PLAYERS AND ADD TO INSTANCE
@@ -114,6 +112,25 @@ def next_match(user_team_id):
     return {"team": team.to_dict()}, 201
 
 
+# Edit Team Name
+@user_team_routes.route("/<user_team_id>", methods=["PUT"])
+@login_required
+def edit_team_name(user_team_id):
+    userId = int(current_user.id)
+    res = request.get_json()
+
+    team = UserTeam.query.get(user_team_id)
+    if (team == None):
+        return {"errors": ["Team does not exist"]}, 404
+
+    if(team.user_id != userId):
+        return {"errors": ["This team doesn't belong to this user"]}, 403
+
+    team.name = res["name"]
+    db.session.commit()
+
+    return {"team": team}
+
 
 # Delete Team
 @user_team_routes.route("/<user_team_id>", methods=["DELETE"])
@@ -128,7 +145,9 @@ def delete_team(user_team_id):
     if(team.user_id != userId):
         return {"errors": ["This team doesn't belong to this user"]}, 403
 
-    return {"team_deleted": user_team_id}
+    db.session.delete(team)
+    db.session.commit()
+    return {"team": user_team_id}
 
 
 

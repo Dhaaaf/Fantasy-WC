@@ -7,6 +7,7 @@ import { NavLink, useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import OpenModalButton from "../OpenModalButton";
 import PlayerModal from "../PlayerModal";
+import EditDeleteTeam from "../TeamEditDelete";
 
 import "./Team.css"
 
@@ -244,7 +245,16 @@ const TeamPage = () => {
                         )}
                         <div className="team-name-div">
                             <div className="reset-button" onClick={() => resetTransfers()}> <i className="fa-solid fa-arrows-rotate"></i>  Reset Transfers</div>
-                            <div className="team-name">{team.name}</div>
+                            <div className="team-name">
+                                <div className="inner-team-name">{team.name}</div>
+                                <div className="name-edit-delete">
+                                    <OpenModalButton
+                                        modalComponent={<EditDeleteTeam team={team} />}
+                                        buttonText="edit-team-name"
+                                        onbuttonClick={closeMenu}
+                                    />
+                                </div>
+                            </div>
                             {canMoveNext && (<div className="next-match-button" onClick={() => nextMatchDay()}>Next Match Day  <i className="fa-solid fa-arrow-right"></i></div>)}
                             {teamPlayersArray.length < 11 && (<div className="next-match-button disabled">Select a valid Squad </div>)}
                             {team.match_day == 7 && (<div className="check-table">League Table <i className="fa-solid fa-table"></i></div>)}
@@ -265,7 +275,8 @@ const TeamPage = () => {
                                 )}
                             </div>
                             <div className="points-div">
-                                <div className="text-info">Total Points</div>
+                                {team.match_day == 7 && (<div className="text-info">Final Points</div>)}
+                                {team.match_day  < 7 && (<div className="text-info">Total Points</div>)}
                                 <div className="numbers-info">{team.points}</div>
                             </div>
                             <div className="bank-div">
