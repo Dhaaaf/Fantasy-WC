@@ -7,6 +7,8 @@ const RESET_TEAM = "team/DELETE_TEAM"
 const ADD_BUDGET = "team/ADD_BUDGET"
 const REMOVE_BUDGET = "team/REMOVE/BUDGET"
 
+const EDIT_NEXT_MATCHDAY = "team/EDIT_NEXT_MATCHDAY"
+
 
 // ACTION
 
@@ -43,6 +45,12 @@ export const actionAddBudget = (value) => ({
 export const actionRemoveBudget = (value) => ({
     type: REMOVE_BUDGET,
     value
+})
+
+// EDIT NEXT MATCH DAY
+export const actionNextMatchDay = (team) => ({
+    type: EDIT_NEXT_MATCHDAY,
+    team
 })
 
 // // ADD PLAYER
@@ -92,6 +100,32 @@ export const thunkAddTeam = (payload) => async(dispatch) => {
     if (res.ok) {
         const data = await res.json()
         dispatch(actionAddTeam(data.team))
+        return data.team;
+    } else if (res.status < 500) {
+        const data = await res.json();
+        if (data.errors) {
+            return data.errors;
+        }
+    } else {
+        return ["An error occurred. Please try again."];
+    }
+}
+
+// EDIT
+
+export const thunkNextMatchDay = (payload) => async(dispatch) => {
+    const {teamId, teamPlayersIds, transfersLeft, bank} = payload
+    console.log("PAYLOAD ----->", payload)
+    const res = await fetch (`/api/user_teams/${teamId}/next_match`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({teamId, teamPlayersIds, transfersLeft, bank}),
+    });
+    if (res.ok) {
+        const data = await res.json()
+        dispatch(actionNextMatchDay(data.team))
         return data.team;
     } else if (res.status < 500) {
         const data = await res.json();

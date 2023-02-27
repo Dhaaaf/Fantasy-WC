@@ -30,7 +30,7 @@ export default function PlayerModal({team, player, teamPlayers}) {
     if (player.position === "DF" && teamDefense.length > 4) canTransfer = false
     if (player.position === "MF" && teamMidfield.length > 4) canTransfer = false
     if (player.position === "FW" && teamAttack.length > 2) canTransfer = false
-    if (team.bank < player.valye) canTransfer = false
+    if (team.bank < player.value) canTransfer = false
     if (teamPlayersIds.includes(player.id)) canTransfer = false
 
 

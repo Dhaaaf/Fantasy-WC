@@ -52,6 +52,26 @@
 
 .reset-button {
     cursor: pointer;
+    padding: 1px 6px;
+    border-radius: 5px;
+    background-color: #e3bc3f;
+    color: #37003c;
+    font-size: 15px;
+}
+
+.next-match-button {
+    cursor: pointer;
+    padding: 1px 6px;
+    border-radius: 5px;
+    background-color: #e3bc3f;
+    color: #37003c;
+    font-size: 15px;
+}
+
+.next-match-button.disabled {
+    cursor: default;
+    background-color: gray;
+    color: white;
 }
 
 .team-info-div {

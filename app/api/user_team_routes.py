@@ -42,6 +42,79 @@ def create_team(league_id):
     return {"team": team.to_dict()}, 201
 
 
+# NEXT MATCHDAY
+@user_team_routes.route("/<user_team_id>/next_match", methods=["PUT"])
+@login_required
+def next_match(user_team_id):
+    team_id = user_team_id
+    userId = int(current_user.id)
+    team = UserTeam.query.get(user_team_id)
+    if (team == None):
+        return {"errors": ["Team does not exist"]}, 404
+
+    if(team.user_id != userId):
+        return {"errors": ["This team doesn't belong to this user"]}, 403
+
+    res = request.get_json()
+    print("RES------->",res)
+    print("RES transfers------->",res["transfersLeft"])
+    print("RES playerIds------->",res["teamPlayersIds"])
+    print("RES playerIds------->",res["bank"])
+
+
+    #GET ALL CURRENT PLAYERS AND DELETE
+
+    print("Before DELETE ------>", team.players)
+
+
+    user_team_players = UserTeamPlayer.query.filter_by(user_team_id=team_id).all()
+    for user_team_player in user_team_players:
+        db.session.delete(user_team_player)
+        db.session.commit()
+
+    print("AFTER DELETE ------>", team.players)
+
+
+    #LOOP OVER ARRAY OF NEW PLAYERS AND ADD TO INSTANCE
+
+    for id in res["teamPlayersIds"]:
+        new_team_player = UserTeamPlayer(
+            user_team_id=team_id,
+            player_id=id
+            )
+        db.session.add(new_team_player)
+        db.session.commit()
+
+
+    
+
+    # NEW BANK
+
+    team.bank = res["bank"]
+    team.match_day = team.match_day + 1
+    db.session.commit()
+
+    # ADD POINTS
+
+    new_players = team.players
+    print("ALL NEW PLAYERS ---->", new_players)
+    add_points = 0
+    for player in team.players:
+        add_points += player.game_week_stats[team.match_day - 1].points
+
+    team.points += add_points
+    db.session.commit()
+
+    # CHECK FOR EXTRA TRANSFERS
+    if res["transfersLeft"] < 0:
+        subtract_points = res["transfersLeft"] * 4
+        team.points += subtract_points
+        db.session.commit()
+
+    return {"team": team.to_dict()}, 201
+
+
+
 # Delete Team
 @user_team_routes.route("/<user_team_id>", methods=["DELETE"])
 @login_required
@@ -51,6 +124,11 @@ def delete_team(user_team_id):
     team = UserTeam.query.get(user_team_id)
     if (team == None):
         return {"errors": ["Team does not exist"]}, 404
+
+    if(team.user_id != userId):
+        return {"errors": ["This team doesn't belong to this user"]}, 403
+
+    return {"team_deleted": user_team_id}
 
 
 
@@ -84,6 +162,7 @@ def add_player(user_team_id, player_id):
         user_team_id=user_team_id,
         player_id=player_id
     )
+
 
     return {"newPlayer": player.to_dict()}
 

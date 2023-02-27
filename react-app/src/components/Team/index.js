@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { thunkGetTeam, actionResetTeam } from"../../store/team"
+import { thunkGetTeam, actionResetTeam, thunkNextMatchDay } from"../../store/team"
 import { thunkGetPlayers, actionResetPlayers } from "../../store/players";
 import { thunkGetTeamPlayers, actionAddTeamPlayer, actionRemoveTeamPlayer, actionResetTeamPlayers } from "../../store/teamPlayers";
 import { NavLink, useHistory } from "react-router-dom";
@@ -56,7 +56,7 @@ const TeamPage = () => {
     // console.log("Players ------->", players)
 
 
-    
+
 
     //// TEAM PLAYERS
 
@@ -88,7 +88,7 @@ const TeamPage = () => {
 
 
 
-    // Transfer Counter
+    //// Transfer Counter
 
     let transfers
     if (team.match_day == 0) {
@@ -102,11 +102,12 @@ const TeamPage = () => {
         transfers = 3
     }
 
+    let teamPlayersIds
     let transfersMade = 0
     if (team && teamPlayersArray && team.players) {
         let dbPlayers = team.players
         let dbPlayersIds = dbPlayers.map(player => player.id)
-        let teamPlayersIds = teamPlayersArray.map(player => (player.id))
+        teamPlayersIds = teamPlayersArray.map(player => (player.id))
 
         // console.log("DB PLAYERS------>", dbPlayersIds)
         // console.log("COMPARING ARRAYS ------>", teamPlayersIds)
@@ -134,7 +135,7 @@ const TeamPage = () => {
     let defenders
     let midfielders
     let forwards
-    /// Sorting by position, and then sorting by value
+    //// Sorting by position, and then sorting by value
     if (players) {
         keepers = playersArray.filter (player => player.position == "GK")
         keepers.sort((a, b) => b.value - a.value);
@@ -177,12 +178,39 @@ const TeamPage = () => {
     }
 
 
-    ///// RESET TRANSFERS BUTTON
+    //// RESET TRANSFERS BUTTON
 
     const resetTransfers = () => {
         dispatch(thunkGetTeamPlayers(teamId))
         dispatch(thunkGetTeam(teamId))
     }
+
+
+    //// NEXT MATCHDAY
+
+    const nextMatchDay = async () => {
+        console.log("nextMatchDay stuff ----->", teamPlayersArray)
+        console.log("nextMatchDay stuff ----->", teamPlayersIds)
+        console.log("Transfers Left ---->", transfersLeft)
+
+        let bank =team.bank
+
+        let payload = {
+            teamId,
+            teamPlayersIds,
+            transfersLeft,
+            bank
+        }
+
+        dispatch(thunkNextMatchDay(payload)).
+        then(() => dispatch(thunkGetTeam(teamId)))
+    }
+
+    let canMoveNext = false
+    if (teamPlayersArray.length == 11 && team.match_day < 7) canMoveNext = true
+
+
+
 
 
   const closeMenu = () => setShowMenu(false);
@@ -204,7 +232,7 @@ const TeamPage = () => {
                         <div className="matchday-div">Round of 16</div>
                         )}
                         {team.match_day == 5 && (
-                        <div className="matchday-div">Quarter-Final {team.match_day}</div>
+                        <div className="matchday-div">Quarter-Final</div>
                         )}
                         {team.match_day == 6 && (
                         <div className="matchday-div">Semi-Final</div>
@@ -215,7 +243,8 @@ const TeamPage = () => {
                         <div className="team-name-div">
                             <div className="reset-button" onClick={() => resetTransfers()}> <i className="fa-solid fa-arrows-rotate"></i>  Reset Transfers</div>
                             <div className="team-name">{team.name}</div>
-                            <div className="next-match-button">Next Match Day  <i className="fa-solid fa-arrow-right"></i></div>
+                            {canMoveNext && (<div className="next-match-button" onClick={() => nextMatchDay()}>Next Match Day  <i className="fa-solid fa-arrow-right"></i></div>)}
+                            {!canMoveNext && (<div className="next-match-button disabled">Select a valid Squad </div>)}
                         </div>
                         <div className="team-info-div">
                             <div className="transfers-div">
