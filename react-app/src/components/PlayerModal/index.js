@@ -4,11 +4,13 @@ import { actionAddTeamPlayer, actionRemoveTeamPlayer } from "../../store/teamPla
 import { useModal } from "../../context/Modal";
 import "./PlayerModal.css"
 
-export default function PlayerModal({team, player}) {
+export default function PlayerModal({team, player, teamPlayers}) {
     const dispatch = useDispatch();
     const {closeModal} = useModal()
 
-    let teamPlayers = team.players
+    let teamPlayersArray = Object.values(teamPlayers)
+    let teamPlayersIds = teamPlayersArray.map(player => (player.id))
+    console.log("teamplayers ----->", teamPlayersIds)
 
     let matchDay = team.match_day
 
@@ -37,6 +39,7 @@ export default function PlayerModal({team, player}) {
                     {player.position == "FW" && (
                     <div className="player-modal-card-position">Forward</div>
                     )}
+                    <div className="player-modal-card-value">€{player.value} million</div>
                     {matchDay > 0 && (
                     <div className="player-modal-card-matchday-outer-div">
                         {matchDay < 4 && (
@@ -69,7 +72,15 @@ export default function PlayerModal({team, player}) {
                     )}
                 </div>
                 <div className="player-modal-card-tranfers">
-                    Transfer Button
+                    {teamPlayersIds.includes(player.id) && (
+                        <div className="transfer-button transfer-out"> Transfer Out</div>
+                    )}
+                    {!teamPlayersIds.includes(player.id) && teamPlayersArray.length < 11 && (
+                        <div className="transfer-button transfer-in"> Transfer In</div>
+                    )}
+                    {!teamPlayersIds.includes(player.id) && teamPlayersArray.length == 11 && (
+                        <div className="transfer-button-too-many-players">Can't have more than 11 players</div>
+                    )}
                 </div>
             </div>
         </div>

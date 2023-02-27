@@ -187,7 +187,7 @@ const TeamPage = () => {
                                         {/* <div className="team-11-player-name">{player.aka}</div> */}
                                         <div className="team-11-player-name">
                                             <OpenModalButton
-                                            modalComponent={<PlayerModal team={team} player={player} />}
+                                            modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
                                             buttonText={player.aka}
                                             onbuttonClick={closeMenu}
                                             />
@@ -209,7 +209,7 @@ const TeamPage = () => {
                                         {/* <div className="team-11-player-name">{player.aka}</div> */}
                                         <div className="team-11-player-name">
                                             <OpenModalButton
-                                            modalComponent={<PlayerModal team={team} player={player} />}
+                                            modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
                                             buttonText={player.aka}
                                             onbuttonClick={closeMenu}
                                             />
@@ -231,7 +231,7 @@ const TeamPage = () => {
                                         {/* <div className="team-11-player-name">{player.aka}</div> */}
                                         <div className="team-11-player-name">
                                             <OpenModalButton
-                                            modalComponent={<PlayerModal team={team} player={player} />}
+                                            modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
                                             buttonText={player.aka}
                                             onbuttonClick={closeMenu}
                                             />
@@ -253,7 +253,7 @@ const TeamPage = () => {
                                         {/* <div className="team-11-player-name">{player.aka}</div> */}
                                         <div className="team-11-player-name">
                                             <OpenModalButton
-                                            modalComponent={<PlayerModal team={team} player={player} />}
+                                            modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
                                             buttonText={player.aka}
                                             onbuttonClick={closeMenu}
                                             />
@@ -318,7 +318,7 @@ const TeamPage = () => {
                                     {/* <div className="player-name">{player.aka}</div> */}
                                     <div className="player-name">
                                     <OpenModalButton
-                                        modalComponent={<PlayerModal team={team} player={player} />}
+                                        modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
                                         buttonText={player.aka}
                                         onbuttonClick={closeMenu}
                                         />
@@ -339,7 +339,7 @@ const TeamPage = () => {
                                     {/* <div className="player-name">{player.aka}</div> */}
                                     <div className="player-name">
                                     <OpenModalButton
-                                        modalComponent={<PlayerModal team={team} player={player} />}
+                                        modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
                                         buttonText={player.aka}
                                         onbuttonClick={closeMenu}
                                         />
@@ -360,7 +360,7 @@ const TeamPage = () => {
                                     {/* <div className="player-name">{player.aka}</div> */}
                                     <div className="player-name">
                                     <OpenModalButton
-                                        modalComponent={<PlayerModal team={team} player={player} />}
+                                        modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
                                         buttonText={player.aka}
                                         onbuttonClick={closeMenu}
                                         />
@@ -381,7 +381,7 @@ const TeamPage = () => {
                                     {/* <div className="player-name">{player.aka}</div> */}
                                     <div className="player-name">
                                     <OpenModalButton
-                                        modalComponent={<PlayerModal team={team} player={player} />}
+                                        modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
                                         buttonText={player.aka}
                                         onbuttonClick={closeMenu}
                                         />
