@@ -24,7 +24,6 @@ const TeamPage = () => {
     const [filterMF, setfilterMF] = useState(false)
     const [filterFW, setfilterFW] = useState(true)
     const {leagueId, teamId} = useParams();
-    const league = leagues.filter(league => league.id = leagueId)
     let userId = user.id
 
     useEffect (() => {

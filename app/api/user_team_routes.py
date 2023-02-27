@@ -97,7 +97,7 @@ def next_match(user_team_id):
     # ADD POINTS
 
     new_players = team.players
-    print("ALL NEW PLAYERS ---->", new_players)
+    # print("ALL NEW PLAYERS ---->", new_players)
     add_points = 0
     for player in team.players:
         add_points += player.game_week_stats[team.match_day - 1].points
