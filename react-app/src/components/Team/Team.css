@@ -74,6 +74,15 @@
     color: white;
 }
 
+.check-table {
+    cursor: pointer;
+    padding: 1px 6px;
+    border-radius: 5px;
+    background-color: #e3bc3f;
+    color: #37003c;
+    font-size: 15px;
+}
+
 .team-info-div {
     display: flex;
     flex-direction: row;

@@ -24,6 +24,7 @@ const TeamPage = () => {
     const [filterMF, setfilterMF] = useState(false)
     const [filterFW, setfilterFW] = useState(true)
     const {leagueId, teamId} = useParams();
+    const league = leagues.filter(league => league.id = leagueId)
     let userId = user.id
 
     useEffect (() => {
@@ -101,6 +102,8 @@ const TeamPage = () => {
     if (team.match_day >= 4) {
         transfers = 3
     }
+
+    let zeroOrSeven = (team.match_day == 0 || team.match_day == 7)
 
     let teamPlayersIds
     let transfersMade = 0
@@ -244,12 +247,13 @@ const TeamPage = () => {
                             <div className="reset-button" onClick={() => resetTransfers()}> <i className="fa-solid fa-arrows-rotate"></i>  Reset Transfers</div>
                             <div className="team-name">{team.name}</div>
                             {canMoveNext && (<div className="next-match-button" onClick={() => nextMatchDay()}>Next Match Day  <i className="fa-solid fa-arrow-right"></i></div>)}
-                            {!canMoveNext && (<div className="next-match-button disabled">Select a valid Squad </div>)}
+                            {teamPlayersArray.length < 11 && (<div className="next-match-button disabled">Select a valid Squad </div>)}
+                            {team.match_day == 7 && (<div className="check-table">League Table <i className="fa-solid fa-table"></i></div>)}
                         </div>
                         <div className="team-info-div">
                             <div className="transfers-div">
                                 <div className="text-info">Transfers Left</div>
-                                {team.match_day == 0 ? (
+                                {zeroOrSeven ? (
                                     <div className="numbers-info"><i className="fa-solid fa-infinity"></i></div>
                                 ): (
                                     <div>
