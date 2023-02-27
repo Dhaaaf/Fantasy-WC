@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch} from "react-redux";
 import { actionAddTeamPlayer, actionRemoveTeamPlayer } from "../../store/teamPlayers";
+import { actionAddBudget, actionRemoveBudget } from "../../store/team";
 import { useModal } from "../../context/Modal";
 import "./PlayerModal.css"
 
@@ -17,6 +18,18 @@ export default function PlayerModal({team, player, teamPlayers}) {
 
 
     let playerMatchDayStats = player.stats[matchDay -1]
+
+    const transferIn = (player) => {
+        dispatch(actionAddTeamPlayer(player))
+        dispatch(actionRemoveBudget(player.value))
+        closeModal()
+    }
+
+    const transferOut = (player) => {
+        dispatch(actionRemoveTeamPlayer(player))
+        dispatch(actionAddBudget(player.value))
+        closeModal()
+    }
 
 
 
@@ -73,10 +86,10 @@ export default function PlayerModal({team, player, teamPlayers}) {
                 </div>
                 <div className="player-modal-card-tranfers">
                     {teamPlayersIds.includes(player.id) && (
-                        <div className="transfer-button transfer-out"> Transfer Out</div>
+                        <div className="transfer-button transfer-out" onClick={() => transferOut(player)}> Transfer Out</div>
                     )}
                     {!teamPlayersIds.includes(player.id) && teamPlayersArray.length < 11 && (
-                        <div className="transfer-button transfer-in"> Transfer In</div>
+                        <div className="transfer-button transfer-in" onClick={() => transferIn(player)}> Transfer In</div>
                     )}
                     {!teamPlayersIds.includes(player.id) && teamPlayersArray.length == 11 && (
                         <div className="transfer-button-too-many-players">Can't have more than 11 players</div>
@@ -85,18 +98,5 @@ export default function PlayerModal({team, player, teamPlayers}) {
             </div>
         </div>
     )
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
