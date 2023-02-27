@@ -16,7 +16,7 @@ const TeamPage = () => {
 	const user = useSelector((state) => state.session.user)
     const leagues = useSelector((state) => state.leagues)
     const players = useSelector((state) => state.players)
-  const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
     const team = useSelector((state) => state.team)
     const teamPlayers = useSelector((state) => state.teamPlayers)
     const [filterGK, setfilterGK] = useState(false)
@@ -54,6 +54,9 @@ const TeamPage = () => {
 
     // console.log("TEAM ------->", team)
     // console.log("Players ------->", players)
+
+
+    
 
     //// TEAM PLAYERS
 

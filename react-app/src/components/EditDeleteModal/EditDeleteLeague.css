@@ -80,10 +80,12 @@ label {
 #edit-league-button {
     padding: 5px;
     cursor: pointer;
+    width: 130px;
 }
 
 #delete-league-button {
     margin-bottom: 20px;
     cursor: pointer;
     padding: 8px;
+    width: 130px;
 }
