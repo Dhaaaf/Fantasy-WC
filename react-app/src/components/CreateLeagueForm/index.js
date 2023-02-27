@@ -24,7 +24,7 @@ export default function CreateLeague() {
     const [is2010, setis2010] = useState(true)
     const [is2006, setis2006] = useState(true)
     const [is2002, setis2002] = useState(true)
-    const [is1998, setis1998] = useState(true)
+    // const [is1998, setis1998] = useState(true)
 	const [errors, setErrors] = useState([]);
     const { closeModal } = useModal();
 
@@ -53,15 +53,20 @@ export default function CreateLeague() {
             errorsArray.push("Please set a display picture")
         }
 
-        if (errorsArray.length > 0) setErrors(errorsArray)
-
         if (is2022) tournaments.push(1)
         if (is2018) tournaments.push(2)
         if (is2014) tournaments.push(3)
         if (is2010) tournaments.push(4)
         if (is2006) tournaments.push(5)
         if (is2002) tournaments.push(6)
-        if (is1998) tournaments.push(7)
+        // if (is1998) tournaments.push(7)
+
+        if (tournaments.length == 0) {
+            errorsArray.push("Please select atleast one tournament")
+        }
+
+
+        if (errorsArray.length > 0) setErrors(errorsArray)
 
         if (errorsArray.length == 0) {
             dispatch(thunkAddLeague({name, display_pic, team_budget, is_private, tournaments}));
@@ -227,7 +232,7 @@ export default function CreateLeague() {
 						</div>
         		    </div>
 
-                    <div className="entries">
+                    {/* <div className="entries">
                         <div className="form-label">
                             <label htmlFor="is1998" className="is1998">1998 World Cup</label>
                         </div>
@@ -240,7 +245,7 @@ export default function CreateLeague() {
                         <div className="CreateLeagueForm-switch">
 							<div></div>
 						</div>
-        		    </div>
+        		    </div> */}
 
                     <div className="form-button">
 					    <button type="submit" className="submit-button" id="create-league-button">Create League</button>

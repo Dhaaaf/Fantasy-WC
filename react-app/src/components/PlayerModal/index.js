@@ -9,11 +9,33 @@ export default function PlayerModal({team, player, teamPlayers}) {
     const dispatch = useDispatch();
     const {closeModal} = useModal()
 
+    // Team Player sorting, etc
+
     let teamPlayersArray = Object.values(teamPlayers)
     let teamPlayersIds = teamPlayersArray.map(player => (player.id))
-    console.log("teamplayers ----->", teamPlayersIds)
+
+    let teamKeeper = teamPlayersArray.filter(player => player.position == "GK")
+    let teamDefense = teamPlayersArray.filter(player => player.position == "DF")
+    let teamMidfield = teamPlayersArray.filter(player => player.position == "MF")
+    let teamAttack = teamPlayersArray.filter(player => player.position == "FW")
 
     let matchDay = team.match_day
+
+
+
+    // Transfer conditionals
+    let canTransfer = true
+    if (teamPlayersArray.length >10) canTransfer = false
+    if (player.position === "GK" && teamKeeper.length == 1) canTransfer = false
+    if (player.position === "DF" && teamDefense.length > 4) canTransfer = false
+    if (player.position === "MF" && teamMidfield.length > 4) canTransfer = false
+    if (player.position === "FW" && teamAttack.length > 2) canTransfer = false
+    if (team.bank < player.valye) canTransfer = false
+    if (teamPlayersIds.includes(player.id)) canTransfer = false
+
+
+    let playerInTeam = false
+    if(teamPlayersIds.includes(player.id)) playerInTeam = true
 
 
 
@@ -88,11 +110,26 @@ export default function PlayerModal({team, player, teamPlayers}) {
                     {teamPlayersIds.includes(player.id) && (
                         <div className="transfer-button transfer-out" onClick={() => transferOut(player)}> Transfer Out</div>
                     )}
-                    {!teamPlayersIds.includes(player.id) && teamPlayersArray.length < 11 && (
+                    {canTransfer && (
                         <div className="transfer-button transfer-in" onClick={() => transferIn(player)}> Transfer In</div>
                     )}
-                    {!teamPlayersIds.includes(player.id) && teamPlayersArray.length == 11 && (
+                    {/* {!canTransfer && !playerInTeam && teamPlayersArray.length == 11 && (
                         <div className="transfer-button-too-many-players">Can't have more than 11 players</div>
+                    )} */}
+                    {!canTransfer && !playerInTeam && player.position == "GK" && teamKeeper.length == 1 && (
+                        <div className="transfer-button-too-many-players">Can't have more than 1 keeper</div>
+                    )}
+                    {!canTransfer && !playerInTeam && player.position == "DF" && teamDefense.length == 5 && (
+                        <div className="transfer-button-too-many-players">Can't have more than 5 defenders</div>
+                    )}
+                    {!canTransfer  && !playerInTeam && player.position == "MF" && teamMidfield.length == 5 && (
+                        <div className="transfer-button-too-many-players">Can't have more than 5 midfielders</div>
+                    )}
+                    {!canTransfer  && !playerInTeam && player.position == "FW" && teamAttack.length == 3 && (
+                        <div className="transfer-button-too-many-players">Can't have more than 3 forwards</div>
+                    )}
+                    {!canTransfer  && !playerInTeam && team.bank < player.value && (
+                        <div className="transfer-button-too-many-players">Can't afford player</div>
                     )}
                 </div>
             </div>
