@@ -4,6 +4,8 @@ const EDIT_TEAM = "team/EDIT_TEAM"
 // const ADD_PLAYER = "team/ADD_PLAYER";
 // const REMOVE_PLAYER = "team/REMOVE_PLAYER";
 const RESET_TEAM = "team/DELETE_TEAM"
+const ADD_BUDGET = "team/ADD_BUDGET"
+const REMOVE_BUDGET = "team/REMOVE/BUDGET"
 
 
 // ACTION
@@ -29,6 +31,18 @@ export const actionEditTeam = (team) => ({
 // DELETE
 export const actionResetTeam = () => ({
     type: RESET_TEAM
+})
+
+// ADD BUDGET
+export const actionAddBudget = (value) => ({
+    type: ADD_BUDGET,
+    value
+})
+
+// Remove BUDGET
+export const actionRemoveBudget = (value) => ({
+    type: REMOVE_BUDGET,
+    value
 })
 
 // // ADD PLAYER
@@ -104,6 +118,16 @@ export default function reducer(state = initialState, action) {
             let newState = { ...state };
 			newState = action.team;
 			return newState;
+        }
+        case ADD_BUDGET: {
+            let newState = { ...state };
+            newState.bank += action.value
+            return newState
+        }
+        case REMOVE_BUDGET: {
+            let newState = { ...state };
+            newState.bank -= action.value
+            return newState
         }
 		case RESET_TEAM: {
 			return {};

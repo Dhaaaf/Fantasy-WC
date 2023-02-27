@@ -6,6 +6,7 @@ import { thunkGetTeamPlayers, actionAddTeamPlayer, actionRemoveTeamPlayer, actio
 import { NavLink, useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import OpenModalButton from "../OpenModalButton";
+import PlayerModal from "../PlayerModal";
 
 import "./Team.css"
 
@@ -15,6 +16,7 @@ const TeamPage = () => {
 	const user = useSelector((state) => state.session.user)
     const leagues = useSelector((state) => state.leagues)
     const players = useSelector((state) => state.players)
+  const [showMenu, setShowMenu] = useState(false);
     const team = useSelector((state) => state.team)
     const teamPlayers = useSelector((state) => state.teamPlayers)
     const [filterGK, setfilterGK] = useState(false)
@@ -73,13 +75,44 @@ const TeamPage = () => {
         teamAttack = teamPlayersArray.filter(player => player.position == "FW")
     }
 
+    // console.log("TEAMPLAYERS =======>", teamPlayersArray)
+    // console.log("TEAMPLAYERS =======>", teamKeeper)
+    // console.log("TEAMPLAYERS =======>", teamDefense)
+    // console.log("TEAMPLAYERS =======>", teamMidfield)
+    // console.log("TEAMPLAYERS =======>", teamAttack)
 
 
 
 
 
+    // Transfer Counter
 
+    let transfers
+    if (team.match_day == 0) {
+        transfers = 9999999999999
+    }
+    if (team.match_day < 4 && team.match_day > 0) {
+        transfers = 2
+    }
 
+    if (team.match_day >= 4) {
+        transfers = 3
+    }
+
+    let transfersMade = 0
+    if (team && teamPlayersArray && team.players) {
+        let dbPlayers = team.players
+        let dbPlayersIds = dbPlayers.map(player => player.id)
+        let teamPlayersIds = teamPlayersArray.map(player => (player.id))
+
+        // console.log("DB PLAYERS------>", dbPlayersIds)
+        // console.log("COMPARING ARRAYS ------>", teamPlayersIds)
+
+        const diff = teamPlayersIds.filter(id => !dbPlayersIds.includes(id));
+        transfersMade = diff.length
+    }
+
+    let transfersLeft = transfers - transfersMade
 
 
 
@@ -109,11 +142,6 @@ const TeamPage = () => {
         forwards = playersArray.filter (player => player.position == "FW")
         forwards.sort((a, b) => b.value - a.value);
     }
-
-    // console.log ("GK ----->", keepers)
-    // console.log ("DF ----->", defenders)
-    // console.log ("MF ----->", midfielders)
-    // console.log ("FW ----->", forwards)
 
     //// FILTERING PLAYERS BY POSITION
 
@@ -145,6 +173,17 @@ const TeamPage = () => {
         setfilterGK(true)
     }
 
+
+    ///// RESET TRANSFERS BUTTON
+
+    const resetTransfers = () => {
+        dispatch(thunkGetTeamPlayers(teamId))
+        dispatch(thunkGetTeam(teamId))
+    }
+
+
+  const closeMenu = () => setShowMenu(false);
+
     return (
         user &&
         team &&
@@ -152,16 +191,43 @@ const TeamPage = () => {
             <div className="game-page-container">
                 <div className="team-div">
                     <div className="team-header">
-                        <div className="matchday-div">
-                            Matchday {team.match_day}
-                        </div>
+                        {team.match_day === 0 && (
+                        <div className="matchday-div">Select Squad</div>
+                        )}
+                        {team.match_day < 4 && team.match_day !== 0 && (
+                        <div className="matchday-div">Matchday {team.match_day}</div>
+                        )}
+                        {team.match_day == 4 && (
+                        <div className="matchday-div">Round of 16</div>
+                        )}
+                        {team.match_day == 5 && (
+                        <div className="matchday-div">Quarter-Final {team.match_day}</div>
+                        )}
+                        {team.match_day == 6 && (
+                        <div className="matchday-div">Semi-Final</div>
+                        )}
+                        {team.match_day == 7 && (
+                        <div className="matchday-div">Final</div>
+                        )}
                         <div className="team-name-div">
-                            {team.name}
+                            <div className="reset-button" onClick={() => resetTransfers()}> <i className="fa-solid fa-arrows-rotate"></i>  Reset Transfers</div>
+                            <div className="team-name">{team.name}</div>
+                            <div className="next-match-button">Next Match Day  <i className="fa-solid fa-arrow-right"></i></div>
                         </div>
                         <div className="team-info-div">
                             <div className="transfers-div">
-                                <div className="text-info">Transfers</div>
-                                <div className="numbers-info">X</div>
+                                <div className="text-info">Transfers Left</div>
+                                {team.match_day == 0 ? (
+                                    <div className="numbers-info"><i className="fa-solid fa-infinity"></i></div>
+                                ): (
+                                    <div>
+                                        {transfersLeft >= 0 ? (
+                                            <div className="numbers-info">{transfersLeft}</div>
+                                        ) : (
+                                            <div className="numbers-info red">{transfersLeft}</div>
+                                        )}
+                                    </div>
+                                )}
                             </div>
                             <div className="points-div">
                                 <div className="text-info">Total Points</div>
@@ -179,7 +245,14 @@ const TeamPage = () => {
                                 teamKeeper.map(player => (
                                     <div key={player.id} className="team-11-player-card team-11-keeper">
                                         <img src={player.picture} className="team-11-player-img"></img>
-                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {/* <div className="team-11-player-name">{player.aka}</div> */}
+                                        <div className="team-11-player-name">
+                                            <OpenModalButton
+                                            modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
+                                            buttonText={player.aka}
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
                                         {team.match_day > 0 ? (
                                             <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
                                         ) : (
@@ -194,7 +267,14 @@ const TeamPage = () => {
                                 teamDefense.map(player => (
                                     <div key={player.id} className="team-11-player-card team-11-keeper">
                                         <img src={player.picture} className="team-11-player-img"></img>
-                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {/* <div className="team-11-player-name">{player.aka}</div> */}
+                                        <div className="team-11-player-name">
+                                            <OpenModalButton
+                                            modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
+                                            buttonText={player.aka}
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
                                         {team.match_day > 0 ? (
                                             <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
                                         ) : (
@@ -209,7 +289,14 @@ const TeamPage = () => {
                                 teamMidfield.map(player => (
                                     <div key={player.id} className="team-11-player-card team-11-keeper">
                                         <img src={player.picture} className="team-11-player-img"></img>
-                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {/* <div className="team-11-player-name">{player.aka}</div> */}
+                                        <div className="team-11-player-name">
+                                            <OpenModalButton
+                                            modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
+                                            buttonText={player.aka}
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
                                         {team.match_day > 0 ? (
                                             <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
                                         ) : (
@@ -224,7 +311,14 @@ const TeamPage = () => {
                                 teamAttack.map(player => (
                                     <div key={player.id} className="team-11-player-card team-11-keeper">
                                         <img src={player.picture} className="team-11-player-img"></img>
-                                        <div className="team-11-player-name">{player.aka}</div>
+                                        {/* <div className="team-11-player-name">{player.aka}</div> */}
+                                        <div className="team-11-player-name">
+                                            <OpenModalButton
+                                            modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
+                                            buttonText={player.aka}
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
                                         {team.match_day > 0 ? (
                                             <div className="team-11-player-value">{player.stats[team.match_day -1].points} points</div>
                                         ) : (
@@ -282,7 +376,14 @@ const TeamPage = () => {
                             <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
-                                    <div className="player-name">{player.aka}</div>
+                                    {/* <div className="player-name">{player.aka}</div> */}
+                                    <div className="player-name">
+                                    <OpenModalButton
+                                        modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
+                                        buttonText={player.aka}
+                                        onbuttonClick={closeMenu}
+                                        />
+                                    </div>
                                     <div className="player-year">{player.year}</div>
                                 </div>
                                 <div className="player-value">€ {player.value}</div>
@@ -296,7 +397,14 @@ const TeamPage = () => {
                             <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
-                                    <div className="player-name">{player.aka}</div>
+                                    {/* <div className="player-name">{player.aka}</div> */}
+                                    <div className="player-name">
+                                    <OpenModalButton
+                                        modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
+                                        buttonText={player.aka}
+                                        onbuttonClick={closeMenu}
+                                        />
+                                    </div>
                                     <div className="player-year">{player.year}</div>
                                 </div>
                                 <div className="player-value">€ {player.value}</div>
@@ -310,7 +418,14 @@ const TeamPage = () => {
                             <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
-                                    <div className="player-name">{player.aka}</div>
+                                    {/* <div className="player-name">{player.aka}</div> */}
+                                    <div className="player-name">
+                                    <OpenModalButton
+                                        modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
+                                        buttonText={player.aka}
+                                        onbuttonClick={closeMenu}
+                                        />
+                                    </div>
                                     <div className="player-year">{player.year}</div>
                                 </div>
                                 <div className="player-value">€ {player.value}</div>
@@ -324,7 +439,14 @@ const TeamPage = () => {
                             <div key={player.id} className="player-list-item">
                                 <img src={player.picture} className="player-img"></img>
                                 <div className="name-year-div">
-                                    <div className="player-name">{player.aka}</div>
+                                    {/* <div className="player-name">{player.aka}</div> */}
+                                    <div className="player-name">
+                                    <OpenModalButton
+                                        modalComponent={<PlayerModal team={team} player={player} teamPlayers={teamPlayers} />}
+                                        buttonText={player.aka}
+                                        onbuttonClick={closeMenu}
+                                        />
+                                    </div>
                                     <div className="player-year">{player.year}</div>
                                 </div>
                                 <div className="player-value">€ {player.value}</div>

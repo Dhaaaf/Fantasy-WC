@@ -34,11 +34,24 @@
 }
 
 .team-name-div {
-    font-size: 24px;
     color: #37003c;
     border-bottom: 1px solid #37003c;
     width: 90%;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-name {
+    font-size: 24px;
+    color: #37003c;
+    text-align: center;
+}
+
+.reset-button {
+    cursor: pointer;
 }
 
 .team-info-div {
@@ -58,6 +71,10 @@
     font-size: 20px;
     font-weight: bold;
     color: #e3bc3f;
+}
+
+.numbers-info.red {
+    color: red;
 }
 
 .transfers-div{
@@ -141,6 +158,15 @@
     color: white;
     font-size: 12px;
     width: 100px;
+}
+
+.team-11-player-name > button {
+    background-color: #37003c;
+    color: white;
+    font-size: 12px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
 }
 
 .team-11-player-value {
@@ -252,6 +278,15 @@
 .player-name {
     padding-right: 10px;
     font-size: 100%;
+}
+
+.player-name > button {
+    padding-right: 10px;
+    font-size: 100%;
+    border: none;
+    background-color: white;
+    color: #37003c;
+    cursor: pointer;
 }
 
 @media (max-width: 880px) {
