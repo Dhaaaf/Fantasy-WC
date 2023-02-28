@@ -49,6 +49,11 @@ function ProfileButton({ user }) {
     history.push(`/leagues`)
   }
 
+
+  const handlePlay = () => {
+    history.push('/leagues')
+  }
+
   const ulClassName = "profile-dropdown" + (showMenu ? "" : " hidden");
   const closeMenu = () => setShowMenu(false);
 
@@ -64,7 +69,7 @@ function ProfileButton({ user }) {
 
                 <div className="profile-info-actions">
                     <p id="username">{user.username}</p>
-                    <p id="profile-email">{user.email}</p>
+                    <p id="profile-play">Play</p>
                     <button onClick={handleLogout} className='fantasywc-button' id='logout-button'>Log Out</button>
                 </div>
 

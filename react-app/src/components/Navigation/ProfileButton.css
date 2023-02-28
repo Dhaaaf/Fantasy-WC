@@ -72,10 +72,18 @@
     background-color: #37003c;
     border: none;
     border-radius: 5px;
+    height: 100%;
+    padding: 20px 10px;
 }
 
 .log-in-sign-up > div > button:hover {
-    background-color: rgba(165, 165, 165, 0.1);
+    /* background-color: rgba(165, 165, 165, 0.1); */
+    background-color: #e3bc3f;
+    color: #37003c;
+    border-radius: 0px;
+    width: 100%;
+    margin: 0px;
+    padding-left: 10px;
 }
 
 
@@ -126,9 +134,16 @@
     border-bottom: 1px solid #e3bc3f;
 }
 
-#profile-email {
+#profile-play {
     padding: 10px 0;
     border-bottom: 1px solid #e3bc3f;
+}
+
+#profile-play:hover {
+    padding: 10px 0;
+    border-bottom: 1px solid #e3bc3f;
+    background-color: #e3bc3f;
+    color: #37003c;
 }
 
 #demo-user-button {
@@ -141,11 +156,13 @@
     text-align: left;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
 }
 
 #demo-user-button:hover {
-    background-color: #37003c;
-    color: #e3bc3f;
+    background-color: #e3bc3f;
+    color: #37003c;
+    border-radius: 0px;
 }
 
 
@@ -159,7 +176,10 @@
 }
 
 #logout-button:hover {
-    color: #e3bc3f;
+    /* color: #e3bc3f; */
+    background-color: #e3bc3f;
+    color: #37003c;
+    border-radius: 0;
 }
 
 .fantasywc-button {

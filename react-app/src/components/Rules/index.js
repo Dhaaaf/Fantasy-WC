@@ -12,8 +12,8 @@ export default function Rules() {
                 <h2 className="rules-leagues">Leagues</h2>
                 <p>1. Managers can join leagues where they may create their squads and compete</p>
                 <p>2. Managers can select players from past world cups, and gain points based on their players' historical performances</p>
-                <p>3. Each League is unique, and it can determine which tournaments players may be selected from and the budget for making a team</p>
-                <p>4. Managers may also create custom and / or private leagues</p>
+                <p>3. Each League is unique, and determines which tournaments players may be selected from and the budget for making a team</p>
+                <p>4. Managers may also create custom and private leagues</p>
             </div>
             <div className="rules-teams-div">
                 <h2 className="rules-teams">Teams</h2>

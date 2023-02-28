@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import LeaguesIndex from "./components/Leagues";
 import TeamPage from "./components/Team";
+import { SplashPage } from "./components/SplashPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -21,6 +22,9 @@ function App() {
       <Navigation isLoaded={isLoaded} />
       {isLoaded && (
         <Switch>
+          <Route exact path="/">
+            <SplashPage />
+          </Route>
           <Route path="/login" >
             <LoginFormPage />
           </Route>
