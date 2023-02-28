@@ -58,6 +58,20 @@ function OpenModalButton({
     );
   }
 
+  if (buttonText === "leaderboard") {
+    // console.log("button text");
+    return (
+      <button
+        onClick={onClick}
+        className={`OpenModalButton-button ${buttonText}`}
+      >
+        <div className="league-leaderboard-button">
+          Leaderboard  <i className="fa-solid fa-table"></i>
+        </div>
+      </button>
+    );
+  }
+
 
 
   return (

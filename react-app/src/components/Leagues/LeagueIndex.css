@@ -69,7 +69,7 @@
     align-items: center;
     color: white;
     font-size: 12px;
-    height: 170px;
+    height: 210px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -198,6 +198,27 @@
     border-radius: 5px;
     color:#37003c;
     height: 30px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    padding: 0px 20px;
+    align-self: center;
+}
+
+.compete {
+    border-bottom: 1px solid white;
+    text-align: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.league-leaderboard > button {
+    border: none;
+    background-color: #e3bc3f;
+    border-radius: 5px;
+    color:#37003c;
+    height: 25px;
     margin-bottom: 8px;
     cursor: pointer;
     padding: 0px 20px;

@@ -14,6 +14,7 @@ import TournamentsList from "./tournamentsList";
 import CreateLeague from "../CreateLeagueForm";
 import EditDeleteLeagueModal from "../EditDeleteModal";
 import CreateTeam from "../Team/CreateTeamForm";
+import LeagueLeaderboard from "../LeagueLeaderboard";
 
 const LeaguesIndex = () => {
     let dispatch = useDispatch();
@@ -91,9 +92,19 @@ const LeaguesIndex = () => {
 
 
                                         <div className="compete">
+                                            <div></div>
                                         <OpenModalButton
                                             modalComponent={<CreateTeam league={league} />}
                                             buttonText="Kick-off"
+                                            onbuttonClick={closeMenu}
+                                            />
+                                            <div></div>
+                                        </div>
+
+                                        <div className="league-leaderboard">   
+                                        <OpenModalButton
+                                            modalComponent={<LeagueLeaderboard league={league} />}
+                                            buttonText="leaderboard"
                                             onbuttonClick={closeMenu}
                                             />
                                         </div>
@@ -120,9 +131,19 @@ const LeaguesIndex = () => {
                                             />
                                         </div>
                                         <div className="compete">
+                                            <div></div>
                                         <OpenModalButton
                                             modalComponent={<CreateTeam league={league} />}
                                             buttonText="Kick-off"
+                                            onbuttonClick={closeMenu}
+                                            />
+                                            <div></div>
+                                        </div>
+
+                                        <div className="league-leaderboard">   
+                                        <OpenModalButton
+                                            modalComponent={<LeagueLeaderboard league={league} />}
+                                            buttonText="leaderboard"
                                             onbuttonClick={closeMenu}
                                             />
                                         </div>
