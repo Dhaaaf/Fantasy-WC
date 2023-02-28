@@ -7,7 +7,14 @@
     width: 400px;
 }
 
-.errors {
+.errors.form-errors {
+    list-style-type: none;
+    /* font-size: 12px; */
+    padding: 2px;
+    color: red
+}
+
+#errors {
     list-style-type: none;
     /* font-size: 12px; */
     padding: 2px;

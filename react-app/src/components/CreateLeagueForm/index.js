@@ -82,7 +82,7 @@ export default function CreateLeague() {
                     <div className="form-title">Create League</div>
                 </div>
                 <form onSubmit={handleSubmit}>
-                    <ul className="errors">
+                    <ul className="errors form-errors" id="errors">
                         {errors.map((error, idx) => (
                             <li key={idx}>{error}</li>
                         ))}

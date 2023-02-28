@@ -1,6 +1,6 @@
 .rules-outer-div {
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
