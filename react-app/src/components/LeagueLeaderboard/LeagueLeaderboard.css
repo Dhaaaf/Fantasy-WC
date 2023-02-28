@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-#modal-content {
+/* #modal-content {
     border-radius: 10px;
-}
+} */
 
 .leaderboard-inner-div {
     /* padding: 20px; */
@@ -22,6 +22,7 @@
     text-align: center;
     font-size: 24px;
     border-bottom: 1px solid #e3bc3f;
+    padding: 10px
 }
 
 .leaderboard-header{
@@ -36,6 +37,7 @@
 .leaderboard-footer {
     padding: 0px 10px;
     overflow-y: scroll;
+    height: 400px;
 }
 
 .no-teams {
@@ -75,6 +77,8 @@
     font-size: 15px;
     padding: 5px 0px;
     border-bottom: 0.5px solid #76767654;
+    align-items: center;
+    padding-left: 10px;
 }
 
 .team-name-manager {
