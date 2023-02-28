@@ -75,8 +75,7 @@ img {
     font-size: 16px;
 }
   
-.splash-body-footer-techstack > h3,
-  li {
+.tech-stack {
     color: white;
     font-size: 16px;
 }
