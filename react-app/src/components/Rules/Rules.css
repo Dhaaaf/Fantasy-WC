@@ -7,15 +7,16 @@
     background-color: #37003c;
     /* color: #e3bc3f; */
     color: white;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    /* padding-bottom: 25px;
+    padding-top: 25px; */
 }
 
 .rules-inner-div {
     overflow-y: scroll;
     overflow-wrap: normal;
-    width: 85%;
-    padding-left: 30px;
+    /* width: 100%; */
+    padding: 20px;
+    text-align: justify;
 }
 
 /* ::-webkit-scrollbar {

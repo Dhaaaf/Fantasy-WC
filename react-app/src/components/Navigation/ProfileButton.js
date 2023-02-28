@@ -69,7 +69,7 @@ function ProfileButton({ user }) {
 
                 <div className="profile-info-actions">
                     <p id="username">{user.username}</p>
-                    <p id="profile-play">Play</p>
+                    <p id="profile-play" onClick={() => handlePlay()}>Play</p>
                     <button onClick={handleLogout} className='fantasywc-button' id='logout-button'>Log Out</button>
                 </div>
 
