@@ -69,18 +69,6 @@
     width: 15%;
 }
 
-/* .leaderboard-team-standings {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 15px;
-    padding: 5px 0px;
-    border-bottom: 0.5px solid #76767654;
-    align-items: center;
-    padding-left: 10px;
-} */
-
 .leaderboard-team-standings {
     display: flex;
     flex-direction: row;
@@ -90,6 +78,19 @@
     border-bottom: 0.5px solid #76767654;
     align-items: center;
     padding: 5px 15px;
+}
+
+.leaderboard-team-standings.highlighted {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    border-bottom: 0.5px solid #76767654;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #37003c;
+    color: #e3bc3f;
 }
 
 .team-name-manager {

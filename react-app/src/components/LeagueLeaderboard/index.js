@@ -10,12 +10,6 @@ export default function LeagueLeaderboard({league}) {
 
     teams.sort((a,b) => b.points - a.points)
 
-    console.log(teams)
-
-
-
-
-
     return (
         <div className="leaderboard-outer-div">
             <div className="leaderboard-inner-div">
@@ -49,6 +43,4 @@ export default function LeagueLeaderboard({league}) {
             </div>
         </div>
     )
-
-
 }

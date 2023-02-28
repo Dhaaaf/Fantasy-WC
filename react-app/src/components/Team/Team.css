@@ -104,6 +104,17 @@
     /* color: #e3bc3f; */
 }
 
+.final-league-leaderboard > button {
+    cursor: pointer;
+    padding: 1px 6px;
+    border-radius: 5px;
+    background-color: #e3bc3f;
+    color: #37003c;
+    font-size: 15px;
+    border: none;
+    padding: 5px
+}
+
 .team-info-div {
     display: flex;
     flex-direction: row;

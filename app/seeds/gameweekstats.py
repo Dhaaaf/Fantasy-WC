@@ -1848,7 +1848,7 @@ def seed_game_week_stats():
         man_of_the_match=False,
     )
 
-    # Thomas Muller
+    # Thomas Muller - 2014
 
     gw183 = GameWeekStat (
         week=1,
@@ -1920,7 +1920,7 @@ def seed_game_week_stats():
         man_of_the_match=False,
     )
 
-    # Mirolsav Klose
+    # Mirolsav Klose - 2014
 
     gw190 = GameWeekStat (
         week=1,
@@ -2570,7 +2570,7 @@ def seed_game_week_stats():
         man_of_the_match=False,
     )
 
-    # Andres Iniesta
+    # Andres Iniesta - 2010
 
     gw253 = GameWeekStat (
         week=1,
@@ -2625,9 +2625,9 @@ def seed_game_week_stats():
     gw258 = GameWeekStat (
         week=6,
         player_id=37,
-        points=6,
+        points=3,
         goals=0,
-        assists=1,
+        assists=0,
         clean_sheet=True,
         man_of_the_match=False,
     )
@@ -3291,7 +3291,7 @@ def seed_game_week_stats():
         man_of_the_match=False,
     )
 
-    # Olivier Giroud
+    # Olivier Giroud - 2018
 
     gw323 = GameWeekStat (
         week=1,
