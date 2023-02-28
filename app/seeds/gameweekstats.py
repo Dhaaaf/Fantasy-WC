@@ -3507,6 +3507,510 @@ def seed_game_week_stats():
         man_of_the_match=True,
     )
 
+    # Buffon - 2006
+
+    gw344 = GameWeekStat (
+        week=1,
+        player_id=50,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw345 = GameWeekStat (
+        week=2,
+        player_id=50,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw346 = GameWeekStat (
+        week=3,
+        player_id=50,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw347 = GameWeekStat (
+        week=4,
+        player_id=50,
+        points=12,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw348 = GameWeekStat (
+        week=5,
+        player_id=50,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw349 = GameWeekStat (
+        week=6,
+        player_id=50,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw350 = GameWeekStat (
+        week=7,
+        player_id=50,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Zambrotta - 2006
+
+    gw351 = GameWeekStat (
+        week=1,
+        player_id=51,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw352 = GameWeekStat (
+        week=2,
+        player_id=51,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw353 = GameWeekStat (
+        week=3,
+        player_id=51,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw354 = GameWeekStat (
+        week=4,
+        player_id=51,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw355 = GameWeekStat (
+        week=5,
+        player_id=51,
+        points=15,
+        goals=1,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw356 = GameWeekStat (
+        week=6,
+        player_id=51,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw357 = GameWeekStat (
+        week=7,
+        player_id=51,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Fabio Grosso - 2006
+
+
+    gw358 = GameWeekStat (
+        week=1,
+        player_id=52,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw359 = GameWeekStat (
+        week=2,
+        player_id=52,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw360 = GameWeekStat (
+        week=3,
+        player_id=52,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw361 = GameWeekStat (
+        week=4,
+        player_id=52,
+        points=9,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw362 = GameWeekStat (
+        week=5,
+        player_id=52,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw363 = GameWeekStat (
+        week=6,
+        player_id=52,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw364 = GameWeekStat (
+        week=7,
+        player_id=52,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Fabio Cannavaro - 2006
+
+    gw365 = GameWeekStat (
+        week=1,
+        player_id=53,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw366 = GameWeekStat (
+        week=2,
+        player_id=53,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw367 = GameWeekStat (
+        week=3,
+        player_id=53,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw368 = GameWeekStat (
+        week=4,
+        player_id=53,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw369 = GameWeekStat (
+        week=5,
+        player_id=53,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw370 = GameWeekStat (
+        week=6,
+        player_id=53,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw371 = GameWeekStat (
+        week=7,
+        player_id=53,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Marco Materazzi 2006
+
+    gw372 = GameWeekStat (
+        week=1,
+        player_id=54,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw373 = GameWeekStat (
+        week=2,
+        player_id=54,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw374 = GameWeekStat (
+        week=3,
+        player_id=54,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw375 = GameWeekStat (
+        week=4,
+        player_id=54,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw376 = GameWeekStat (
+        week=5,
+        player_id=54,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw377 = GameWeekStat (
+        week=6,
+        player_id=54,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw378 = GameWeekStat (
+        week=7,
+        player_id=54,
+        points=8,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Gennaro Gattuso - 2006
+
+    gw379 = GameWeekStat (
+        week=1,
+        player_id=55,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw380 = GameWeekStat (
+        week=2,
+        player_id=55,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw381 = GameWeekStat (
+        week=3,
+        player_id=55,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw382 = GameWeekStat (
+        week=4,
+        player_id=55,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw383 = GameWeekStat (
+        week=5,
+        player_id=55,
+        points=9,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw384 = GameWeekStat (
+        week=6,
+        player_id=55,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw385 = GameWeekStat (
+        week=7,
+        player_id=55,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Andrea Pirlo - 2006
+
+    gw386 = GameWeekStat (
+        week=1,
+        player_id=56,
+        points=14,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw387 = GameWeekStat (
+        week=2,
+        player_id=56,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw388 = GameWeekStat (
+        week=3,
+        player_id=56,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw389 = GameWeekStat (
+        week=4,
+        player_id=56,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw390 = GameWeekStat (
+        week=5,
+        player_id=56,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw391 = GameWeekStat (
+        week=6,
+        player_id=56,
+        points=12,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw392 = GameWeekStat (
+        week=7,
+        player_id=56,
+        points=11,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
 
 
 
@@ -3856,6 +4360,55 @@ def seed_game_week_stats():
             gw341,
             gw342,
             gw343,
+            gw344,
+            gw345,
+            gw346,
+            gw347,
+            gw348,
+            gw349,
+            gw350,
+            gw351,
+            gw352,
+            gw353,
+            gw354,
+            gw355,
+            gw356,
+            gw357,
+            gw358,
+            gw359,
+            gw360,
+            gw361,
+            gw362,
+            gw363,
+            gw364,
+            gw365,
+            gw366,
+            gw367,
+            gw368,
+            gw369,
+            gw370,
+            gw371,
+            gw372,
+            gw373,
+            gw374,
+            gw375,
+            gw376,
+            gw377,
+            gw378,
+            gw379,
+            gw380,
+            gw381,
+            gw382,
+            gw383,
+            gw384,
+            gw385,
+            gw386,
+            gw387,
+            gw388,
+            gw389,
+            gw390,
+            gw391,
+            gw392,
 
         ]
     )

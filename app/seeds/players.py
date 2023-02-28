@@ -604,6 +604,92 @@ def seed_players():
         tournament_id=2
     )
 
+    # ITALY 2006
+
+    p50 = Player (
+        first_name="Gianluigi",
+        last_name="Buffon",
+        aka="Buffon",
+        picture="https://ichef.bbci.co.uk/images/ic/1920x1080/p067n1sc.jpg",
+        team="Italy",
+        year=2006,
+        position="GK",
+        value=6,
+        tournament_id=5
+    )
+
+    p51 = Player (
+        first_name="Gianluca",
+        last_name="Zambrotta",
+        aka="Zambrotta",
+        picture="https://worldfootballindex.com/wp-content/uploads/2020/03/gianluca-zambrotta.jpg",
+        team="Italy",
+        year=2006,
+        position="DF",
+        value=5,
+        tournament_id=5
+    )
+
+    p52 = Player (
+        first_name="Fabio",
+        last_name="Grosso",
+        aka="Grosso",
+        picture="https://storage.googleapis.com/afs-prod/media/570cf874393144188cf0c65e81a283d2/3000.jpeg",
+        team="Italy",
+        year=2006,
+        position="DF",
+        value=5,
+        tournament_id=5
+    )
+
+    p53 = Player (
+        first_name="Fabio",
+        last_name="Cannavaro",
+        aka="Cannavaro",
+        picture="https://sm.imgix.net/14/19/fabio-cannavaro.jpg?w=640&h=480&auto=compress,format&fit=clip",
+        team="Italy",
+        year=2006,
+        position="DF",
+        value=5,
+        tournament_id=5
+    )
+
+    p54 = Player (
+        first_name="Marco",
+        last_name="Materazzi",
+        aka="Materazzi",
+        picture="https://content.api.news/v3/images/bin/b1aa8a1c57e272196a35a0ffcbd429a2",
+        team="Italy",
+        year=2006,
+        position="DF",
+        value=5,
+        tournament_id=5
+    )
+
+    p55 = Player (
+        first_name="Gennaro",
+        last_name="Gattuso",
+        aka="Gattuso",
+        picture="https://pbs.twimg.com/media/ExGI3KHXAAUzQKI?format=jpg&name=4096x4096",
+        team="Italy",
+        year=2006,
+        position="MF",
+        value=5,
+        tournament_id=5
+    )
+
+    p56 = Player (
+        first_name="Andrea",
+        last_name="Pirlo",
+        aka="Pirlo",
+        picture="https://ichef.bbci.co.uk/images/ic/1920x1080/p05m62f4.jpg",
+        team="Italy",
+        year=2006,
+        position="MF",
+        value=5,
+        tournament_id=5
+    )
+
 
 
     db.session.add_all(
@@ -656,7 +742,14 @@ def seed_players():
             p46,
             p47,
             p48,
-            p49
+            p49,
+            p50,
+            p51,
+            p52,
+            p53,
+            p54,
+            p55,
+            p56
         ]
     )
     db.session.commit()
