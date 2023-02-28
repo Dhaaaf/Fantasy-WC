@@ -48,3 +48,11 @@
     width: 35%;
     color: #e3bc3f;
 }
+
+.exception-div {
+    border-top: 1px solid #e3bc3f;
+}
+
+.exception {
+    font-size: 10px;
+}
