@@ -53,12 +53,6 @@
     transition-duration: 0.3s;
 }
 
-#solid-bars {
-    margin-right: 7px;
-    color: gray;
-    font-size: 15px;
-}
-
 .dropdown-menu {
     width: 100%;
     height: inherit;
@@ -74,18 +68,30 @@
     transition-property: all;
     cursor: pointer;
     font-weight: bold;
-    background-color: #e3bc3f;
-    color: #001d3d;
+    color: #e3bc3f;
+    background-color: #37003c;
     border: none;
     border-radius: 5px;
-    border-bottom: 2px solid rgba(165, 165, 165, 0.2);
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.log-in-sign-up > div > button:hover {
+    /* background-color: rgba(165, 165, 165, 0.1); */
+    background-color: #e3bc3f;
+    color: #37003c;
+    border-radius: 0px;
+    width: 100%;
+    margin: 0px;
+    padding-left: 10px;
 }
 
 
 #sign-up-modal {
-    font-family: inherit;
-    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
     transition-property: all;
+    border-bottom: 1px solid #e3bc3f;
 }
 
 #sign-up-modal:hover {
@@ -95,10 +101,14 @@
 }
 
 #log-in-modal {
-    font-family: inherit;
-    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
     transition-property: all;
-    border-bottom: 2px solid rgba(165, 165, 165, 0.2);
+    border-bottom: 1px solid #e3bc3f;
+}
+
+#sign-up-modal:hover {
+    background-color: rgba(165, 165, 165, 0.1);
 }
 
 #log-in-modal:hover {
@@ -124,24 +134,35 @@
     border-bottom: 1px solid #e3bc3f;
 }
 
-#profile-email {
+#profile-play {
     padding: 10px 0;
     border-bottom: 1px solid #e3bc3f;
 }
 
+#profile-play:hover {
+    padding: 10px 0;
+    border-bottom: 1px solid #e3bc3f;
+    background-color: #e3bc3f;
+    color: #37003c;
+}
+
 #demo-user-button {
     /* margin-top: 5px; */
-    background-color: #e3bc3f;
+    background-color: #37003c;
     /* color: #001d3d; */
-    color: #37003c;
+    color: #e3bc3f;
     height: 25px;
     width: 100%;
     text-align: left;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
 }
 
 #demo-user-button:hover {
     background-color: #e3bc3f;
-    color: #001d3d;
+    color: #37003c;
+    border-radius: 0px;
 }
 
 
@@ -155,7 +176,10 @@
 }
 
 #logout-button:hover {
-    color: #e3bc3f;
+    /* color: #e3bc3f; */
+    background-color: #e3bc3f;
+    color: #37003c;
+    border-radius: 0;
 }
 
 .fantasywc-button {

@@ -1,0 +1,50 @@
+.rules-outer-div {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #37003c;
+    /* color: #e3bc3f; */
+    color: white;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.rules-inner-div {
+    overflow-y: scroll;
+    overflow-wrap: normal;
+    width: 85%;
+    padding-left: 30px;
+}
+
+/* ::-webkit-scrollbar {
+    width: 5px;
+    background-color: #e3bc3f;
+    padding-left: 10px;
+  } */
+
+.rules-title {
+    border-bottom: 1px solid #e3bc3f;
+    width: 35%;
+    color: #e3bc3f;
+    margin: 0px;
+}
+
+.rules-leagues {
+    border-bottom: 1px solid #e3bc3f;
+    width: 35%;
+    color: #e3bc3f;
+}
+
+.rules-teams {
+    border-bottom: 1px solid #e3bc3f;
+    width: 35%;
+    color: #e3bc3f;
+}
+
+.rules-scoring {
+    border-bottom: 1px solid #e3bc3f;
+    width: 35%;
+    color: #e3bc3f;
+}
