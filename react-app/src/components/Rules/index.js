@@ -33,6 +33,8 @@ export default function Rules() {
                 <p>5. Goalkeepers and Defenders get 4 points for keeping a clean sheet, and 6 points for scoring a goal</p>
                 <p>6. Midifelders get 5 points for a goal, and 1 point for keeping a clean sheet</p>
                 <p>7. Forwards get 4 points for scoring a goal, and 0 points for keeping a clean sheet</p>
+                <p>8. Players may be avoided assists for winning penalties that have been scored, or for a shot that lead directly to an own goal</p>
+                <p>9. Man of the match and assist statistics are harder to procure reliably the further back in time we go</p>
                 <p className="exception">* More players will continue to be added to the game. Gathering individual gameday stats is a time inducive, and error-prone process</p>
             </div>
         </div>
