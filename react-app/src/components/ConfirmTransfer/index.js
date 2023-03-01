@@ -1,11 +1,13 @@
 import { thunkNextMatchDay, thunkGetTeam } from "../../store/team";
 import { useModal } from "../../context/Modal";
 import { useDispatch} from "react-redux";
-import "./ConfirmTransfers.css"
+import "./ConfirmTransfer.css"
 
 export default function ConfirmTransfers({teamId, teamPlayersIds, transfersLeft, bank}) {
     const dispatch = useDispatch();
     const { closeModal } = useModal();
+
+    console.log("IN MODAL ----->", teamId, teamPlayersIds, transfersLeft, bank)
 
 
 
@@ -27,6 +29,20 @@ export default function ConfirmTransfers({teamId, teamPlayersIds, transfersLeft,
         then(() => closeModal())
     }
 
-
+    return (
+        <div className="confirm-transfers-div">
+            <div className="title">
+                <div className="form-title-confirm-transfers">Confirm transfers and calculate points?</div>
+            </div>
+            <div className="yes-no-div">
+                <div className="form-button">
+                    <button onClick={() => closeModal()} type="submit" className="confirm-transfers-button no">Cancel</button>
+                </div>
+                <div className="form-button">
+                    <button onClick={() => nextMatchDay()} type="submit" className="confirm-transfers-button yes">Yes</button>
+                </div>
+            </div>
+        </div>
+        )
 
 }

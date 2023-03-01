@@ -73,6 +73,19 @@ function OpenModalButton({
   }
 
 
+  if (buttonText === "next-match-day") {
+    // console.log("button text");
+    return (
+      <button
+        onClick={onClick}
+        className={`OpenModalButton-button ${buttonText}`}
+      >
+        <div className="next-matchday-button">
+        Next Match Day  <i className="fa-solid fa-arrow-right"></i>
+        </div>
+      </button>
+    );
+  }
 
   return (
     <button onClick={onClick}>{buttonText}</button>
