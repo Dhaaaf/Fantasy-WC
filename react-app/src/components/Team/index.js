@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 import OpenModalButton from "../OpenModalButton";
 import PlayerModal from "../PlayerModal";
 import EditDeleteTeam from "../TeamEditDelete";
+import FinalLeagueLeaderboard from "../LeagueLeaderboard/FinalLeagueLeaderboard";
 
 import "./Team.css"
 
@@ -257,7 +258,16 @@ const TeamPage = () => {
                             </div>
                             {canMoveNext && (<div className="next-match-button" onClick={() => nextMatchDay()}>Next Match Day  <i className="fa-solid fa-arrow-right"></i></div>)}
                             {teamPlayersArray.length < 11 && (<div className="next-match-button disabled">Select a valid Squad </div>)}
-                            {team.match_day == 7 && (<div className="check-table">League Table <i className="fa-solid fa-table"></i></div>)}
+                            {team.match_day == 7 && (
+                            // <div className="check-table">League Table <i className="fa-solid fa-table"></i></div>
+                            <div className="final-league-leaderboard">   
+                                        <OpenModalButton
+                                            modalComponent={<FinalLeagueLeaderboard leagueId={leagueId} team={team} />}
+                                            buttonText="leaderboard"
+                                            onbuttonClick={closeMenu}
+                                            />
+                                        </div>
+                            )}
                         </div>
                         <div className="team-info-div">
                             <div className="transfers-div">

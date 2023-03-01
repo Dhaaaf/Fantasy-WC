@@ -6,6 +6,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* #modal-content {
+    border-radius: 10px;
+    box-sizing: border-box;
+} */
+
 /* #root {
     background-image: url("./assets/ucl-background.png");
     background-position: center bottom;

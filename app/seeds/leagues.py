@@ -38,7 +38,7 @@ def seed_leagues():
     l5 = League (
         owner_id =2,
         name ="Money League",
-        display_pic ="https://img.freepik.com/free-photo/set-euro-currency-bills-isolated_1101-2388.jpg",
+        display_pic ="https://media.licdn.com/dms/image/C5112AQFj4FT9bK_p7w/article-cover_image-shrink_600_2000/0/1563191183154?e=2147483647&v=beta&t=emmTP6DImh71L4CWQy2X-wryBvdwROCqplBK0f2wG8Q",
         team_budget=200,
         is_private=True
     )

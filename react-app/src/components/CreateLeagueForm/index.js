@@ -59,6 +59,7 @@ export default function CreateLeague() {
         if (is2010) tournaments.push(4)
         if (is2006) tournaments.push(5)
         if (is2002) tournaments.push(6)
+        tournaments.push(7)
         // if (is1998) tournaments.push(7)
 
         if (tournaments.length == 0) {

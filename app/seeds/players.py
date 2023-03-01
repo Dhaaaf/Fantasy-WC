@@ -604,6 +604,311 @@ def seed_players():
         tournament_id=2
     )
 
+    # ITALY 2006
+
+    p50 = Player (
+        first_name="Gianluigi",
+        last_name="Buffon",
+        aka="Buffon",
+        picture="https://ichef.bbci.co.uk/images/ic/1920x1080/p067n1sc.jpg",
+        team="Italy",
+        year=2006,
+        position="GK",
+        value=6,
+        tournament_id=5
+    )
+
+    p51 = Player (
+        first_name="Gianluca",
+        last_name="Zambrotta",
+        aka="Zambrotta",
+        picture="https://worldfootballindex.com/wp-content/uploads/2020/03/gianluca-zambrotta.jpg",
+        team="Italy",
+        year=2006,
+        position="DF",
+        value=5,
+        tournament_id=5
+    )
+
+    p52 = Player (
+        first_name="Fabio",
+        last_name="Grosso",
+        aka="Grosso",
+        picture="https://storage.googleapis.com/afs-prod/media/570cf874393144188cf0c65e81a283d2/3000.jpeg",
+        team="Italy",
+        year=2006,
+        position="DF",
+        value=5,
+        tournament_id=5
+    )
+
+    p53 = Player (
+        first_name="Fabio",
+        last_name="Cannavaro",
+        aka="Cannavaro",
+        picture="https://sm.imgix.net/14/19/fabio-cannavaro.jpg?w=640&h=480&auto=compress,format&fit=clip",
+        team="Italy",
+        year=2006,
+        position="DF",
+        value=5,
+        tournament_id=5
+    )
+
+    p54 = Player (
+        first_name="Marco",
+        last_name="Materazzi",
+        aka="Materazzi",
+        picture="https://content.api.news/v3/images/bin/b1aa8a1c57e272196a35a0ffcbd429a2",
+        team="Italy",
+        year=2006,
+        position="DF",
+        value=5,
+        tournament_id=5
+    )
+
+    p55 = Player (
+        first_name="Gennaro",
+        last_name="Gattuso",
+        aka="Gattuso",
+        picture="https://pbs.twimg.com/media/ExGI3KHXAAUzQKI?format=jpg&name=4096x4096",
+        team="Italy",
+        year=2006,
+        position="MF",
+        value=5,
+        tournament_id=5
+    )
+
+    p56 = Player (
+        first_name="Andrea",
+        last_name="Pirlo",
+        aka="Pirlo",
+        picture="https://ichef.bbci.co.uk/images/ic/1920x1080/p05m62f4.jpg",
+        team="Italy",
+        year=2006,
+        position="MF",
+        value=5,
+        tournament_id=5
+    )
+
+    p57 = Player (
+        first_name="Francesco",
+        last_name="Totti",
+        aka="Totti",
+        picture="https://d3lbfr570u7hdr.cloudfront.net/stadiumastro/media/perform-article/2022/nov/18/francesco-totti_a8krog3voc1416uyfshrkdjsx.jpg",
+        team="Italy",
+        year=2006,
+        position="FW",
+        value=5,
+        tournament_id=5
+    )
+
+    p58 = Player (
+        first_name="Luca",
+        last_name="Toni",
+        aka="Toni",
+        picture="https://d3nfwcxd527z59.cloudfront.net/content/uploads/2020/11/15122720/luca-toni-italy.jpg",
+        team="Italy",
+        year=2006,
+        position="FW",
+        value=5,
+        tournament_id=5
+    )
+
+    p59 = Player (
+        first_name="Alessandro",
+        last_name="Del Piero",
+        aka="Del Piero",
+        picture="https://digitalhub.fifa.com/transform/6bab80b6-30ba-4ad7-9bf8-0231b0117ce3/2006_SF_GER_ITA_Del_Piero_120-1",
+        team="Italy",
+        year=2006,
+        position="FW",
+        value=5,
+        tournament_id=5
+    )
+
+    p60 = Player (
+        first_name="Zinedine",
+        last_name="Zidane",
+        aka="Zidane",
+        picture="https://i.guim.co.uk/img/media/f02d99c0c61e788e3b293f24b7c0872233e70252/0_23_2640_1584/master/2640.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=4b50e9068e2865bc5bcd3e3204e75307",
+        team="France",
+        year=2006,
+        position="MF",
+        value=5,
+        tournament_id=5
+    )
+
+    p61 = Player (
+        first_name="Marcos",
+        last_name="Roberto",
+        aka="Marcos",
+        picture="https://www.thesun.co.uk/wp-content/uploads/2022/06/NINTCHDBPICT000001881515.jpg",
+        team="Brazil",
+        year=2002,
+        position="GK",
+        value=5,
+        tournament_id=6
+    )
+
+    p62 = Player (
+        first_name="Marcos",
+        last_name="Cafu",
+        aka="Cafu",
+        picture="https://tmssl.akamaized.net/images/foto/galerie/cafu-mit-dem-wm-pokal-1589276246-38312.jpg?lm=1589276306",
+        team="Brazil",
+        year=2002,
+        position="DF",
+        value=5,
+        tournament_id=6
+    )
+
+    p63 = Player (
+        first_name="Roberto",
+        last_name="Carlos",
+        aka="R. Carlos",
+        picture="https://d3nfwcxd527z59.cloudfront.net/content/uploads/2020/06/13121742/Roberto-Carlos-Brazil-celebrates.jpg",
+        team="Brazil",
+        year=2002,
+        position="DF",
+        value=5,
+        tournament_id=6
+    )
+
+    p64 = Player (
+        first_name="José",
+        last_name="Edmílson",
+        aka="Edmílson",
+        picture="https://i.guim.co.uk/img/media/5df144ea612c25aebdad9138db3f9b8dcc19046c/0_133_2356_1415/master/2356.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=0b8d98b795bb07f25a0af28947e877d1",
+        team="Brazil",
+        year=2002,
+        position="DF",
+        value=5,
+        tournament_id=6
+    )
+
+    p65 = Player (
+        first_name="Lúcio",
+        last_name="da Silva",
+        aka="Lúcio",
+        picture="https://ronaldo.com/wp-content/uploads/2019/06/GettyImages-88729456.jpg",
+        team="Brazil",
+        year=2002,
+        position="DF",
+        value=5,
+        tournament_id=6
+    )
+
+    p66 = Player (
+        first_name="Roque",
+        last_name="Júnior",
+        aka="Roque .J",
+        picture="https://editorial01.shutterstock.com/preview-440/7434185ab/df88968a/Shutterstock_7434185ab.jpg",
+        team="Brazil",
+        year=2002,
+        position="DF",
+        value=5,
+        tournament_id=6
+    )
+
+    p67 = Player (
+        first_name="Gilberto",
+        last_name="Silva",
+        aka="G. Silva",
+        picture="https://images.beinsports.com/Q9_taZrBVESYf3o9pMLnxD8QbtY=/full-fit-in/1000x0/gilbertosilva-cropped_nzn8ij22jpvw1i2ov5s5gyabx.jpg",
+        team="Brazil",
+        year=2002,
+        position="MF",
+        value=5,
+        tournament_id=6
+    )
+
+    p68 = Player (
+        first_name="Juninho",
+        last_name="Paulista",
+        aka="Juninho",
+        picture="https://i0.wp.com/thesefootballtimes.co/wp-content/uploads/2018/01/juninho.jpg?fit=1600%2C1046&ssl=1",
+        team="Brazil",
+        year=2002,
+        position="MF",
+        value=5,
+        tournament_id=6
+    )
+
+    p69 = Player (
+        first_name="Ronaldinho",
+        last_name="Gaúcho",
+        aka="Ronaldinho",
+        picture="http://ronaldinho7.weebly.com/uploads/3/8/7/9/38795437/5508042_orig.jpg",
+        team="Brazil",
+        year=2002,
+        position="MF",
+        value=5,
+        tournament_id=6
+    )
+
+    p70 = Player (
+        first_name="Rivaldo",
+        last_name="Ferreira",
+        aka="Rivaldo",
+        picture="https://cdn.sportscroll.com/wp-content/uploads/2019/06/rivaldo-1.jpg",
+        team="Brazil",
+        year=2002,
+        position="FW",
+        value=5,
+        tournament_id=6
+    )
+
+    p71 = Player (
+        first_name="Miroslav",
+        last_name="Klose",
+        aka="Klose",
+        picture="https://digitalhub.fifa.com/transform/eeaa504b-fefd-4f29-8583-bc3fcd521984/2002_E_Klose_1-0_GER_IRL",
+        team="Germany",
+        year=2002,
+        position="FW",
+        value=5,
+        tournament_id=6
+    )
+
+    p72 = Player (
+        first_name="Miroslav",
+        last_name="Klose",
+        aka="Klose",
+        picture="https://footballwhispers.com/wp-content/uploads/2018/05/Klose-2006.jpg",
+        team="Germany",
+        year=2006,
+        position="FW",
+        value=5,
+        tournament_id=5
+    )
+
+    p73 = Player (
+        first_name="Michael",
+        last_name="Ballack",
+        aka="Balack",
+        picture="https://pbs.twimg.com/media/Dgs53G8WAAEERYJ.jpg:large",
+        team="Germany",
+        year=2002,
+        position="MF",
+        value=5,
+        tournament_id=6
+    )
+
+    p74 = Player (
+        first_name="Oliver",
+        last_name="Kahn",
+        aka="Kahn",
+        picture="https://digitalhub.fifa.com/transform/33f6020c-56f5-42d3-8ad8-cc93696910df/2002_KAHN_LEV_YASHIN_AWARD",
+        team="Germany",
+        year=2002,
+        position="GK",
+        value=5,
+        tournament_id=6
+    )
+
+
+
+
 
 
     db.session.add_all(
@@ -656,7 +961,32 @@ def seed_players():
             p46,
             p47,
             p48,
-            p49
+            p49,
+            p50,
+            p51,
+            p52,
+            p53,
+            p54,
+            p55,
+            p56,
+            p57,
+            p58,
+            p59,
+            p60,
+            p61,
+            p62,
+            p63,
+            p64,
+            p65,
+            p66,
+            p67,
+            p68,
+            p69,
+            p70,
+            p71,
+            p72,
+            p73,
+            p74
         ]
     )
     db.session.commit()

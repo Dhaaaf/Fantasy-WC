@@ -1,0 +1,122 @@
+.leaderboard-outer-div {
+    width: 530px;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+/* #modal-content {
+    border-radius: 10px;
+} */
+
+.leaderboard-inner-div {
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.leaderboard-league-name {
+    width: 100%;
+    background-color: #37003c;
+    color: #e3bc3f;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px solid #e3bc3f;
+    padding: 10px
+}
+
+.leaderboard-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    color: #37003c;
+    border-bottom: 1px solid #e3bc3f;
+}
+
+.leaderboard-footer {
+    /* padding: 0px 10px; */
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.no-teams {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #37003c;
+    padding-top: 30px;
+}
+
+
+.leaderboard-rank {
+    width: 10%;
+}
+
+.leaderboard-team-manager {
+    width: 35%;
+}
+
+.leaderboard-name-manager {
+    width: 35%;
+}
+
+.leaderboard-match-day {
+    width: 20%;
+}
+
+.leaderboard-points {
+    width: 15%;
+}
+
+/* .leaderboard-team-standings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0px;
+    border-bottom: 0.5px solid #76767654;
+    align-items: center;
+    padding-left: 10px;
+} */
+
+.leaderboard-team-standings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    border-bottom: 0.5px solid #76767654;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.team-name-manager {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.leaderboard-team-name {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.leaderboard-team-manager {
+    font-size: 12px;
+    overflow-x: visible;
+    width: fit-content;
+}
+
+.leaderboard-team-rank {
+    width: 10%
+}
+
+.leaderboard-team-md {
+    width: 20%;
+}
+
+.leaderboard-team-points {
+    width: 15%
+}
