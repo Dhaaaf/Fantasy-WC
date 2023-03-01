@@ -4716,6 +4716,13 @@ def seed_game_week_stats():
             gw411,
             gw412,
             gw413,
+            gw414,
+            gw415,
+            gw416,
+            gw417,
+            gw418,
+            gw419,
+            gw420,
 
         ]
     )
