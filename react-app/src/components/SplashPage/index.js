@@ -8,12 +8,38 @@ import brazil2002 from "../../assets/brazil-2002.jpeg"
 import griezmann from "../../assets/griezmann-2018.jpeg"
 import transferMarket from "../../assets/transferMarket.png"
 import leaderBoard from "../../assets/leaderBoard.png"
+import teamSelector from "../../assets/teamSelector.png"
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
-
-
+import React from "react";
 
 import "./SplashPage.css"
+
+function FadeInSection(props) {
+    const [isVisible, setVisible] = React.useState(false);
+    const domRef = React.useRef();
+    React.useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(entry.isIntersecting);
+          }
+        });
+      });
+  
+      const { current } = domRef;
+      observer.observe(current);
+      return () => observer.unobserve(current);
+    }, []);
+    return (
+      <div
+        className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+        ref={domRef}
+      >
+        {props.children}
+      </div>
+    );
+  }
 
 
 export function SplashPage() {
@@ -47,14 +73,11 @@ export function SplashPage() {
                 //   openForm();
                 // }}
                 onClick={handleOpenClick}
-                className="open-discord-button"
+                className="open-fantasy-button"
               >
-                Join a league
+                Click the manager button in the top right to start
               </button>
           </div>
-        </div>
-        <div className="background-image-container-parent">
-          {/* <img src={background} className="bg-image" /> */}
         </div>
         <div className="background-image-container">
           {/* <img src={leaderBoard} className="bg-image-left"></img> */}
@@ -63,35 +86,21 @@ export function SplashPage() {
       </div>
 
 
-
-
-        {/* <div className="splash-page-outer-div">
-            <div className="carousel-div">
-            <div className="welcome-div">
-                <h2 className="welcome-title">Welcome to Fantasy WC</h2>
-                <h3 className="welcome-text">Live out your dreams as you manage world cup heroes of past and present. Login or Sign-up to play!</h3>
+      <FadeInSection>
+        <div className="splash-body-parent">
+          <div className="splash-body-container">
+            <div className="splash-body-img-container">
+              <img src={teamSelector} className="body-img"></img>
             </div>
-            <Carousel
-                interval={4000}
-                transitionTime={1000}
-                showArrows={true}
-                showStatus={false}
-                infiniteLoop
-                showThumbs={false}
-                autoPlay
-                stopOnHover={false}
-                showIndicators={false}
-            >
-                <img src={argentinaWin} />
-                <img src={iniesta} />
-                <img src={germanyBrazil} />
-                <img src={zidane} />
-                <img src={brazil2002} />
-                <img src={griezmann} />
-            </Carousel>
+            <div className="splash-body-description">
+              <h2 className="splash-page-make-team">Select a Team and Earn Points</h2>
+              <div className="splash-body-description-text">
+                Guide your team through seven matchdays gaining points based on that player's performance during past world cup matches
+              </div>
             </div>
-        </div> */}
-
+          </div>
+        </div>
+      </FadeInSection>
             <div className="splash-body-footer-parent">
                 <div className="splash-body-footer-container">
                     <div className="splash-body-footer-left">
