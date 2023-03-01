@@ -885,7 +885,7 @@ def seed_players():
     p73 = Player (
         first_name="Michael",
         last_name="Ballack",
-        aka="Balack",
+        aka="Ballack",
         picture="https://pbs.twimg.com/media/Dgs53G8WAAEERYJ.jpg:large",
         team="Germany",
         year=2002,
