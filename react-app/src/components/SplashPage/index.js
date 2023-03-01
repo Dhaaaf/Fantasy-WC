@@ -41,29 +41,29 @@ export function SplashPage() {
         </div>
 
             <div className="splash-body-footer-parent">
-            <div className="splash-body-footer-container">
-            <div className="splash-body-footer-left">
-                <h1>The Beautiful Game</h1>
+                <div className="splash-body-footer-container">
+                    <div className="splash-body-footer-left">
+                        <h1>The Beautiful Game</h1>
+                    </div>
+                    <div className="splash-body-footer-techstack">
+                        <h2>Tech Stack</h2>
+                        <h3 className="tech-stack">Languages</h3>
+                        <li className="tech-stack">Python</li>
+                        <li className="tech-stack">JavaScript</li>
+                        <li className="tech-stack">HTML</li>
+                        <li className="tech-stack">CSS</li>
+                        <h3 className="tech-stack">Backend</h3>
+                        <li className="tech-stack">Flask</li>
+                        <li className="tech-stack">Flask SQL Alchemy</li>
+                        <li className="tech-stack">Flask Alembic</li>
+                        <h3 className="tech-stack">Frontend</h3>
+                        <li className="tech-stack">React</li>
+                        <li className="tech-stack">React Router</li>
+                        <li className="tech-stack">Redux</li>
+                    </div>
+                </div>
             </div>
-            <div className="splash-body-footer-techstack">
-                <h2>Tech Stack</h2>
-                <h3 className="tech-stack">Languages</h3>
-                <li className="tech-stack">Python</li>
-                <li className="tech-stack">JavaScript</li>
-                <li className="tech-stack">HTML</li>
-                <li className="tech-stack">CSS</li>
-                <h3 className="tech-stack">Backend</h3>
-                <li className="tech-stack">Flask</li>
-                <li className="tech-stack">Flask SQL Alchemy</li>
-                <li className="tech-stack">Flask Alembic</li>
-                <h3 className="tech-stack">Frontend</h3>
-                <li className="tech-stack">React</li>
-                <li className="tech-stack">React Router</li>
-                <li className="tech-stack">Redux</li>
-            </div>
-            </div>
-            </div>
-            </>
+        </>
 
     )
 }
