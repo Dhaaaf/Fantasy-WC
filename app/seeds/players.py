@@ -690,6 +690,54 @@ def seed_players():
         tournament_id=5
     )
 
+    p57 = Player (
+        first_name="Francesco",
+        last_name="Totti",
+        aka="Totti",
+        picture="https://d3lbfr570u7hdr.cloudfront.net/stadiumastro/media/perform-article/2022/nov/18/francesco-totti_a8krog3voc1416uyfshrkdjsx.jpg",
+        team="Italy",
+        year=2006,
+        position="FW",
+        value=5,
+        tournament_id=5
+    )
+
+    p58 = Player (
+        first_name="Luca",
+        last_name="Toni",
+        aka="Toni",
+        picture="https://d3nfwcxd527z59.cloudfront.net/content/uploads/2020/11/15122720/luca-toni-italy.jpg",
+        team="Italy",
+        year=2006,
+        position="FW",
+        value=5,
+        tournament_id=5
+    )
+
+    p59 = Player (
+        first_name="Alessandro",
+        last_name="Del Piero",
+        aka="Del Piero",
+        picture="https://digitalhub.fifa.com/transform/6bab80b6-30ba-4ad7-9bf8-0231b0117ce3/2006_SF_GER_ITA_Del_Piero_120-1",
+        team="Italy",
+        year=2006,
+        position="FW",
+        value=5,
+        tournament_id=5
+    )
+
+    p60 = Player (
+        first_name="Zinedine",
+        last_name="Zidane",
+        aka="Zidane",
+        picture="https://i.ytimg.com/vi/4KKjIf25PRo/maxresdefault.jpg",
+        team="France",
+        year=2006,
+        position="MF",
+        value=5,
+        tournament_id=5
+    )
+
 
 
     db.session.add_all(
@@ -749,7 +797,11 @@ def seed_players():
             p53,
             p54,
             p55,
-            p56
+            p56,
+            p57,
+            p58,
+            p59,
+            p60,
         ]
     )
     db.session.commit()

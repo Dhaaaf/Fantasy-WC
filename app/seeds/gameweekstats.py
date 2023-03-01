@@ -4012,7 +4012,293 @@ def seed_game_week_stats():
         man_of_the_match=True,
     )
 
+    # Francesco Totti - 2006
 
+    gw393 = GameWeekStat (
+        week=1,
+        player_id=57,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw394 = GameWeekStat (
+        week=2,
+        player_id=57,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw395 = GameWeekStat (
+        week=3,
+        player_id=57,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw396 = GameWeekStat (
+        week=4,
+        player_id=57,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw397 = GameWeekStat (
+        week=5,
+        player_id=57,
+        points=8,
+        goals=0,
+        assists=2,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw398 = GameWeekStat (
+        week=6,
+        player_id=57,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw399 = GameWeekStat (
+        week=7,
+        player_id=57,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Luca Toni - 2006
+
+    gw400 = GameWeekStat (
+        week=1,
+        player_id=58,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw401 = GameWeekStat (
+        week=2,
+        player_id=58,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw402 = GameWeekStat (
+        week=3,
+        player_id=58,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw403 = GameWeekStat (
+        week=4,
+        player_id=58,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw404 = GameWeekStat (
+        week=5,
+        player_id=58,
+        points=10,
+        goals=2,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw405 = GameWeekStat (
+        week=6,
+        player_id=58,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw406 = GameWeekStat (
+        week=7,
+        player_id=58,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Del Piero - 2006
+
+    gw407 = GameWeekStat (
+        week=1,
+        player_id=59,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw408 = GameWeekStat (
+        week=2,
+        player_id=59,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw409 = GameWeekStat (
+        week=3,
+        player_id=59,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw410 = GameWeekStat (
+        week=4,
+        player_id=59,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw411 = GameWeekStat (
+        week=5,
+        player_id=59,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw412 = GameWeekStat (
+        week=6,
+        player_id=59,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw413 = GameWeekStat (
+        week=7,
+        player_id=59,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Zinedine Zidane 2006 
+
+    gw414 = GameWeekStat (
+        week=1,
+        player_id=60,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw415 = GameWeekStat (
+        week=2,
+        player_id=60,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw416 = GameWeekStat (
+        week=3,
+        player_id=60,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw417 = GameWeekStat (
+        week=4,
+        player_id=60,
+        points=10,
+        goals=1,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw418 = GameWeekStat (
+        week=5,
+        player_id=60,
+        points=12,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw419 = GameWeekStat (
+        week=6,
+        player_id=60,
+        points=8,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw420 = GameWeekStat (
+        week=7,
+        player_id=60,
+        points=7,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
 
 
     db.session.add_all(
@@ -4409,6 +4695,27 @@ def seed_game_week_stats():
             gw390,
             gw391,
             gw392,
+            gw393,
+            gw394,
+            gw395,
+            gw396,
+            gw397,
+            gw398,
+            gw399,
+            gw400,
+            gw401,
+            gw402,
+            gw403,
+            gw404,
+            gw405,
+            gw406,
+            gw407,
+            gw408,
+            gw409,
+            gw410,
+            gw411,
+            gw412,
+            gw413,
 
         ]
     )
