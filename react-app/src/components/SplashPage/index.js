@@ -6,14 +6,66 @@ import germanyBrazil from "../../assets/germany-vs-brazil.jpeg"
 import zidane from "../../assets/zidane.jpeg"
 import brazil2002 from "../../assets/brazil-2002.jpeg"
 import griezmann from "../../assets/griezmann-2018.jpeg"
+import transferMarket from "../../assets/transferMarket.png"
+import leaderBoard from "../../assets/leaderBoard.png"
+import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
+
+
 
 import "./SplashPage.css"
 
 
 export function SplashPage() {
+    const history = useHistory();
+	const user = useSelector((state) => state.session.user);
+
+
+    const handleOpenClick = () => {
+        // console.log("SPLASH USER", user)
+        console.log("User ---->", user)
+    }
+
+
+
     return (
         <>
-        <div className="splash-page-outer-div">
+        <div className="splash-container-top">
+        <div className="splash-top-details-container">
+          <div className="splash-top-details-text">
+            <h1 className="splash-header">Welcome to WC Fantasy</h1>
+            <div className="splash-top-details-subtext">
+              <span>
+                Where you can manage a dream team of your favorite world cup heroes of past and present. A place to compete with friends and lead your team to eternal glory.
+              </span>
+            </div>
+          </div>
+          <div className="splash-top-details-buttons">
+              <button
+                // onClick={() => {
+                //   setHidden(true);
+                //   openForm();
+                // }}
+                onClick={handleOpenClick}
+                className="open-discord-button"
+              >
+                Join a league
+              </button>
+          </div>
+        </div>
+        <div className="background-image-container-parent">
+          {/* <img src={background} className="bg-image" /> */}
+        </div>
+        <div className="background-image-container">
+          {/* <img src={leaderBoard} className="bg-image-left"></img> */}
+          <img src={transferMarket} className="bg-image-right"></img>
+        </div>
+      </div>
+
+
+
+
+        {/* <div className="splash-page-outer-div">
             <div className="carousel-div">
             <div className="welcome-div">
                 <h2 className="welcome-title">Welcome to Fantasy WC</h2>
@@ -38,7 +90,7 @@ export function SplashPage() {
                 <img src={griezmann} />
             </Carousel>
             </div>
-        </div>
+        </div> */}
 
             <div className="splash-body-footer-parent">
                 <div className="splash-body-footer-container">
