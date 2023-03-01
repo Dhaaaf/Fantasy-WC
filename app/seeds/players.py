@@ -906,6 +906,42 @@ def seed_players():
         tournament_id=6
     )
 
+    p75 = Player (
+        first_name="Kylian",
+        last_name="Mbappé",
+        aka="Mbappé",
+        picture="https://cdn.theathletic.com/app/uploads/2022/12/18131832/GettyImages-1450089040-scaled.jpg",
+        team="France",
+        year=2022,
+        position="FW",
+        value=12,
+        tournament_id=1
+    )
+
+    p76 = Player (
+        first_name="Harry",
+        last_name="Kane",
+        aka="Kane",
+        picture="https://img.asmedia.epimg.net/resizer/OdAMoOUIuQZ4NjPcX4q-r56uhv4=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/D2D2NPAMOZKDRH5MKPO5VSZCXA.jpg",
+        team="France",
+        year=2018,
+        position="FW",
+        value=9,
+        tournament_id=2
+    )
+
+    p77 = Player (
+        first_name="Luka",
+        last_name="Modrić",
+        aka="Modrić",
+        picture="https://images.beinsports.com/iCAahhEnsFbEas3rN5FBhUvAc-c=/1300x731/smart/luka-modric-cropped_1x53vmftwlb6r1gynsc48i0yb1.jpg",
+        team="Croatia",
+        year=2018,
+        position="MF",
+        value=5,
+        tournament_id=2
+    )
+
 
 
 
@@ -986,7 +1022,10 @@ def seed_players():
             p71,
             p72,
             p73,
-            p74
+            p74,
+            p75,
+            p76,
+            p77
         ]
     )
     db.session.commit()

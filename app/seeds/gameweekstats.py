@@ -5308,6 +5308,225 @@ def seed_game_week_stats():
         man_of_the_match=False,
     )
 
+    # Kylian Mbappe 2002
+
+    gw519 = GameWeekStat (
+        week=1,
+        player_id=75,
+        points=15,
+        goals=1,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw520 = GameWeekStat (
+        week=2,
+        player_id=75,
+        points=16,
+        goals=2,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw521 = GameWeekStat (
+        week=3,
+        player_id=75,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw522 = GameWeekStat (
+        week=4,
+        player_id=75,
+        points=19,
+        goals=2,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw523 = GameWeekStat (
+        week=5,
+        player_id=75,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw524 = GameWeekStat (
+        week=6,
+        player_id=75,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw525 = GameWeekStat (
+        week=7,
+        player_id=75,
+        points=14,
+        goals=3,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Harry Kane 2018
+
+    gw526 = GameWeekStat (
+        week=1,
+        player_id=76,
+        points=16,
+        goals=2,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw527 = GameWeekStat (
+        week=2,
+        player_id=76,
+        points=20,
+        goals=3,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw528 = GameWeekStat (
+        week=3,
+        player_id=76,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw529 = GameWeekStat (
+        week=4,
+        player_id=76,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw530 = GameWeekStat (
+        week=5,
+        player_id=76,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw531 = GameWeekStat (
+        week=6,
+        player_id=76,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw532 = GameWeekStat (
+        week=7,
+        player_id=76,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+
+    # Luka Modric 2018
+
+    gw533 = GameWeekStat (
+        week=1,
+        player_id=77,
+        points=14,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw534 = GameWeekStat (
+        week=2,
+        player_id=77,
+        points=14,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw535 = GameWeekStat (
+        week=3,
+        player_id=77,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw536 = GameWeekStat (
+        week=4,
+        player_id=77,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw537 = GameWeekStat (
+        week=5,
+        player_id=77,
+        points=11,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw538 = GameWeekStat (
+        week=6,
+        player_id=77,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw539 = GameWeekStat (
+        week=7,
+        player_id=77,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+
+
 
 
     db.session.add_all(
@@ -5830,6 +6049,27 @@ def seed_game_week_stats():
             gw516,
             gw517,
             gw518,
+            gw519,
+            gw520,
+            gw521,
+            gw522,
+            gw523,
+            gw524,
+            gw525,
+            gw526,
+            gw527,
+            gw528,
+            gw529,
+            gw530,
+            gw531,
+            gw532,
+            gw533,
+            gw534,
+            gw535,
+            gw536,
+            gw537,
+            gw538,
+            gw539,
         ]
     )
     db.session.commit()
