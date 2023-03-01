@@ -39,7 +39,7 @@ function FadeInSection(props) {
         {props.children}
       </div>
     );
-  }
+}
 
 
 export function SplashPage() {
@@ -49,7 +49,6 @@ export function SplashPage() {
 
     const handleOpenClick = () => {
         // console.log("SPLASH USER", user)
-        console.log("User ---->", user)
     }
 
 

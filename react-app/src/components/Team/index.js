@@ -193,9 +193,9 @@ const TeamPage = () => {
     //// NEXT MATCHDAY
 
     const nextMatchDay = async () => {
-        console.log("nextMatchDay stuff ----->", teamPlayersArray)
-        console.log("nextMatchDay stuff ----->", teamPlayersIds)
-        console.log("Transfers Left ---->", transfersLeft)
+        // console.log("nextMatchDay stuff ----->", teamPlayersArray)
+        // console.log("nextMatchDay stuff ----->", teamPlayersIds)
+        // console.log("Transfers Left ---->", transfersLeft)
 
         let bank =team.bank
 

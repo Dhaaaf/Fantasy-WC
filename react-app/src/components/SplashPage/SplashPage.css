@@ -189,7 +189,7 @@ img {
     display: none;
 }
   
-  .open-fantasy-button {
+.open-fantasy-button {
     font-size: 20px;
     color: #e3bc3f;
     background-color: #37003c;
@@ -199,13 +199,13 @@ img {
     margin-top: 24px;
     transition: 0.3s;
     cursor: pointer;
-  }
+}
   
-  .open-fantasy-button:hover {
+.open-fantasy-button:hover {
     cursor: pointer;
     background-color: hsl(220, 7.7%, 22.9%);
     box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
-  }
+}
   
   .form-container {
     display: flex;
