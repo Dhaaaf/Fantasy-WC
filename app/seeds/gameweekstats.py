@@ -1009,11 +1009,11 @@ def seed_game_week_stats():
     gw101 = GameWeekStat (
         week=3,
         player_id=15,
-        points=16,
+        points=10,
         goals=2,
         assists=0,
         clean_sheet=False,
-        man_of_the_match=True,
+        man_of_the_match=False,
     )
 
     gw102 = GameWeekStat (
@@ -1039,11 +1039,11 @@ def seed_game_week_stats():
     gw104 = GameWeekStat (
         week=6,
         player_id=15,
-        points=6,
+        points=12,
         goals=1,
         assists=0,
         clean_sheet=True,
-        man_of_the_match=False,
+        man_of_the_match=True,
     )
 
     gw105 = GameWeekStat (
@@ -4300,6 +4300,1015 @@ def seed_game_week_stats():
         man_of_the_match=False,
     )
 
+    # Marcos Brazil 2002
+
+    gw421 = GameWeekStat (
+        week=1,
+        player_id=61,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw422 = GameWeekStat (
+        week=2,
+        player_id=61,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw423 = GameWeekStat (
+        week=3,
+        player_id=61,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw424 = GameWeekStat (
+        week=4,
+        player_id=61,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw425 = GameWeekStat (
+        week=5,
+        player_id=61,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw426 = GameWeekStat (
+        week=6,
+        player_id=61,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw427 = GameWeekStat (
+        week=7,
+        player_id=61,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Cafu 2002
+
+    gw428 = GameWeekStat (
+        week=1,
+        player_id=62,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw429 = GameWeekStat (
+        week=2,
+        player_id=62,
+        points=9,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw430 = GameWeekStat (
+        week=3,
+        player_id=62,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw431 = GameWeekStat (
+        week=4,
+        player_id=62,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw432 = GameWeekStat (
+        week=5,
+        player_id=62,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw433 = GameWeekStat (
+        week=6,
+        player_id=62,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw434 = GameWeekStat (
+        week=7,
+        player_id=62,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Roberto Carlos 2002
+
+    gw435 = GameWeekStat (
+        week=1,
+        player_id=63,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw436 = GameWeekStat (
+        week=2,
+        player_id=63,
+        points=18,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw437 = GameWeekStat (
+        week=3,
+        player_id=63,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw438 = GameWeekStat (
+        week=4,
+        player_id=63,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw439 = GameWeekStat (
+        week=5,
+        player_id=63,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw440 = GameWeekStat (
+        week=6,
+        player_id=63,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw441 = GameWeekStat (
+        week=7,
+        player_id=63,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Edmilson Brazil 2002
+
+    gw442 = GameWeekStat (
+        week=1,
+        player_id=64,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw443 = GameWeekStat (
+        week=2,
+        player_id=64,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw444 = GameWeekStat (
+        week=3,
+        player_id=64,
+        points=11,
+        goals=1,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw445 = GameWeekStat (
+        week=4,
+        player_id=64,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw446 = GameWeekStat (
+        week=5,
+        player_id=64,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw447 = GameWeekStat (
+        week=6,
+        player_id=64,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw448 = GameWeekStat (
+        week=7,
+        player_id=64,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Lucio 2002 WC
+
+    gw449 = GameWeekStat (
+        week=1,
+        player_id=65,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw450 = GameWeekStat (
+        week=2,
+        player_id=65,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw451 = GameWeekStat (
+        week=3,
+        player_id=65,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw452 = GameWeekStat (
+        week=4,
+        player_id=65,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw453 = GameWeekStat (
+        week=5,
+        player_id=65,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw454 = GameWeekStat (
+        week=6,
+        player_id=65,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw455 = GameWeekStat (
+        week=7,
+        player_id=65,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Roque Junior
+
+    gw456 = GameWeekStat (
+        week=1,
+        player_id=66,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw457 = GameWeekStat (
+        week=2,
+        player_id=66,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw458 = GameWeekStat (
+        week=3,
+        player_id=66,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw459 = GameWeekStat (
+        week=4,
+        player_id=66,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw460 = GameWeekStat (
+        week=5,
+        player_id=66,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw461 = GameWeekStat (
+        week=6,
+        player_id=66,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw462 = GameWeekStat (
+        week=7,
+        player_id=66,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Gilberto Silva 2002
+
+    gw463 = GameWeekStat (
+        week=1,
+        player_id=67,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw464 = GameWeekStat (
+        week=2,
+        player_id=67,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw465 = GameWeekStat (
+        week=3,
+        player_id=67,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw466 = GameWeekStat (
+        week=4,
+        player_id=67,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw467 = GameWeekStat (
+        week=5,
+        player_id=67,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw468 = GameWeekStat (
+        week=6,
+        player_id=67,
+        points=6,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw469 = GameWeekStat (
+        week=7,
+        player_id=67,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Juninho Paulista - 2002
+
+    gw470 = GameWeekStat (
+        week=1,
+        player_id=68,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw471 = GameWeekStat (
+        week=2,
+        player_id=68,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw472 = GameWeekStat (
+        week=3,
+        player_id=68,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw473 = GameWeekStat (
+        week=4,
+        player_id=68,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw474 = GameWeekStat (
+        week=5,
+        player_id=68,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw475 = GameWeekStat (
+        week=6,
+        player_id=68,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw476 = GameWeekStat (
+        week=7,
+        player_id=68,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Ronaldinho 2002
+
+    gw477 = GameWeekStat (
+        week=1,
+        player_id=69,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw478 = GameWeekStat (
+        week=2,
+        player_id=69,
+        points=11,
+        goals=1,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw479 = GameWeekStat (
+        week=3,
+        player_id=69,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw480 = GameWeekStat (
+        week=4,
+        player_id=69,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw481 = GameWeekStat (
+        week=5,
+        player_id=69,
+        points=10,
+        goals=1,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw482 = GameWeekStat (
+        week=6,
+        player_id=69,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw483 = GameWeekStat (
+        week=7,
+        player_id=69,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Rivaldo 02
+
+    gw484 = GameWeekStat (
+        week=1,
+        player_id=70,
+        points=15,
+        goals=1,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw485 = GameWeekStat (
+        week=2,
+        player_id=70,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw486 = GameWeekStat (
+        week=3,
+        player_id=70,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw487 = GameWeekStat (
+        week=4,
+        player_id=70,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw488 = GameWeekStat (
+        week=5,
+        player_id=70,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw489 = GameWeekStat (
+        week=6,
+        player_id=70,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw490 = GameWeekStat (
+        week=7,
+        player_id=70,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    # Miroslav Klose 2002
+
+    gw491 = GameWeekStat (
+        week=1,
+        player_id=71,
+        points=20,
+        goals=3,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw492 = GameWeekStat (
+        week=2,
+        player_id=71,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw493 = GameWeekStat (
+        week=3,
+        player_id=71,
+        points=14,
+        goals=1,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw494 = GameWeekStat (
+        week=4,
+        player_id=71,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw495 = GameWeekStat (
+        week=5,
+        player_id=71,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw496 = GameWeekStat (
+        week=6,
+        player_id=71,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw497 = GameWeekStat (
+        week=7,
+        player_id=71,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Miroslav Klose 2006
+
+    gw498 = GameWeekStat (
+        week=1,
+        player_id=72,
+        points=16,
+        goals=2,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw499 = GameWeekStat (
+        week=2,
+        player_id=72,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw500 = GameWeekStat (
+        week=3,
+        player_id=72,
+        points=16,
+        goals=2,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw501 = GameWeekStat (
+        week=4,
+        player_id=72,
+        points=8,
+        goals=0,
+        assists=2,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw502 = GameWeekStat (
+        week=5,
+        player_id=72,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw503 = GameWeekStat (
+        week=6,
+        player_id=72,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw504 = GameWeekStat (
+        week=7,
+        player_id=72,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Michael Ballack 2006
+
+    gw505 = GameWeekStat (
+        week=1,
+        player_id=73,
+        points=14,
+        goals=1,
+        assists=2,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw506 = GameWeekStat (
+        week=2,
+        player_id=73,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw507 = GameWeekStat (
+        week=3,
+        player_id=73,
+        points=6,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw508 = GameWeekStat (
+        week=4,
+        player_id=73,
+        points=3,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw509 = GameWeekStat (
+        week=5,
+        player_id=73,
+        points=8,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw510 = GameWeekStat (
+        week=6,
+        player_id=73,
+        points=14,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw511 = GameWeekStat (
+        week=7,
+        player_id=73,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Oliver Kahn 2002
+
+    gw512 = GameWeekStat (
+        week=1,
+        player_id=74,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw513 = GameWeekStat (
+        week=2,
+        player_id=74,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw514 = GameWeekStat (
+        week=3,
+        player_id=74,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw515 = GameWeekStat (
+        week=4,
+        player_id=74,
+        points=12,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw516 = GameWeekStat (
+        week=5,
+        player_id=74,
+        points=12,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw517 = GameWeekStat (
+        week=6,
+        player_id=74,
+        points=6,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw518 = GameWeekStat (
+        week=7,
+        player_id=74,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+
 
     db.session.add_all(
         [
@@ -4723,7 +5732,104 @@ def seed_game_week_stats():
             gw418,
             gw419,
             gw420,
-
+            gw421,
+            gw422,
+            gw423,
+            gw424,
+            gw425,
+            gw426,
+            gw427,
+            gw428,
+            gw429,
+            gw430,
+            gw431,
+            gw432,
+            gw433,
+            gw434,
+            gw435,
+            gw436,
+            gw437,
+            gw438,
+            gw439,
+            gw440,
+            gw441,
+            gw442,
+            gw443,
+            gw444,
+            gw445,
+            gw446,
+            gw447,
+            gw448,
+            gw449,
+            gw450,
+            gw451,
+            gw452,
+            gw453,
+            gw454,
+            gw455,
+            gw456,
+            gw457,
+            gw458,
+            gw459,
+            gw460,
+            gw461,
+            gw462,
+            gw463,
+            gw464,
+            gw465,
+            gw466,
+            gw467,
+            gw468,
+            gw469,
+            gw470,
+            gw471,
+            gw472,
+            gw473,
+            gw474,
+            gw475,
+            gw476,
+            gw477,
+            gw478,
+            gw479,
+            gw480,
+            gw481,
+            gw482,
+            gw483,
+            gw484,
+            gw485,
+            gw486,
+            gw487,
+            gw488,
+            gw489,
+            gw490,
+            gw491,
+            gw492,
+            gw493,
+            gw494,
+            gw495,
+            gw496,
+            gw497,
+            gw498,
+            gw499,
+            gw500,
+            gw501,
+            gw502,
+            gw503,
+            gw504,
+            gw505,
+            gw506,
+            gw507,
+            gw508,
+            gw509,
+            gw510,
+            gw511,
+            gw512,
+            gw513,
+            gw514,
+            gw515,
+            gw516,
+            gw517,
+            gw518,
         ]
     )
     db.session.commit()
