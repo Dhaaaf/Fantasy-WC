@@ -12,7 +12,7 @@ def seed_players():
         team="Argentina",
         year=2022,
         position="FW",
-        value=15,
+        value=12,
         tournament_id=1
     )
 
@@ -24,7 +24,7 @@ def seed_players():
         team="Argentina",
         year=2022,
         position="GK",
-        value=5,
+        value=7,
         tournament_id=1
     )
 
@@ -36,7 +36,7 @@ def seed_players():
         team="Argentina",
         year=2022,
         position="DF",
-        value=5,
+        value=6,
         tournament_id=1
     )
 
@@ -60,7 +60,7 @@ def seed_players():
         team="Argentina",
         year=2022,
         position="DF",
-        value=5,
+        value=7,
         tournament_id=1
     )
 
@@ -72,7 +72,7 @@ def seed_players():
         team="Argentina",
         year=2022,
         position="DF",
-        value=5,
+        value=7,
         tournament_id=1
     )
 
@@ -84,7 +84,7 @@ def seed_players():
         team="Argentina",
         year=2022,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=1
     )
 
@@ -108,7 +108,7 @@ def seed_players():
         team="Argentina",
         year=2022,
         position="MF",
-        value=5,
+        value=6,
         tournament_id=1
     )
 
@@ -144,7 +144,7 @@ def seed_players():
         team="Argentina",
         year=2022,
         position="MF",
-        value=5,
+        value=7,
         tournament_id=1
     )
 
@@ -156,7 +156,7 @@ def seed_players():
         team="Argentina",
         year=2022,
         position="MF",
-        value=5,
+        value=6,
         tournament_id=1
     )
 
@@ -168,7 +168,7 @@ def seed_players():
         team="Argentina",
         year=2022,
         position="FW",
-        value=5,
+        value=8,
         tournament_id=1
     )
 
@@ -182,7 +182,7 @@ def seed_players():
         team="Brazil",
         year=2002,
         position="FW",
-        value=15,
+        value=11,
         tournament_id=6
     )
 
@@ -196,14 +196,13 @@ def seed_players():
         team="Netherlands",
         year=2010,
         position="MF",
-        value=15,
+        value=11,
         tournament_id=4
     )
 
     # Germany WC 2014
 
     p17 = Player (
-
         first_name="Manuel",
         last_name="Neuer",
         aka="Neuer",
@@ -211,12 +210,11 @@ def seed_players():
         team="Germany",
         year=2014,
         position="GK",
-        value=5,
+        value=8,
         tournament_id=3
     )
 
     p18 = Player (
-
         first_name="Benedikt",
         last_name="Höwedes",
         aka="Höwedes",
@@ -224,7 +222,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=3
     )
 
@@ -236,7 +234,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="DF",
-        value=5,
+        value=9,
         tournament_id=3
     )
 
@@ -248,7 +246,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="DF",
-        value=5,
+        value=7,
         tournament_id=3
     )
 
@@ -260,7 +258,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=3
     )
 
@@ -272,7 +270,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="MF",
-        value=5,
+        value=6,
         tournament_id=3
     )
 
@@ -284,7 +282,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="MF",
-        value=5,
+        value=7,
         tournament_id=3
     )
 
@@ -296,7 +294,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="MF",
-        value=5,
+        value=8,
         tournament_id=3
     )
 
@@ -308,7 +306,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="MF",
-        value=5,
+        value=8,
         tournament_id=3
     )
 
@@ -320,7 +318,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="MF",
-        value=13,
+        value=9,
         tournament_id=3
     )
 
@@ -332,7 +330,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="FW",
-        value=5,
+        value=10,
         tournament_id=3
     )
 
@@ -344,7 +342,7 @@ def seed_players():
         team="Germany",
         year=2014,
         position="FW",
-        value=5,
+        value=6,
         tournament_id=3
     )
 
@@ -358,7 +356,7 @@ def seed_players():
         team="Spain",
         year=2010,
         position="GK",
-        value=5,
+        value=8,
         tournament_id=4
     )
 
@@ -370,7 +368,7 @@ def seed_players():
         team="Spain",
         year=2010,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=4
     )
 
@@ -382,7 +380,7 @@ def seed_players():
         team="Spain",
         year=2010,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=4
     )
     
@@ -394,7 +392,7 @@ def seed_players():
         team="Spain",
         year=2010,
         position="DF",
-        value=5,
+        value=9,
         tournament_id=4
     )
 
@@ -406,7 +404,7 @@ def seed_players():
         team="Spain",
         year=2010,
         position="MF",
-        value=5,
+        value=6,
         tournament_id=4
     )
 
@@ -418,7 +416,7 @@ def seed_players():
         team="Spain",
         year=2010,
         position="MF",
-        value=5,
+        value=6,
         tournament_id=4
     )
 
@@ -442,7 +440,7 @@ def seed_players():
         team="Spain",
         year=2010,
         position="MF",
-        value=5,
+        value=7,
         tournament_id=4
     )
 
@@ -454,7 +452,7 @@ def seed_players():
         team="Spain",
         year=2010,
         position="MF",
-        value=5,
+        value=8,
         tournament_id=4
     )
 
@@ -466,7 +464,7 @@ def seed_players():
         team="Spain",
         year=2010,
         position="FW",
-        value=5,
+        value=9,
         tournament_id=4
     )
 
@@ -480,7 +478,7 @@ def seed_players():
         team="France",
         year=2018,
         position="GK",
-        value=5,
+        value=6,
         tournament_id=2
     )
 
@@ -492,7 +490,7 @@ def seed_players():
         team="France",
         year=2018,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=2
     )
 
@@ -504,7 +502,7 @@ def seed_players():
         team="France",
         year=2018,
         position="DF",
-        value=5,
+        value=7,
         tournament_id=2
     )
 
@@ -516,7 +514,7 @@ def seed_players():
         team="France",
         year=2018,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=2
     )
 
@@ -528,7 +526,7 @@ def seed_players():
         team="France",
         year=2018,
         position="DF",
-        value=5,
+        value=9,
         tournament_id=2
     )
 
@@ -552,7 +550,7 @@ def seed_players():
         team="France",
         year=2018,
         position="MF",
-        value=5,
+        value=6,
         tournament_id=2
     )
 
@@ -564,7 +562,7 @@ def seed_players():
         team="France",
         year=2018,
         position="MF",
-        value=5,
+        value=6,
         tournament_id=2
     )
 
@@ -576,7 +574,7 @@ def seed_players():
         team="France",
         year=2018,
         position="FW",
-        value=5,
+        value=6,
         tournament_id=2
     )
 
@@ -588,7 +586,7 @@ def seed_players():
         team="France",
         year=2018,
         position="FW",
-        value=11,
+        value=9,
         tournament_id=2
     )
 
@@ -600,7 +598,7 @@ def seed_players():
         team="France",
         year=2018,
         position="FW",
-        value=13,
+        value=10,
         tournament_id=2
     )
 
@@ -614,7 +612,7 @@ def seed_players():
         team="Italy",
         year=2006,
         position="GK",
-        value=6,
+        value=8,
         tournament_id=5
     )
 
@@ -626,7 +624,7 @@ def seed_players():
         team="Italy",
         year=2006,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=5
     )
 
@@ -638,7 +636,7 @@ def seed_players():
         team="Italy",
         year=2006,
         position="DF",
-        value=5,
+        value=9,
         tournament_id=5
     )
 
@@ -650,7 +648,7 @@ def seed_players():
         team="Italy",
         year=2006,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=5
     )
 
@@ -662,7 +660,7 @@ def seed_players():
         team="Italy",
         year=2006,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=5
     )
 
@@ -674,7 +672,7 @@ def seed_players():
         team="Italy",
         year=2006,
         position="MF",
-        value=5,
+        value=6,
         tournament_id=5
     )
 
@@ -686,7 +684,7 @@ def seed_players():
         team="Italy",
         year=2006,
         position="MF",
-        value=5,
+        value=9,
         tournament_id=5
     )
 
@@ -698,7 +696,7 @@ def seed_players():
         team="Italy",
         year=2006,
         position="FW",
-        value=5,
+        value=7,
         tournament_id=5
     )
 
@@ -710,7 +708,7 @@ def seed_players():
         team="Italy",
         year=2006,
         position="FW",
-        value=5,
+        value=6,
         tournament_id=5
     )
 
@@ -734,7 +732,7 @@ def seed_players():
         team="France",
         year=2006,
         position="MF",
-        value=5,
+        value=9,
         tournament_id=5
     )
 
@@ -746,7 +744,7 @@ def seed_players():
         team="Brazil",
         year=2002,
         position="GK",
-        value=5,
+        value=7,
         tournament_id=6
     )
 
@@ -758,7 +756,7 @@ def seed_players():
         team="Brazil",
         year=2002,
         position="DF",
-        value=5,
+        value=7,
         tournament_id=6
     )
 
@@ -770,7 +768,7 @@ def seed_players():
         team="Brazil",
         year=2002,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=6
     )
 
@@ -782,7 +780,7 @@ def seed_players():
         team="Brazil",
         year=2002,
         position="DF",
-        value=5,
+        value=8,
         tournament_id=6
     )
 
@@ -794,7 +792,7 @@ def seed_players():
         team="Brazil",
         year=2002,
         position="DF",
-        value=5,
+        value=7,
         tournament_id=6
     )
 
@@ -806,7 +804,7 @@ def seed_players():
         team="Brazil",
         year=2002,
         position="DF",
-        value=5,
+        value=7,
         tournament_id=6
     )
 
@@ -818,7 +816,7 @@ def seed_players():
         team="Brazil",
         year=2002,
         position="MF",
-        value=5,
+        value=6,
         tournament_id=6
     )
 
@@ -842,7 +840,7 @@ def seed_players():
         team="Brazil",
         year=2002,
         position="MF",
-        value=5,
+        value=8,
         tournament_id=6
     )
 
@@ -854,7 +852,7 @@ def seed_players():
         team="Brazil",
         year=2002,
         position="FW",
-        value=5,
+        value=10,
         tournament_id=6
     )
 
@@ -866,7 +864,7 @@ def seed_players():
         team="Germany",
         year=2002,
         position="FW",
-        value=5,
+        value=9,
         tournament_id=6
     )
 
@@ -878,7 +876,7 @@ def seed_players():
         team="Germany",
         year=2006,
         position="FW",
-        value=5,
+        value=10,
         tournament_id=5
     )
 
@@ -890,7 +888,7 @@ def seed_players():
         team="Germany",
         year=2002,
         position="MF",
-        value=5,
+        value=10,
         tournament_id=6
     )
 
@@ -902,7 +900,7 @@ def seed_players():
         team="Germany",
         year=2002,
         position="GK",
-        value=5,
+        value=9,
         tournament_id=6
     )
 
@@ -914,7 +912,7 @@ def seed_players():
         team="France",
         year=2022,
         position="FW",
-        value=12,
+        value=11,
         tournament_id=1
     )
 
@@ -926,7 +924,7 @@ def seed_players():
         team="France",
         year=2018,
         position="FW",
-        value=9,
+        value=10,
         tournament_id=2
     )
 
@@ -938,7 +936,7 @@ def seed_players():
         team="Croatia",
         year=2018,
         position="MF",
-        value=5,
+        value=9,
         tournament_id=2
     )
 
@@ -950,7 +948,7 @@ def seed_players():
         team="Argentina",
         year=2014,
         position="FW",
-        value=5,
+        value=10,
         tournament_id=3
     )
 
@@ -962,7 +960,7 @@ def seed_players():
         team="Germany",
         year=2010,
         position="FW",
-        value=5,
+        value=10,
         tournament_id=4
     )
 
@@ -974,7 +972,7 @@ def seed_players():
         team="Uruguay",
         year=2010,
         position="FW",
-        value=5,
+        value=10,
         tournament_id=4
     )
 
