@@ -906,6 +906,78 @@ def seed_players():
         tournament_id=6
     )
 
+    p75 = Player (
+        first_name="Kylian",
+        last_name="Mbappé",
+        aka="Mbappé",
+        picture="https://cdn.theathletic.com/app/uploads/2022/12/18131832/GettyImages-1450089040-scaled.jpg",
+        team="France",
+        year=2022,
+        position="FW",
+        value=12,
+        tournament_id=1
+    )
+
+    p76 = Player (
+        first_name="Harry",
+        last_name="Kane",
+        aka="Kane",
+        picture="https://img.asmedia.epimg.net/resizer/OdAMoOUIuQZ4NjPcX4q-r56uhv4=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/D2D2NPAMOZKDRH5MKPO5VSZCXA.jpg",
+        team="France",
+        year=2018,
+        position="FW",
+        value=9,
+        tournament_id=2
+    )
+
+    p77 = Player (
+        first_name="Luka",
+        last_name="Modrić",
+        aka="Modrić",
+        picture="https://images.beinsports.com/iCAahhEnsFbEas3rN5FBhUvAc-c=/1300x731/smart/luka-modric-cropped_1x53vmftwlb6r1gynsc48i0yb1.jpg",
+        team="Croatia",
+        year=2018,
+        position="MF",
+        value=5,
+        tournament_id=2
+    )
+
+    p78 = Player (
+        first_name="Lionel",
+        last_name="Messi",
+        aka="Messi",
+        picture="https://e0.365dm.com/14/06/2048x1152/football-2014-fifa-world-cup-fifa-world-cup-2014-world-cup-fifa-world-cup-nigeria_3163800.jpg",
+        team="Argentina",
+        year=2014,
+        position="FW",
+        value=5,
+        tournament_id=3
+    )
+
+    p79 = Player (
+        first_name="Thomas",
+        last_name="Müller",
+        aka="Müller",
+        picture="https://live.staticflickr.com/4139/4781090703_0e27e718df_z.jpg",
+        team="Germany",
+        year=2010,
+        position="FW",
+        value=5,
+        tournament_id=4
+    )
+
+    p80 = Player (
+        first_name="Diego",
+        last_name="Forlán",
+        aka="Forlán",
+        picture="https://pbs.twimg.com/media/B_3PNzcUYAAjERW?format=jpg&name=4096x4096",
+        team="Uruguay",
+        year=2010,
+        position="FW",
+        value=5,
+        tournament_id=4
+    )
+
 
 
 
@@ -986,7 +1058,13 @@ def seed_players():
             p71,
             p72,
             p73,
-            p74
+            p74,
+            p75,
+            p76,
+            p77,
+            p78,
+            p79,
+            p80
         ]
     )
     db.session.commit()

@@ -9,6 +9,7 @@ import OpenModalButton from "../OpenModalButton";
 import PlayerModal from "../PlayerModal";
 import EditDeleteTeam from "../TeamEditDelete";
 import FinalLeagueLeaderboard from "../LeagueLeaderboard/FinalLeagueLeaderboard";
+import ConfirmTransfers from "../ConfirmTransfer";
 
 import "./Team.css"
 
@@ -193,9 +194,9 @@ const TeamPage = () => {
     //// NEXT MATCHDAY
 
     const nextMatchDay = async () => {
-        console.log("nextMatchDay stuff ----->", teamPlayersArray)
-        console.log("nextMatchDay stuff ----->", teamPlayersIds)
-        console.log("Transfers Left ---->", transfersLeft)
+        // console.log("nextMatchDay stuff ----->", teamPlayersArray)
+        // console.log("nextMatchDay stuff ----->", teamPlayersIds)
+        // console.log("Transfers Left ---->", transfersLeft)
 
         let bank =team.bank
 
@@ -256,9 +257,20 @@ const TeamPage = () => {
                                     />
                                 </div>
                             </div>
-                            {canMoveNext && (<div className="next-match-button" onClick={() => nextMatchDay()}>Next Match Day  <i className="fa-solid fa-arrow-right"></i></div>)}
-                            {teamPlayersArray.length < 11 && (<div className="next-match-button disabled">Select a valid Squad </div>)}
-                            {team.match_day == 7 && (
+                            {canMoveNext && (
+                            <div className="next-match-button">
+                                <OpenModalButton
+                                    modalComponent={<ConfirmTransfers teamId={teamId}  teamPlayersIds={teamPlayersIds} transfersLeft={transfersLeft} bank={team.bank} />}
+                                    buttonText="next-match-day"
+                                    onbuttonClick={closeMenu}
+                                />
+                            </div>
+                        //     <div className="next-match-button" onClick={() => nextMatchDay()}>
+                        //     Next Match Day  <i className="fa-solid fa-arrow-right"></i>
+                        // </div>
+                            )}
+                            {teamPlayersArray.length < 11 && team.match_day !== 7 && (<div className="next-match-button disabled">Select a valid Squad </div>)}
+                            {team.match_day === 7 && (
                             // <div className="check-table">League Table <i className="fa-solid fa-table"></i></div>
                             <div className="final-league-leaderboard">   
                                         <OpenModalButton
@@ -285,7 +297,7 @@ const TeamPage = () => {
                                 )}
                             </div>
                             <div className="points-div">
-                                {team.match_day == 7 && (<div className="text-info">Final Points</div>)}
+                                {team.match_day === 7 && (<div className="text-info">Final Points</div>)}
                                 {team.match_day  < 7 && (<div className="text-info">Total Points</div>)}
                                 <div className="numbers-info">{team.points}</div>
                             </div>

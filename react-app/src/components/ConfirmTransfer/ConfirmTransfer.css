@@ -1,0 +1,96 @@
+.confirm-transfers-div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+
+.title {
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: left;
+    width: 90%;
+    font-size: 15px;
+    color: #37003c;
+}
+
+.form-title-confirm-transfers {
+    font-weight: bold;
+    font-size: 20px;
+    color: #37003c;
+    text-align: center;
+    background-color: #37003c;
+    color: #e3bc3f;
+    padding: 10px;
+}
+
+.form {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.entries{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    /* border: 1px solid red; */
+    /* width: 400px; */
+}
+
+input {
+    width: 200px;
+    background-color: rgba(128, 128, 128, 0.282);
+    border: none;
+    border-bottom: 3px solid #37003c;
+    color: #37003c;
+    margin-left: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm-transfers-button {
+    border: none;
+    background-color: #37003c;
+    color: white;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-transfers-button.yes{
+    background-color: #e3bc3f;
+    color: #37003c
+}
+
+/* .confirm-transfers-button.no {
+    background-color: rgb(182, 8, 8);
+} */
+
+.yes-no-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
