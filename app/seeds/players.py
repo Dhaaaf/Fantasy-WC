@@ -942,6 +942,42 @@ def seed_players():
         tournament_id=2
     )
 
+    p78 = Player (
+        first_name="Lionel",
+        last_name="Messi",
+        aka="Messi",
+        picture="https://e0.365dm.com/14/06/2048x1152/football-2014-fifa-world-cup-fifa-world-cup-2014-world-cup-fifa-world-cup-nigeria_3163800.jpg",
+        team="Argentina",
+        year=2014,
+        position="FW",
+        value=5,
+        tournament_id=3
+    )
+
+    p79 = Player (
+        first_name="Thomas",
+        last_name="Müller",
+        aka="Müller",
+        picture="https://live.staticflickr.com/4139/4781090703_0e27e718df_z.jpg",
+        team="Germany",
+        year=2010,
+        position="FW",
+        value=5,
+        tournament_id=4
+    )
+
+    p80 = Player (
+        first_name="Diego",
+        last_name="Forlán",
+        aka="Forlán",
+        picture="https://pbs.twimg.com/media/B_3PNzcUYAAjERW?format=jpg&name=4096x4096",
+        team="Uruguay",
+        year=2010,
+        position="FW",
+        value=5,
+        tournament_id=4
+    )
+
 
 
 
@@ -1025,7 +1061,10 @@ def seed_players():
             p74,
             p75,
             p76,
-            p77
+            p77,
+            p78,
+            p79,
+            p80
         ]
     )
     db.session.commit()

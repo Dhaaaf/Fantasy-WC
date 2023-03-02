@@ -5526,6 +5526,226 @@ def seed_game_week_stats():
     )
 
 
+    # Lionel Messi 2014
+
+    gw540 = GameWeekStat (
+        week=1,
+        player_id=78,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw541 = GameWeekStat (
+        week=2,
+        player_id=78,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw542 = GameWeekStat (
+        week=3,
+        player_id=78,
+        points=16,
+        goals=2,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw543 = GameWeekStat (
+        week=4,
+        player_id=78,
+        points=11,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw544 = GameWeekStat (
+        week=5,
+        player_id=78,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw545 = GameWeekStat (
+        week=6,
+        player_id=78,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw546 = GameWeekStat (
+        week=7,
+        player_id=78,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    # Thomas Muller 2010
+
+    gw547 = GameWeekStat (
+        week=1,
+        player_id=79,
+        points=9,
+        goals=1,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw548 = GameWeekStat (
+        week=2,
+        player_id=79,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw549 = GameWeekStat (
+        week=3,
+        player_id=79,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw550 = GameWeekStat (
+        week=4,
+        player_id=79,
+        points=19,
+        goals=2,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw551 = GameWeekStat (
+        week=5,
+        player_id=79,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw552 = GameWeekStat (
+        week=6,
+        player_id=79,
+        points=0,
+        goals=0,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw553 = GameWeekStat (
+        week=7,
+        player_id=79,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+
+    # Diego Forlan 2010
+
+    gw554 = GameWeekStat (
+        week=1,
+        player_id=80,
+        points=8,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=True,
+    )
+
+    gw555 = GameWeekStat (
+        week=2,
+        player_id=80,
+        points=16,
+        goals=2,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw556 = GameWeekStat (
+        week=3,
+        player_id=80,
+        points=2,
+        goals=0,
+        assists=0,
+        clean_sheet=True,
+        man_of_the_match=False,
+    )
+
+    gw557 = GameWeekStat (
+        week=4,
+        player_id=80,
+        points=5,
+        goals=0,
+        assists=1,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw558 = GameWeekStat (
+        week=5,
+        player_id=80,
+        points=12,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=True,
+    )
+
+    gw559 = GameWeekStat (
+        week=6,
+        player_id=80,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+    gw560 = GameWeekStat (
+        week=7,
+        player_id=80,
+        points=6,
+        goals=1,
+        assists=0,
+        clean_sheet=False,
+        man_of_the_match=False,
+    )
+
+
+
+
 
 
 
@@ -6070,6 +6290,27 @@ def seed_game_week_stats():
             gw537,
             gw538,
             gw539,
+            gw540,
+            gw541,
+            gw542,
+            gw543,
+            gw544,
+            gw545,
+            gw546,
+            gw547,
+            gw548,
+            gw549,
+            gw550,
+            gw551,
+            gw552,
+            gw553,
+            gw554,
+            gw555,
+            gw556,
+            gw557,
+            gw558,
+            gw559,
+            gw560,
         ]
     )
     db.session.commit()
