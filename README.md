@@ -27,21 +27,31 @@ Fantasy WC is a full-stack web application cloned and inspired by Fantasy Premie
 
 ## ✨ **Features**:
 
+
 ## Leagues
 
 ![img](./ImagesReadMe/readMe-Leagues.png)
+
+
 
 ## Teams
 
 ![img](./ImagesReadMe/readMe-Teams.png)
 
+
+
 ## Player Transfers
 
 ![img](./ImagesReadMe/readMe-Transfers.png)
 
+
+
 ## Leaderboards
 
 ![img](./ImagesReadMe/readMe-Leaderboards.png)
+
+
+
 
 ## 📁 Installation
 1. Clone this repository (only this branch)
