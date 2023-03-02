@@ -104,7 +104,7 @@ export default function CreateLeague() {
 
                     <div className="entries">
                         <div className="form-label">
-                            <label htmlFor="display_pic" className="display_pic">Display Pic</label>
+                            <label htmlFor="display_pic" className="display_pic">Image URL</label>
                         </div>
                         <input
                         type="text"
