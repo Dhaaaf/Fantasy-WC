@@ -1,4 +1,5 @@
 import { thunkNextMatchDay, thunkGetTeam } from "../../store/team";
+import { useState } from "react";
 import { useModal } from "../../context/Modal";
 import { useDispatch} from "react-redux";
 import "./ConfirmTransfer.css"
@@ -6,8 +7,9 @@ import "./ConfirmTransfer.css"
 export default function ConfirmTransfers({teamId, teamPlayersIds, transfersLeft, bank}) {
     const dispatch = useDispatch();
     const { closeModal } = useModal();
+    const [isActive, setIsActive] = useState(true)
 
-    console.log("IN MODAL ----->", teamId, teamPlayersIds, transfersLeft, bank)
+    console.log("ON OPEN MODAL ----->", isActive)
 
 
 
@@ -17,16 +19,24 @@ export default function ConfirmTransfers({teamId, teamPlayersIds, transfersLeft,
         // console.log("nextMatchDay stuff ----->", teamPlayersIds)
         // console.log("Transfers Left ---->", transfersLeft)
 
-        let payload = {
-            teamId,
-            teamPlayersIds,
-            transfersLeft,
-            bank
+        if (isActive) {
+            let payload = {
+                teamId,
+                teamPlayersIds,
+                transfersLeft,
+                bank
+            }
+
+            setIsActive(false)
+            
+            console.log("NEXT MATCHDAY MODAL ----->", isActive)
+            
+            dispatch(thunkNextMatchDay(payload)).
+            then(() => dispatch(thunkGetTeam(teamId))).
+            then(() => closeModal())
+            
         }
 
-        dispatch(thunkNextMatchDay(payload)).
-        then(() => dispatch(thunkGetTeam(teamId))).
-        then(() => closeModal())
     }
 
     return (
