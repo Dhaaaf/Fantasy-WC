@@ -313,7 +313,8 @@
 
 .players-list {
     width: 100%;
-    padding: 5px 5px;
+    /* padding: 5px 0px; */
+    border-top: 1px solid #37003c;
 }
 
 .player-list-item {
@@ -325,6 +326,12 @@
     border-bottom: 1px solid rgba(225, 225, 225, 0.8);
     align-items: center;
     justify-content: space-between;
+    /* box-sizing: border-box; */
+}
+
+.player-list-item:hover {
+    background-color: #e3bd3f;
+    transition: 0.8s;
 }
 
 .player-img {
@@ -355,7 +362,7 @@
     padding-right: 10px;
     font-size: 100%;
     border: none;
-    background-color: white;
+    background-color: unset;
     color: #37003c;
     cursor: pointer;
 }
