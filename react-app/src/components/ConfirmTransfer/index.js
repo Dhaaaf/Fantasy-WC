@@ -32,8 +32,8 @@ export default function ConfirmTransfers({teamId, teamPlayersIds, transfersLeft,
             console.log("NEXT MATCHDAY MODAL ----->", isActive)
             
             dispatch(thunkNextMatchDay(payload)).
-            then(() => dispatch(thunkGetTeam(teamId))).
-            then(() => closeModal())
+            then(() => dispatch(thunkGetTeam(teamId)))
+            closeModal()
             
         }
 
