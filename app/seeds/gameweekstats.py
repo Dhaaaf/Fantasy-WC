@@ -5308,7 +5308,7 @@ def seed_game_week_stats():
         man_of_the_match=False,
     )
 
-    # Kylian Mbappe 2002
+    # Kylian Mbappe 2022
 
     gw519 = GameWeekStat (
         week=1,
