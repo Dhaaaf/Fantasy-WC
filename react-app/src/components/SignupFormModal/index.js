@@ -15,22 +15,45 @@ function SignupFormModal() {
 	const { closeModal } = useModal();
 	const history = useHistory()
 
+	let errorsArray = []
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		if (password === confirmPassword) {
-			const data = await dispatch(signUp(username, email, password));
-			if (data) {
-				setErrors(data);
+
+		setErrors([])
+
+		if (!email.includes("@")) {
+            errorsArray.push("Please enter a valid email")
+        }
+
+		if (username.length < 4 || username.length > 20) {
+            errorsArray.push("Username must be between 3 and 20 characters")
+        }
+
+		if (password.length < 4 || password.length > 50) {
+            errorsArray.push("password must be between 3 and 50 characters")
+        }
+
+		if (errorsArray.length > 0) setErrors(errorsArray)
+
+		if (errorsArray.length == 0) {
+			if (password === confirmPassword) {
+				const data = await dispatch(signUp(username, email, password));
+				if (data) {
+					setErrors(data);
+				} else {
+					closeModal();
+					history.push(`/leagues`)
+				}
 			} else {
-				closeModal();
-				history.push(`/leagues`)
+				setErrors([
+					"Confirm Password field must be the same as the Password field",
+				]);
 			}
-		} else {
-			setErrors([
-				"Confirm Password field must be the same as the Password field",
-			]);
 		}
+
+
+
 	};
 
 	return (

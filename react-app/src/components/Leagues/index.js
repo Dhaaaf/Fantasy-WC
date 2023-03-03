@@ -75,6 +75,7 @@ const LeaguesIndex = () => {
                                         <img
                                         className="league-image"
                                         src={league.display_pic}
+                                        onError={e => { e.currentTarget.src = "https://cloudinary.fifa.com/m/6e6c51d56752bd7a/original/The-FIFA-World-Cup-Trophy.jpg"; }}
                                         > 
                                         </img>
                                     </div>

@@ -30,11 +30,15 @@ Fantasy WC is a full-stack web application cloned and inspired by Fantasy Premie
 
 ## Leagues
 
+### Users can create and join leagues to compete with friends. Leagues can be customized to allow different team budgets, and set varrying combinations of world cups to choose players from.
+
 ![img](./ImagesReadMe/readMe-Leagues.png)
 
 
 
 ## Teams
+
+### Create teams to fill out your fantasy of being a manager during the World Cup. Managers may change team formations and gain points every matchday depending on their starting 11.
 
 ![img](./ImagesReadMe/readMe-Teams.png)
 
@@ -42,11 +46,15 @@ Fantasy WC is a full-stack web application cloned and inspired by Fantasy Premie
 
 ## Player Transfers
 
+### Managers can transfer players in and out of their team during the World Cup. Have Toni Kroos 2014 for the 7-1 semi-final thrashing of Brazil, and transfer him out for Iniesta's 2010 goal and man of the match performance in the final. You better not transfer out Messi 2022 though, you'd be shooting yourself in the foot.
+
 ![img](./ImagesReadMe/readMe-Transfers.png)
 
 
 
 ## Leaderboards
+
+### Each league comes with a dedicated leaderboard to track which teams and managers performed the best. Scores are updated as new team's join and earn points.
 
 ![img](./ImagesReadMe/readMe-Leaderboards.png)
 
