@@ -122,13 +122,16 @@ export function SplashPage() {
                         <li className="tech-stack">Redux</li>
                         <h3 className="tech-stack aboutMe">Fahd Ahsan</h3>
                         {/* <li className="tech-stack aboutMe">Fahd Ahsan</li> */}
+                        <li className="tech-stack aboutMe link">
                         <a href="https://www.linkedin.com/in/fahdahsan/" className="tech-stack aboutMe link">
                          LinkedIn
                          </a>
-                         <div></div>
+                        </li>
+                        <li className="tech-stack aboutMe link">
                          <a href="https://github.com/Dhaaaf" className="tech-stack aboutMe link">
                          GitHub
                          </a>
+                        </li>
                     </div>
                 </div>
             </div>
