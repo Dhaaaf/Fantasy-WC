@@ -220,6 +220,16 @@ const TeamPage = () => {
 
   const closeMenu = () => setShowMenu(false);
 
+
+  if (team) {
+      if (team.match_day > 7) {
+        return (
+            <div>Clicked too far ahead...</div>
+        )
+      }
+  }
+
+
     return (
         user &&
         team &&

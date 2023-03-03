@@ -64,6 +64,9 @@ def next_match(user_team_id):
 
     #GET ALL CURRENT PLAYERS AND DELETE
 
+    if(team.match_day is 7):
+        return {"team": team.to_dict()}, 201
+
 
 
     user_team_players = UserTeamPlayer.query.filter_by(user_team_id=team_id).all()
