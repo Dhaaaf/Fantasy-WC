@@ -69,6 +69,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .submit-button {
@@ -80,4 +81,5 @@ label {
     width: 100px;
     margin-top: 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
