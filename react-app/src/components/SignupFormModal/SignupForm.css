@@ -75,9 +75,10 @@ label {
     width: 100px;
     margin-top: 20px;
     border-radius: 5px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 #signup-button {
     margin-bottom: 20px;
+    cursor: pointer;
 }

@@ -140,13 +140,13 @@ export const thunkNextMatchDay = (payload) => async(dispatch) => {
 // EDIT TEAM NAME
 
 export const thunkEditTeamName = (payload) => async(dispatch) => {
-    const {teamId, name} = payload
+    const {teamId, name, bank} = payload
     const res = await fetch (`/api/user_teams/${teamId}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({name}),
+        body: JSON.stringify({name, bank}),
     });
     if (res.ok) {
         const data = await res.json()
