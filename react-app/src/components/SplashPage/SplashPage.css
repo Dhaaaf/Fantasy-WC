@@ -82,6 +82,14 @@ img {
     font-size: 16px;
 }
 
+.tech-stack.aboutMe {
+  color: #e3bc3f;
+}
+
+.tech-stack.aboutMe.link {
+  cursor: pointer;
+}
+
 
 .splash-body-parent {
     width: 100%;

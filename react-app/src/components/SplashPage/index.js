@@ -44,7 +44,7 @@ function FadeInSection(props) {
 
 export function SplashPage() {
     const history = useHistory();
-	const user = useSelector((state) => state.session.user);
+	  const user = useSelector((state) => state.session.user);
 
 
     const handleOpenClick = () => {
@@ -120,6 +120,15 @@ export function SplashPage() {
                         <li className="tech-stack">React</li>
                         <li className="tech-stack">React Router</li>
                         <li className="tech-stack">Redux</li>
+                        <h3 className="tech-stack aboutMe">Fahd Ahsan</h3>
+                        {/* <li className="tech-stack aboutMe">Fahd Ahsan</li> */}
+                        <a href="https://www.linkedin.com/in/fahdahsan/" className="tech-stack aboutMe link">
+                         LinkedIn
+                         </a>
+                         <div></div>
+                         <a href="https://github.com/Dhaaaf" className="tech-stack aboutMe link">
+                         GitHub
+                         </a>
                     </div>
                 </div>
             </div>
