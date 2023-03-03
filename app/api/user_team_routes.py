@@ -131,6 +131,8 @@ def edit_team_name(user_team_id):
 
     team.name = res["name"]
     db.session.commit()
+    team.bank = res["bank"]
+    db.session.commit()
 
     return {"team": team}
 

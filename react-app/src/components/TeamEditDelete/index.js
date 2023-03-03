@@ -19,6 +19,10 @@ export default function EditDeleteTeam({team}) {
 
     let errorsArray = []
 
+    let bank = team.bank
+
+    console.log("TEAM EDIT ---->", bank, team)
+
     const handleEdit = async (e) => {
         e.preventDefault();
         setErrors([]);
@@ -28,11 +32,12 @@ export default function EditDeleteTeam({team}) {
         }
 
 
+
         if (errorsArray.length > 0) setErrors(errorsArray)
 
 
         if (errorsArray.length == 0) {
-            dispatch(thunkEditTeamName({teamId, name})).
+            dispatch(thunkEditTeamName({teamId, name, bank})).
             then(() => dispatch(thunkGetTeam(teamId)))
             closeModal()
         }
