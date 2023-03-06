@@ -594,7 +594,7 @@ def seed_players():
         first_name="Antoine",
         last_name="Griezmann",
         aka="Griezmann",
-        picture="https://pbs.twimg.com/media/DiKl3gIX4AAzcaD?format=jpg&name=4096x4096",
+        picture="https://digitalhub.fifa.com/m/4ddb323264c45cf6/original/fl9qqjpf92l9d8b781jn-jpg.jpg",
         team="France",
         year=2018,
         position="FW",
