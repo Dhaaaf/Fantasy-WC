@@ -9,15 +9,10 @@ export default function ConfirmTransfers({teamId, teamPlayersIds, transfersLeft,
     const { closeModal } = useModal();
     const [isActive, setIsActive] = useState(true)
 
-    console.log("ON OPEN MODAL ----->", isActive)
-
 
 
 
     const nextMatchDay = async () => {
-        // console.log("nextMatchDay stuff ----->", teamPlayersArray)
-        // console.log("nextMatchDay stuff ----->", teamPlayersIds)
-        // console.log("Transfers Left ---->", transfersLeft)
 
         if (isActive) {
             let payload = {
@@ -29,7 +24,6 @@ export default function ConfirmTransfers({teamId, teamPlayersIds, transfersLeft,
 
             setIsActive(false)
             
-            console.log("NEXT MATCHDAY MODAL ----->", isActive)
             
             dispatch(thunkNextMatchDay(payload)).
             then(() => dispatch(thunkGetTeam(teamId)))

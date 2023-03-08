@@ -55,9 +55,6 @@ const TeamPage = () => {
         }
     }, [])
 
-    // console.log("TEAM ------->", team)
-    // console.log("Players ------->", players)
-
 
 
 
@@ -80,12 +77,6 @@ const TeamPage = () => {
         teamMidfield = teamPlayersArray.filter(player => player.position == "MF")
         teamAttack = teamPlayersArray.filter(player => player.position == "FW")
     }
-
-    // console.log("TEAMPLAYERS =======>", teamPlayersArray)
-    // console.log("TEAMPLAYERS =======>", teamKeeper)
-    // console.log("TEAMPLAYERS =======>", teamDefense)
-    // console.log("TEAMPLAYERS =======>", teamMidfield)
-    // console.log("TEAMPLAYERS =======>", teamAttack)
 
 
 
@@ -114,8 +105,6 @@ const TeamPage = () => {
         let dbPlayersIds = dbPlayers.map(player => player.id)
         teamPlayersIds = teamPlayersArray.map(player => (player.id))
 
-        // console.log("DB PLAYERS------>", dbPlayersIds)
-        // console.log("COMPARING ARRAYS ------>", teamPlayersIds)
 
         const diff = teamPlayersIds.filter(id => !dbPlayersIds.includes(id));
         transfersMade = diff.length
@@ -194,9 +183,6 @@ const TeamPage = () => {
     //// NEXT MATCHDAY
 
     const nextMatchDay = async () => {
-        // console.log("nextMatchDay stuff ----->", teamPlayersArray)
-        // console.log("nextMatchDay stuff ----->", teamPlayersIds)
-        // console.log("Transfers Left ---->", transfersLeft)
 
         let bank =team.bank
 

@@ -16,7 +16,6 @@ function OpenModalButton({
   };
 
   if (buttonText === "i") {
-    // console.log("button text");
     return (
       <button
         onClick={onClick}
@@ -31,7 +30,6 @@ function OpenModalButton({
 
 
   if (buttonText === "edit-league") {
-    // console.log("button text");
     return (
       <button
         onClick={onClick}
@@ -45,7 +43,6 @@ function OpenModalButton({
   }
 
   if (buttonText === "edit-team-name") {
-    // console.log("button text");
     return (
       <button
         onClick={onClick}
@@ -59,7 +56,6 @@ function OpenModalButton({
   }
 
   if (buttonText === "leaderboard") {
-    // console.log("button text");
     return (
       <button
         onClick={onClick}
@@ -74,7 +70,6 @@ function OpenModalButton({
 
 
   if (buttonText === "next-match-day") {
-    // console.log("button text");
     return (
       <button
         onClick={onClick}
