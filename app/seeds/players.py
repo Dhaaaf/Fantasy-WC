@@ -178,7 +178,7 @@ def seed_players():
         first_name="Ronaldo",
         last_name="Nazario",
         aka="Ronaldo",
-        picture="https://imgsrv2.voi.id/w6pLz7BZHP1p4TmzOAOl8a4uIqVVCL8j9jfxv6N8Ymc/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8yMjQxNjcvMjAyMjExMDMwNjIwLW1haW4ucG5n.jpg",
+        picture="https://cloudinary.fifa.com/m/28c258ac8564eee1/original/Ronaldo-celebrates-scoring-for-Brazil-in-the-Korea-Japan-2002-final.jpg",
         team="Brazil",
         year=2002,
         position="FW",
