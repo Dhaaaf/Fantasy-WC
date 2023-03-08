@@ -5245,7 +5245,7 @@ def seed_game_week_stats():
         goals=0,
         assists=0,
         clean_sheet=True,
-        man_of_the_match=True,
+        man_of_the_match=False,
     )
 
     gw513 = GameWeekStat (

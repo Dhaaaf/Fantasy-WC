@@ -21,7 +21,6 @@ export default function EditDeleteTeam({team}) {
 
     let bank = team.bank
 
-    console.log("TEAM EDIT ---->", bank, team)
 
     const handleEdit = async (e) => {
         e.preventDefault();

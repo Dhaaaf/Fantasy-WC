@@ -32,8 +32,6 @@ export default function EditDeleteLeagueModal({league}) {
 
         if (errorsArray.length > 0) setErrors(errorsArray)
 
-        console.log("leagueId ----->", leagueId)
-
         if (errorsArray.length == 0) {
             dispatch(thunkEditLeague(leagueId, name, display_pic, is_private))
             closeModal()

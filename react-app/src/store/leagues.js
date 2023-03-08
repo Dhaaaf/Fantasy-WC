@@ -92,7 +92,6 @@ export const thunkEditLeague = (leagueId, name, display_pic, is_private) => asyn
 
     if (res.ok) {
         const data = await res.json();
-		console.log("DATA ------>", data)
         dispatch(actionEditLeague(data.league.id, data.league));
         return data.league;
     } else if (res.status < 500) {

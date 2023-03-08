@@ -48,7 +48,6 @@ export function SplashPage() {
 
 
     const handleOpenClick = () => {
-        // console.log("SPLASH USER", user)
     }
 
 
