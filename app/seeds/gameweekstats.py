@@ -5746,9 +5746,6 @@ def seed_game_week_stats():
 
 
 
-
-
-
     db.session.add_all(
         [
             gw1,

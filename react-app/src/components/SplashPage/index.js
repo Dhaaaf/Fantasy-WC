@@ -54,6 +54,7 @@ export function SplashPage() {
 
     return (
         <>
+        <div className="view-on-pc">Please View this App on a desktop, it is not formatted for other screen sizes yet.</div>
         <div className="splash-container-top">
         <div className="splash-top-details-container">
           <div className="splash-top-details-text">

@@ -499,7 +499,36 @@ img {
       display: block;
       z-index: 0;
       left: 50%;
-      margin-left: 270px;
+      margin-left: 250px;
       margin-bottom: 40px;
     }
   }
+
+
+@media (max-width: 950px) {
+  .body-img{
+    display: none;
+  }
+
+  .bg-image-right{
+    display: none;
+  }
+
+  .view-on-pc{
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .view-on-pc{
+    display: none;
+  }
+}
+
+.view-on-pc{
+  color: #e3bc3f;
+  background-color: #37003c;
+  border: 0.5px solid #e3bc3f;
+  text-align: center;
+  font-size: 30px;
+}
