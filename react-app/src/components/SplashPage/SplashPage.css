@@ -517,6 +517,11 @@ img {
   .view-on-pc{
     display: block;
   }
+
+  .splash-top-details-container{
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 1024px) {
